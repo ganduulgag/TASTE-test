@@ -1,0 +1,85 @@
+V "GNAT Lib v6"
+A -O1
+A -gnatA
+A -g
+A -gnatwa
+A -gnatwG
+A -gnat12
+A -fstack-usage
+A -g
+A -gnata
+A -gnato
+A -g
+A -mtune=generic
+A -march=i686
+P SS ZX
+
+RN
+RR NO_ACCESS_SUBPROGRAMS
+RR NO_ALLOCATORS
+RR NO_DISPATCH
+RR NO_IO
+RR NO_RECURSION
+RR NO_UNCHECKED_ACCESS
+RR NO_UNCHECKED_DEALLOCATION
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLEMENTATION_RESTRICTIONS
+RV NO_ELABORATION_CODE
+RV NO_OBSOLESCENT_FEATURES
+RV SPARK_05
+
+U polyorb_hi_generated.naming%s  polyorb_hi_generated-naming.ads  f334a5f6 EE OO PK
+W deviceconfig_node1_crazyflie_ble_pohiada%s  deviceconfig_node1_crazyflie_ble_pohiada.ads  deviceconfig_node1_crazyflie_ble_pohiada.ali
+W deviceconfig_node2_client_ble_pohiada%s  deviceconfig_node2_client_ble_pohiada.ads  deviceconfig_node2_client_ble_pohiada.ali
+W polyorb_hi%s		polyorb_hi.ads		polyorb_hi.ali
+W polyorb_hi.utils%s	polyorb_hi-utils.adb	polyorb_hi-utils.ali
+W polyorb_hi_generated%s  polyorb_hi_generated.ads  polyorb_hi_generated.ali
+W polyorb_hi_generated.deployment%s  polyorb_hi_generated-deployment.ads  polyorb_hi_generated-deployment.ali
+W system%s		system.ads		system.ali
+
+D ada.ads		20070406091342 3ffc8e18 ada%s
+D a-charac.ads		20070912115821 2d3ec45b ada.characters%s
+D a-chlat1.ads		20140225151544 66457d31 ada.characters.latin_1%s
+D a-unccon.ads		20070406091342 f9eb8f06 ada.unchecked_conversion%s
+D adaasn1rtl.ads	20180611081821 e9ad266d adaasn1rtl%s
+D deviceconfig_node1_crazyflie_ble_pohiada.ads  20180611081806 3ee81368 deviceconfig_node1_crazyflie_ble_pohiada%s
+D deviceconfig_node2_client_ble_pohiada.ads  20180611081807 bd5e8441 deviceconfig_node2_client_ble_pohiada%s
+D interfac.ads		20151118101227 4be8ce1b interfaces%s
+D pohicdriver_bluetooth.ads  20180611081806 71bc1a08 pohicdriver_bluetooth%s
+D polyorb_hi.ads	20180607235124 f77a07a6 polyorb_hi%s
+D polyorb_hi-utils.ads	20180607235124 8c6cb8de polyorb_hi.utils%s
+D polyorb_hi_generated.ads  20180607235124 32a22d97 polyorb_hi_generated%s
+D polyorb_hi_generated-deployment.ads  20180611081810 0956f063 polyorb_hi_generated.deployment%s
+D polyorb_hi_generated-naming.ads  20180611081810 01edc3b0 polyorb_hi_generated.naming%s
+D system.ads		20151123113124 c6f79445 system%s
+D s-assert.ads		20140225151544 cd8d2c94 system.assertions%s
+D s-exctab.ads		20140225151139 54135002 system.exception_table%s
+D s-secsta.ads		20140225151139 86a2856d system.secondary_stack%s
+D s-stalib.ads		20151112104907 09bd3940 system.standard_library%s
+D s-stoele.ads		20140225151139 2dc34a04 system.storage_elements%s
+D s-unstyp.ads		20140731130224 9d58a4c0 system.unsigned_types%s
+D /home/taste/tool-inst/include/ocarina/runtime/polyorb-hi-ada/native.adc  20180607235124 00000000
+X 6 deviceconfig_node1_crazyflie_ble_pohiada.ads
+13K9*DeviceConfig_node1_crazyflie_ble_pohiada 30e45 14|10w6 24r7
+18r1*pohidrv_node1_crazyflie_ble_pohiada_cv{9|44R6} 14|24r48
+X 7 deviceconfig_node2_client_ble_pohiada.ads
+13K9*DeviceConfig_node2_client_ble_pohiada 30e42 14|12w6 29r7
+18r1*pohidrv_node2_client_ble_pohiada_cv{9|44R6} 14|29r45
+X 10 polyorb_hi.ads
+35K9*PolyORB_HI 39e15 14|9r6 19r66 21r7 26r7
+X 11 polyorb_hi-utils.ads
+40K20*Utils 144e21 14|9w17 19r77 21r18 26r18
+85V13*To_Hi_String{83R9} 14|21s24 26s24
+116A9*Naming_Table_Type(110R9)<13|16E8> 14|19r83
+X 12 polyorb_hi_generated.ads
+34K9*PolyORB_HI_Generated 38e25 14|11r6 15r9 20r5 25r5 36r5
+X 13 polyorb_hi_generated-deployment.ads
+10K30*Deployment 200e36 14|11w27 20r26 25r26
+17n5*crazyflie_v2_partition_K{16E8} 14|20r37
+18n5*x86_partition_K{16E8} 14|25r37
+X 14 polyorb_hi_generated-naming.ads
+15K30*Naming 12|34k9 14|36l26 36e32
+19a3*process_package_bluetooth_crazyflie_cv_Naming_Table{11|116A9}
+X 15 system.ads
+37K9*System 14|13w6 15|156e11
+

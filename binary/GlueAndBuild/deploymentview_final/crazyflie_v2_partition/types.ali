@@ -1,0 +1,73 @@
+V "GNAT Lib v2017"
+A -O1
+A -gnatA
+A --RTS=/usr/gnat/arm-eabi/lib/gnat/ravenscar-full-stm32f4/
+A -mlittle-endian
+A -mfloat-abi=hard
+A -mcpu=cortex-m4
+A -mfpu=fpv4-sp-d16
+A -mthumb
+A -g
+A -gnatwa
+A -gnatwG
+A -gnat12
+A -fstack-usage
+A -g
+A -gnata
+A -gnato
+A -g
+P ES ZX
+
+RN
+RV NO_FLOATING_POINT
+RR NO_STREAMS
+RR NO_UNCHECKED_DEALLOCATION
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLEMENTATION_RESTRICTIONS
+RV NO_OBSOLESCENT_FEATURES
+RV SPARK_05
+
+U types%s		types.ads		9b1f3c16 NE OO PK
+W interfaces%s		interfac.ads		interfac.ali
+
+D interfac.ads		20170517144320 5ab55268 interfaces%s
+D system.ads		20170517144320 db831581 system%s
+D types.ads		20180608084407 c1aa6e7e types%s
+D /home/taste/tool-inst/include/ocarina/runtime/polyorb-hi-ada/gnat_runtime.adc  20180607235124 00000000
+X 1 interfac.ads
+38K9*Interfaces 184e15 3|1w6 7r24 8r24 9r24 10r24 15r25 16r25 17r25 18r25
+46I9*Integer_8<short_short_integer> 3|7r35
+49I9*Integer_16<short_integer> 3|8r35
+52I9*Integer_32<integer> 3|9r35
+55I9*Integer_64<long_long_integer> 3|10r35
+63M9*Unsigned_8 3|15r36
+66M9*Unsigned_16 3|16r36
+74M9*Unsigned_32 3|17r36
+77M9*Unsigned_64 3|18r36
+X 3 types.ads
+3K9*Types 59l5 59e10
+7I12*T_Int8{1|46I9}
+8I12*T_Int16{1|49I9}
+9I12*T_Int32{1|52I9} 26r55
+10I12*T_Int64{1|55I9} 27r55
+12M9*T_Uint6 13r8
+15M9*T_Uint8<1|63M9> 23r55
+16M9*T_Uint16<1|66M9> 24r55
+17M9*T_Uint32<1|74M9>
+18M9*T_Uint64<1|77M9>
+20I12*T_Bit_Pos_8{natural}
+21I12*T_Bit_Pos_16{natural}
+23A9*T_Uint8_Array(15M9)<integer>
+24A9*T_Uint16_Array(16M9)<integer>
+26A9*T_Int32_Array(9I12)<integer>
+27A9*T_Int64_Array(10I12)<integer>
+29A9*Float_Array(float)<integer>
+31F12*Natural_Float{float}
+36F12*T_Delta_Time{float}
+39F12*T_Alpha{float}
+43F12*T_Degrees{float}
+47F12*T_Speed{float}
+50F12*T_Sensitivity{float}
+53F12*T_Motor_Fac{float}
+57F12*T_Quaternion{float}
+

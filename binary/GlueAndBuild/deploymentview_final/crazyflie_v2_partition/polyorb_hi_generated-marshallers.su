@@ -1,0 +1,7 @@
+/home/taste/tool-inst/include/ocarina/runtime/polyorb-hi-ada/polyorb_hi-marshallers_g.adb:53:4:Marshall	32	static
+/home/taste/tool-inst/include/ocarina/runtime/polyorb-hi-ada/polyorb_hi-marshallers_g.adb:67:4:Unmarshall	24	static
+/home/taste/test1/binary/GlueAndBuild/deploymentview_final/crazyflie_v2_partition/polyorb_hi_generated-marshallers.adb:22:3:Marshall	0	static
+/home/taste/test1/binary/GlueAndBuild/deploymentview_final/crazyflie_v2_partition/polyorb_hi_generated-marshallers.adb:38:3:Unmarshall	64	static
+/home/taste/test1/binary/GlueAndBuild/deploymentview_final/crazyflie_v2_partition/polyorb_hi_generated-marshallers.adb:65:13:Marshall	8	static
+/home/taste/test1/binary/GlueAndBuild/deploymentview_final/crazyflie_v2_partition/polyorb_hi_generated-marshallers.adb:70:13:Unmarshall	8	static
+/home/taste/test1/binary/GlueAndBuild/deploymentview_final/crazyflie_v2_partition/polyorb_hi_generated-marshallers.adb:13:1:Marshallers	0	static

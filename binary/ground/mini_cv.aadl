@@ -1,0 +1,22 @@
+-- Automatically Generated - For use with AADL2GlueC only - Do NOT modify! --
+
+SUBPROGRAM start_demo
+FEATURES
+	a:OUT PARAMETER DataView::T_Uint16 {encoding=>UPER;};
+END start_demo;
+
+SUBPROGRAM IMPLEMENTATION start_demo.GUI_RI
+PROPERTIES
+	FV_Name => "ground";
+	Source_Language => GUI_RI;
+END start_demo.GUI_RI;
+
+SUBPROGRAM gui_polling_ground
+END gui_polling_ground;
+
+SUBPROGRAM IMPLEMENTATION gui_polling_ground.GUI_PI
+PROPERTIES
+	FV_Name => "ground";
+	Source_Language => GUI_PI;
+END gui_polling_ground.GUI_PI;
+

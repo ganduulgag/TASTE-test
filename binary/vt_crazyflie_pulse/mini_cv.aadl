@@ -1,0 +1,42 @@
+-- Automatically Generated - For use with AADL2GlueC only - Do NOT modify! --
+
+SUBPROGRAM artificial_pulse
+END artificial_pulse;
+
+SUBPROGRAM IMPLEMENTATION artificial_pulse.C
+PROPERTIES
+	FV_Name => "vt_crazyflie_pulse";
+	Source_Language => C;
+END artificial_pulse.C;
+
+SUBPROGRAM pulse
+END pulse;
+
+SUBPROGRAM IMPLEMENTATION pulse.C
+PROPERTIES
+	FV_Name => "vt_crazyflie_pulse";
+	Source_Language => C;
+END pulse.C;
+
+SUBPROGRAM led_on_vt
+FEATURES
+	a:OUT PARAMETER DataView::T_Uint16 {encoding=>UPER;};
+END led_on_vt;
+
+SUBPROGRAM IMPLEMENTATION led_on_vt.C
+PROPERTIES
+	FV_Name => "vt_crazyflie_pulse";
+	Source_Language => C;
+END led_on_vt.C;
+
+SUBPROGRAM check_queue_vt
+FEATURES
+	res:IN PARAMETER DataView::T_Boolean {encoding=>NATIVE;};
+END check_queue_vt;
+
+SUBPROGRAM IMPLEMENTATION check_queue_vt.C
+PROPERTIES
+	FV_Name => "vt_crazyflie_pulse";
+	Source_Language => C;
+END check_queue_vt.C;
+

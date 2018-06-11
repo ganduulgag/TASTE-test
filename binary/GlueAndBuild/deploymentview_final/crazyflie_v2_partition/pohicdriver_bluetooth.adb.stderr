@@ -1,0 +1,10 @@
+pohicdriver_bluetooth.adb:3:01: warning: "Unsigned_64" is already use-visible through previous use_type_clause at pohicdriver_bluetooth.ads:6
+pohicdriver_bluetooth.adb:4:01: warning: "Integer_64" is already use-visible through previous use_type_clause at pohicdriver_bluetooth.ads:7
+pohicdriver_bluetooth.adb:5:01: warning: "BIT" is already use-visible through previous use_type_clause at pohicdriver_bluetooth.ads:8
+pohicdriver_bluetooth.adb:54:45: warning: condition can only be False if invalid values present
+pohicdriver_bluetooth.adb:54:45: warning: condition is always True
+pohicdriver_bluetooth.adb:54:45: warning: (see test at line 53)
+pohicdriver_bluetooth.adb:129:60: warning: condition can only be False if invalid values present
+pohicdriver_bluetooth.ads:4:20: warning: "OctetBuffer" is already use-visible through package use clause at line 3
+pohicdriver_bluetooth.ads:5:20: warning: "BitArray" is already use-visible through package use clause at line 3
+pohicdriver_bluetooth.ads:8:20: warning: "BIT" is already use-visible through package use clause at line 3

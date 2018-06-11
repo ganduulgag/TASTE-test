@@ -1,0 +1,134 @@
+V "GNAT Lib v2017"
+A -O1
+A -gnatA
+A --RTS=/usr/gnat/arm-eabi/lib/gnat/ravenscar-full-stm32f4/
+A -mlittle-endian
+A -mfloat-abi=hard
+A -mcpu=cortex-m4
+A -mfpu=fpv4-sp-d16
+A -mthumb
+A -g
+A -gnatwa
+A -gnatwG
+A -gnat12
+A -fstack-usage
+A -g
+A -gnata
+A -gnato
+A -g
+P DB ES ZX
+
+RN
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_FLOATING_POINT
+RR NO_STREAMS
+RR NO_UNCHECKED_DEALLOCATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_ASPECT_SPECIFICATIONS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLEMENTATION_RESTRICTIONS
+RV NO_OBSOLESCENT_FEATURES
+RV SPARK_05
+
+U maths%b		maths.adb		22418199 NE OO PK
+W ada%s			ada.ads			ada.ali
+W ada.numerics%s	a-numeri.ads		a-numeri.ali
+W ada.numerics.elementary_functions%s  a-nuelfu.ads  a-nuelfu.ali
+W safety%s		safety.ads		safety.ali
+W system.assertions%s	s-assert.adb		s-assert.ali
+
+U maths%s		maths.ads		66b7d24e EE NE OO PK
+W ada%s			ada.ads			ada.ali
+W ada.numerics%s	a-numeri.ads		a-numeri.ali
+W system.assertions%s	s-assert.adb		s-assert.ali
+W types%s		types.ads		types.ali
+
+D ada.ads		20170517144320 76789da1 ada%s
+D a-except.ads		20170517144320 291912d5 ada.exceptions%s
+D a-finali.ads		20170517144320 bf4f806b ada.finalization%s
+D a-numeri.ads		20170517144320 bb51c45a ada.numerics%s
+D a-nuelfu.ads		20170517144320 51c3d5d5 ada.numerics.elementary_functions%s
+D a-reatim.ads		20170517144320 bb781ad1 ada.real_time%s
+D a-tags.ads		20170517144320 d3a89129 ada.tags%s
+D a-unccon.ads		20170517144320 31484697 ada.unchecked_conversion%s
+D filter.ads		20180608084407 da22adf9 filter%s
+D hal.ads		20180608084415 2b42c80e hal%s
+D hal-i2c.ads		20180608084415 0ed73138 hal.i2c%s
+D hal-time.ads		20180608084415 f5295cd7 hal.time%s
+D imu.ads		20180608084407 e5cf47da imu%s
+D interfac.ads		20170517144320 5ab55268 interfaces%s
+D i-stm32.ads		20170517144320 4d2e1e9b interfaces.stm32%s
+D i-stm32-pwr.ads	20170517144320 10ed2a13 interfaces.stm32.pwr%s
+D i-stm32-rcc.ads	20170517144320 ed083a96 interfaces.stm32.rcc%s
+D maths.ads		20180608084407 1c4c786a maths%s
+D maths.adb		20180608084407 52c4e676 maths%b
+D mpu9250.ads		20180608084415 11ad30ab mpu9250%s
+D safety.ads		20180608084407 3d0aca50 safety%s
+D system.ads		20170517144320 db831581 system%s
+D s-assert.ads		20170517144320 cd8d2c94 system.assertions%s
+D s-bb.ads		20170517144320 09e072ae system.bb%s
+D s-bbbopa.ads		20170517144320 95d97b26 system.bb.board_parameters%s
+D s-bbbosu.ads		20170517144320 9b59a61f system.bb.board_support%s
+D s-bbcppr.ads		20170517144320 bcfa73ad system.bb.cpu_primitives%s
+D s-bcprmu.ads		20170517144320 043d3736 system.bb.cpu_primitives.multiprocessors%s
+D s-bbinte.ads		20170517144320 d9fc23b0 system.bb.interrupts%s
+D s-bbmcpa.ads		20170517144320 c4c55388 system.bb.mcu_parameters%s
+D s-bbpara.ads		20170517144320 77379e7b system.bb.parameters%s
+D s-bbthre.ads		20170517144320 d6c36e4f system.bb.threads%s
+D s-bbthqu.ads		20170517144320 db3cad46 system.bb.threads.queues%s
+D s-bbtime.ads		20170517144320 ad086247 system.bb.time%s
+D s-exnllf.ads		20170517144320 bc7ebbdc system.exn_llf%s
+D s-finmas.ads		20170517144320 7811a767 system.finalization_masters%s
+D s-finroo.ads		20170517144320 4ff27390 system.finalization_root%s
+D s-gcmain.ads		20170517144320 f623c353 system.generic_c_math_interface%s
+D s-libpre.ads		20170517144320 f93cda94 system.libm_prefix%s
+D s-libsin.ads		20170517144320 7070a09c system.libm_single%s
+D s-multip.ads		20170517144320 f33e0e35 system.multiprocessors%s
+D s-osinte.ads		20170517144320 2d4f0621 system.os_interface%s
+D s-parame.ads		20170517144320 c9fe535f system.parameters%s
+D s-pooglo.ads		20170517144320 ede33ef8 system.pool_global%s
+D s-stalib.ads		20170517144320 09bd3940 system.standard_library%s
+D s-stm32.ads		20170517144320 e898dba2 system.stm32%s
+D s-stoele.ads		20170517144320 2dc34a04 system.storage_elements%s
+D s-stopoo.ads		20170517144320 b16154c2 system.storage_pools%s
+D s-traent.ads		20170517144320 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20170517144320 34867c83 system.unsigned_types%s
+D types.ads		20180608084407 c1aa6e7e types%s
+D /home/taste/tool-inst/include/ocarina/runtime/polyorb-hi-ada/gnat_runtime.adc  20180607235124 00000000
+X 1 ada.ads
+16K9*Ada 20e8 18|1r6 1r24 19|1r6 1r45
+X 4 a-numeri.ads
+16K13*Numerics 32e17 18|1w10 1r28 19|1r10 1r49
+21N4*Pi 18|11r44 11r56 19|18r40 18r44 26r37 26r47
+X 5 a-nuelfu.ads
+41K22*Elementary_Functions[38|86] 19|1w19 1r58
+X 18 maths.ads
+4K9*Maths 37l5 37e10 19|4b14 45l5 45t10
+11F12*T_Radians{float} 29r49 32r37 19|13r49 21r37
+16V13*Sqrtf{float} 16>20 19r16 19|10s20
+16f20 X{float} 18r16
+23V13*Inv_Sqrt{float} 23>23 26r16 26r42 19|8b13 11l8 11t16
+23f23 X{float} 25r16 19|8b23 10r27
+29V13*Atan{11F12} 29>19 29>31 19|13b13 19l8 19t12
+29f19 Y{float} 19|13b19 18r32
+29f31 X{float} 19|13b31 18r35
+32V13*Asin{11F12} 32>19 19|21b13 27l8 27t12
+32f19 X{float} 19|21b19 26r32
+35V13*Mean_Float{float} 35>25 19|29b13 43l8 43t18
+35a25 Block{51|29A9} 19|29b25 34r16 38r10 39r31
+X 19 maths.adb
+31f7 Sum{float} 35m10 35r17 39r18
+32f7 Mean{float} 39m10 42r14
+34f11 b=34:16{float} 35r23
+X 21 safety.ads
+4K9*Safety 19|2w6 2r45 21|73e11
+24V13*Saturate{float} 19|18s14 26s14
+X 28 s-bcprmu.ads
+39U14*Start_All_CPUs 40i<c,__gnat_start_slave_cpus>22
+X 38 s-gcmain.ads
+145V13*Arcsin{float} 19|26s24[5|41]
+163V13*Arctan{float} 19|18s24[5|41]
+X 51 types.ads
+3K9*Types 18|2w6 2r24 51|59e10
+29A9*Float_Array(float)<integer> 18|35r33 19|29r33
+

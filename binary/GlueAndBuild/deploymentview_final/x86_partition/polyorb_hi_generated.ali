@@ -1,0 +1,36 @@
+V "GNAT Lib v6"
+A -O1
+A -gnatA
+A -g
+A -gnatwa
+A -gnatwG
+A -gnat12
+A -fstack-usage
+A -g
+A -gnata
+A -gnato
+A -g
+A -mtune=generic
+A -march=i686
+P ZX
+
+RN
+RR NO_ACCESS_SUBPROGRAMS
+RR NO_ALLOCATORS
+RR NO_DISPATCH
+RR NO_IO
+RR NO_RECURSION
+RR NO_UNCHECKED_ACCESS
+RR NO_UNCHECKED_DEALLOCATION
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLEMENTATION_RESTRICTIONS
+RV NO_OBSOLESCENT_FEATURES
+
+U polyorb_hi_generated%s  polyorb_hi_generated.ads  32a22d97 NE OO PU PK
+
+D polyorb_hi_generated.ads  20180607235124 32a22d97 polyorb_hi_generated%s
+D system.ads		20151123113124 c6f79445 system%s
+D /home/taste/tool-inst/include/ocarina/runtime/polyorb-hi-ada/native.adc  20180607235124 00000000
+X 1 polyorb_hi_generated.ads
+34K9*PolyORB_HI_Generated 38l5 38e25
+

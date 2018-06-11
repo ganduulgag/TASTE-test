@@ -1,0 +1,183 @@
+---------------------------------------------------
+-- AADL2.1
+-- TASTE type deploymentview
+-- 
+-- generated code: do not edit
+---------------------------------------------------
+
+PACKAGE deploymentview::DV::Node1
+PUBLIC
+
+WITH ocarina_buses;
+WITH ocarina_drivers;
+WITH Taste;
+WITH Deployment;
+WITH TASTE_DV_Properties;
+PROCESS crazyflie_v2_partition
+END crazyflie_v2_partition;
+
+PROCESS IMPLEMENTATION crazyflie_v2_partition.others
+END crazyflie_v2_partition.others;
+
+DEVICE Crazyflie_BLE_pohiada
+EXTENDS ocarina_drivers::Crazyflie_BLE
+FEATURES
+  link : REFINED TO REQUIRES BUS ACCESS ocarina_buses::bluetooth.crazyflie {
+    Taste::coordinates => "101178 92123";
+  };
+PROPERTIES
+  Taste::Interface_Coordinates => "116375 112595" APPLIES TO link;
+  Deployment::Help => "Write your ASN.1 configuration here";
+  Deployment::Configuration => "{channel 80}";
+  Deployment::Config => "/home/taste/tool-inst/include/ocarina/runtime/polyorb-hi-c/src/drivers/configuration/bluetooth.asn";
+  Deployment::Version => "0.1beta";
+END Crazyflie_BLE_pohiada;
+
+DEVICE IMPLEMENTATION Crazyflie_BLE_pohiada.others
+EXTENDS ocarina_drivers::Crazyflie_BLE.pohiada
+END Crazyflie_BLE_pohiada.others;
+
+END deploymentview::DV::Node1;
+
+PACKAGE deploymentview::DV::Node2
+PUBLIC
+
+WITH ocarina_buses;
+WITH ocarina_drivers;
+WITH Taste;
+WITH Deployment;
+WITH TASTE_DV_Properties;
+PROCESS x86_partition
+END x86_partition;
+
+PROCESS IMPLEMENTATION x86_partition.others
+END x86_partition.others;
+
+DEVICE Client_BLE_pohiada
+EXTENDS ocarina_drivers::Client_BLE
+FEATURES
+  link : REFINED TO REQUIRES BUS ACCESS ocarina_buses::bluetooth.crazyflie {
+    Taste::coordinates => "193852 93068";
+  };
+PROPERTIES
+  Taste::Interface_Coordinates => "182357 112910" APPLIES TO link;
+  Deployment::Help => "Write your ASN.1 configuration here";
+  Deployment::Configuration => "{channel 80}";
+  Deployment::Config => "/home/taste/tool-inst/include/ocarina/runtime/polyorb-hi-c/src/drivers/configuration/bluetooth.asn";
+  Deployment::Version => "0.1beta";
+END Client_BLE_pohiada;
+
+DEVICE IMPLEMENTATION Client_BLE_pohiada.others
+EXTENDS ocarina_drivers::Client_BLE.pohiada
+END Client_BLE_pohiada.others;
+
+END deploymentview::DV::Node2;
+
+PACKAGE deploymentview::DV
+PUBLIC
+
+WITH interfaceview::IV::crazyflie;
+WITH interfaceview::IV::led_control;
+WITH ocarina_processors_arm;
+WITH deploymentview::DV::Node1;
+WITH interfaceview::IV::ground;
+WITH ocarina_processors_x86;
+WITH deploymentview::DV::Node2;
+WITH ocarina_buses;
+WITH Taste;
+WITH Deployment;
+WITH interfaceview::IV;
+WITH TASTE_DV_Properties;
+SYSTEM Node1
+FEATURES
+  Crazyflie_BLE_pohiada_bluetooth_crazyflie : REQUIRES BUS ACCESS ocarina_buses::bluetooth.crazyflie;
+END Node1;
+
+SYSTEM IMPLEMENTATION Node1.others
+SUBCOMPONENTS
+  IV_crazyflie : SYSTEM interfaceview::IV::crazyflie::crazyflie.others {
+    Taste::FunctionName => "crazyflie";
+  };
+  IV_led_control : SYSTEM interfaceview::IV::led_control::led_control.others {
+    Taste::FunctionName => "led_control";
+  };
+  crazyflie_v2_partition : PROCESS deploymentview::DV::Node1::crazyflie_v2_partition.others {
+    Taste::coordinates => "86725 63283 122402 80954";
+    Deployment::Port_Number => 0;
+  };
+  crazyflie_v2_gnat : PROCESSOR ocarina_processors_arm::crazyflie_v2.gnat {
+    Taste::coordinates => "82265 58234 126862 83478";
+  };
+  Crazyflie_BLE_pohiada : DEVICE deploymentview::DV::Node1::Crazyflie_BLE_pohiada.others {
+    Taste::coordinates => "84564 85824 123146 92123";
+  };
+CONNECTIONS
+  Crazyflie_BLE_pohiada_bluetooth_crazyflie_link : BUS ACCESS Crazyflie_BLE_pohiada_bluetooth_crazyflie -> Crazyflie_BLE_pohiada.link;
+PROPERTIES
+  Taste::APLC_Binding => (reference (crazyflie_v2_partition)) APPLIES TO IV_crazyflie;
+  Taste::APLC_Binding => (reference (crazyflie_v2_partition)) APPLIES TO IV_led_control;
+  Actual_Processor_Binding => (reference (crazyflie_v2_gnat)) APPLIES TO crazyflie_v2_partition;
+  Actual_Processor_Binding => (reference (crazyflie_v2_gnat)) APPLIES TO Crazyflie_BLE_pohiada;
+END Node1.others;
+
+SYSTEM Node2
+FEATURES
+  Client_BLE_pohiada_bluetooth_crazyflie : REQUIRES BUS ACCESS ocarina_buses::bluetooth.crazyflie;
+END Node2;
+
+SYSTEM IMPLEMENTATION Node2.others
+SUBCOMPONENTS
+  IV_ground : SYSTEM interfaceview::IV::ground::ground.others {
+    Taste::FunctionName => "ground";
+  };
+  x86_partition : PROCESS deploymentview::DV::Node2::x86_partition.others {
+    Taste::coordinates => "162494 64704 200490 82607";
+    Deployment::Port_Number => 0;
+  };
+  x86_linux : PROCESSOR ocarina_processors_x86::x86.linux {
+    Taste::coordinates => "157744 59589 205239 85164";
+  };
+  Client_BLE_pohiada : DEVICE deploymentview::DV::Node2::Client_BLE_pohiada.others {
+    Taste::coordinates => "158578 87714 202672 93068";
+  };
+CONNECTIONS
+  Client_BLE_pohiada_bluetooth_crazyflie_link : BUS ACCESS Client_BLE_pohiada_bluetooth_crazyflie -> Client_BLE_pohiada.link;
+PROPERTIES
+  Taste::APLC_Binding => (reference (x86_partition)) APPLIES TO IV_ground;
+  Actual_Processor_Binding => (reference (x86_linux)) APPLIES TO x86_partition;
+  Actual_Processor_Binding => (reference (x86_linux)) APPLIES TO Client_BLE_pohiada;
+END Node2.others;
+
+SYSTEM deploymentview
+END deploymentview;
+
+SYSTEM IMPLEMENTATION deploymentview.others
+SUBCOMPONENTS
+  Node1 : SYSTEM Node1.others {
+    Taste::coordinates => "76690 51022 132437 93698";
+  };
+  Node2 : SYSTEM Node2.others {
+    Taste::coordinates => "151807 52282 211176 94643";
+  };
+  bluetooth_crazyflie : BUS ocarina_buses::bluetooth.crazyflie {
+    Taste::coordinates => "116375 106296 182357 119052";
+  };
+  interfaceview : SYSTEM interfaceview::IV::interfaceview.others;
+CONNECTIONS
+  Connection2 : BUS ACCESS bluetooth_crazyflie -> Node1.Crazyflie_BLE_pohiada_bluetooth_crazyflie {
+    Taste::coordinates => "101178 92123 101178 112595 116375 112595";
+  };
+  Connection1 : BUS ACCESS bluetooth_crazyflie -> Node2.Client_BLE_pohiada_bluetooth_crazyflie {
+    Taste::coordinates => "193852 93068 193852 112910 182357 112910";
+  };
+PROPERTIES
+  Actual_Connection_Binding => (reference (bluetooth_crazyflie)) APPLIES TO interfaceview.crazyflie_PI_start_demo_ground_RI_start_demo;
+END deploymentview.others;
+
+PROPERTIES
+  Taste::coordinates => "0 0 297000 210000";
+  Taste::version => "2.0";
+  Taste::interfaceView => "InterfaceView.aadl";
+  Taste::HWLibraries => ("../tool-inst/share/ocarina/AADLv2/ocarina_components.aadl");
+END deploymentview::DV;
+

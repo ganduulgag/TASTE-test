@@ -1,0 +1,124 @@
+V "GNAT Lib v2017"
+A -O1
+A -gnatA
+A --RTS=/usr/gnat/arm-eabi/lib/gnat/ravenscar-full-stm32f4/
+A -mlittle-endian
+A -mfloat-abi=hard
+A -mcpu=cortex-m4
+A -mfpu=fpv4-sp-d16
+A -mthumb
+A -g
+A -gnatwa
+A -gnatwG
+A -gnat12
+A -fstack-usage
+A -g
+A -gnata
+A -gnato
+A -g
+P DB ES ZX
+
+RN
+RV NO_STANDARD_STORAGE_POOLS
+RR NO_STREAMS
+RV NO_UNCHECKED_CONVERSION
+RR NO_UNCHECKED_DEALLOCATION
+RV NO_DEFAULT_INITIALIZATION
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLEMENTATION_RESTRICTIONS
+RV NO_ELABORATION_CODE
+RV NO_OBSOLESCENT_FEATURES
+RV SPARK_05
+
+U crazyflie%b		crazyflie.adb		02d01c31 OO PK IL
+W ada%s			ada.ads			ada.ali
+W ada.numerics%s	a-numeri.ads		a-numeri.ali
+W ada.numerics.generic_elementary_functions%s
+W ada.unchecked_conversion%s
+W adaasn1rtl%s		adaasn1rtl.adb		adaasn1rtl.ali
+W interfaces%s		interfac.ads		interfac.ali
+W system%s		system.ads		system.ali
+W system.io%s		s-io.adb		s-io.ali
+W taste_basictypes%s	taste_basictypes.adb	taste_basictypes.ali
+W taste_dataview%s	taste_dataview.adb	taste_dataview.ali
+
+U crazyflie%s		crazyflie.ads		0bcf0d52 EE NE OO PK IL
+W adaasn1rtl%s		adaasn1rtl.adb		adaasn1rtl.ali
+W taste_dataview%s	taste_dataview.adb	taste_dataview.ali
+
+D ada.ads		20170517144320 76789da1 ada%s
+D a-charac.ads		20170517144320 2d3ec45b ada.characters%s
+D a-chlat1.ads		20170517144320 66457d31 ada.characters.latin_1%s
+D a-numeri.ads		20170517144320 bb51c45a ada.numerics%s
+D a-nuelfu.ads		20170517144320 51c3d5d5 ada.numerics.elementary_functions%s
+D a-ngelfu.ads		20170517144320 ac447086 ada.numerics.generic_elementary_functions%s
+D a-ngelfu.adb		20170517144320 1a32e079 ada.numerics.generic_elementary_functions%b
+D a-nlelfu.ads		20170517144320 4a933b1e ada.numerics.long_elementary_functions%s
+D a-nllefu.ads		20170517144320 a34f74c3 ada.numerics.long_long_elementary_functions%s
+D a-unccon.ads		20170517144320 31484697 ada.unchecked_conversion%s
+D adaasn1rtl.ads	20180611094056 e9ad266d adaasn1rtl%s
+D crazyflie.ads		20180611094049 52bc3824 crazyflie%s
+D crazyflie.adb		20180611094048 ddbe364a crazyflie%b
+D interfac.ads		20170517144320 5ab55268 interfaces%s
+D system.ads		20170517144320 db831581 system%s
+D s-gcmain.ads		20170517144320 f623c353 system.generic_c_math_interface%s
+D s-io.ads		20170517144320 9e42f74f system.io%s
+D s-libdou.ads		20170517144320 642b3a67 system.libm_double%s
+D s-libpre.ads		20170517144320 f93cda94 system.libm_prefix%s
+D s-libsin.ads		20170517144320 7070a09c system.libm_single%s
+D s-unstyp.ads		20170517144320 34867c83 system.unsigned_types%s
+D taste_basictypes.ads	20180611094056 8d5ab41f taste_basictypes%s
+D taste_dataview.ads	20180611094056 b0de131b taste_dataview%s
+D /home/taste/tool-inst/include/ocarina/runtime/polyorb-hi-ada/gnat_runtime.adc  20180607235124 00000000
+X 1 ada.ads
+16K9*Ada 20e8 13|6r6 7r6
+X 4 a-numeri.ads
+16K13*Numerics 32e17 13|7r10
+X 6 a-ngelfu.ads
+41k22*Generic_Elementary_Functions 238e46 13|7w19
+X 10 a-unccon.ads
+20v14*Unchecked_Conversion 13|6w10
+X 11 adaasn1rtl.ads
+8K9*adaasn1rtl 1380e15 12|7w6 8r5 13|13w6 14r5
+24M12*Asn1UInt{14|77M9}
+X 12 crazyflie.ads
+13K9*crazyflie 35l5 35e14 13|19b14 100l5 100t14
+18U14*pulse 19i<c,crazyflie_PI_pulse>21 13|31b15 41l13 41t18
+24U14*start_demo 24^25 25i<c,crazyflie_PI_start_demo>21 13|44b15 55l13 55t23
+24p25 a(23|34M9) 13|44b26 50r31
+30U14*led_on 30^21 31b<c,crazyflie_RI_led_on>21 32r59
+30p21 a(23|34M9)
+32U14*RIÜled_on=32:59 13|73s25
+32p24 a(23|34M9)
+X 13 crazyflie.adb
+20E10 States 20e31 23r17
+20n21 run{20E10} 34r22 47r22 76r39 83r39
+20n26 wait{20E10} 36r22 49r22 69r39
+21R10 ctxt_Ty 27e15 28r19
+23e9*state{20E10} 33r23 46r23 69m30 76m30 83m30
+24b9*initDone{boolean} 99m14
+25m9*a{23|34M9} 50m26 80r49
+26m9*my_command{23|34M9} 73m40 80m30
+28r5 ctxt{21R10} 33r18 46r18 50m21 69m25 73m35 73r35 76m25 80m25 80r44 83m25
+. 99m9
+29i5 CS_Only{integer} 37r35 39r35 48r35 53r35 85r26
+30U15 runTransition 30>29 35s21 37s21 39s21 48s21 51s21 53s21 58b15 94l13
+. 94t26 98s9
+30i29 Id{integer} 58b29 59r27
+59i9 trId{integer} 61r20 62r22 68m25 75m25 82m25 86m25
+91L19 next_transition 70r30 77r30 84r30 87r30
+X 14 interfac.ads
+38K9*Interfaces 13|16w6 17r5 14|184e15
+77M9*Unsigned_64
+X 15 system.ads
+50K9*System 13|3r6 4r5 15|164e11
+X 17 s-io.ads
+37K16*IO 13|3w13 4r12 17|64e14
+44U14*Put 13|65s25
+47U14*New_Line 13|66s25
+X 22 taste_basictypes.ads
+12K9*TASTE_BasicTypes 13|9w6 10r5 22|68e21
+X 23 taste_dataview.ads
+12K9*TASTE_Dataview 12|10w6 11r5 13|11w6 12r5 23|50e19
+34M9*asn1SccT_Uint16{11|24M12} 12|24r35 30r31 32r34 13|25r21 26r30 44r36
+

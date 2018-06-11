@@ -1,0 +1,261 @@
+--  TASTE - Warning: This is NOT the real Concurrency view  --
+--  This file was automatically generated and should remain read-only
+--  Open it with TASTE-IV
+--  The only intended use of this file is visualization - not processing.
+
+package generated_cv::IV::ConcurrencyView
+public
+with dataview; 
+with exportedComponent::FV;
+with taste;
+
+  --{ interfaceview obj6480 10 10
+  --TASTE-generated concurrency view
+  --For visualization purposes.
+  --}
+
+  system exportedComponent
+  end exportedComponent;
+
+  system implementation exportedComponent.others
+    subcomponents
+	crazyflie : system interfaceview::IV::PASSIVE_crazyflie.others;
+	ground : system interfaceview::IV::THREAD_ground.others;
+	led_control : system interfaceview::IV::PASSIVE_led_control.others;
+	crazyflie_v2_partition_taste_api : system interfaceview::IV::PASSIVE_crazyflie_v2_partition_taste_api.others;
+	vt_crazyflie_pulse : system interfaceview::IV::THREAD_vt_crazyflie_pulse.others;
+	vt_crazyflie_start_demo : system interfaceview::IV::THREAD_vt_crazyflie_start_demo.others;
+    connections
+	unprotected_led_on : subprogram access PASSIVE_led_control.led_on -> PASSIVE_crazyflie.led_on;
+	unprotected_crazyflie_has_pending_msg : subprogram access PASSIVE_crazyflie_v2_partition_taste_api.crazyflie_has_pending_msg -> PASSIVE_crazyflie.check_queue;
+	sporadic_artificial_start_demo : subprogram access THREAD_vt_crazyflie_start_demo.artificial_start_demo -> THREAD_ground.start_demo;
+	protected_pulse : subprogram access PASSIVE_crazyflie.pulse -> THREAD_vt_crazyflie_pulse.pulse;
+	unprotected_led_on : subprogram access PASSIVE_led_control.led_on -> THREAD_vt_crazyflie_pulse.led_on_vt;
+	unprotected_crazyflie_has_pending_msg : subprogram access PASSIVE_crazyflie_v2_partition_taste_api.crazyflie_has_pending_msg -> THREAD_vt_crazyflie_pulse.check_queue_vt;
+	protected_start_demo : subprogram access PASSIVE_crazyflie.start_demo -> THREAD_vt_crazyflie_start_demo.start_demo;
+	unprotected_led_on : subprogram access PASSIVE_led_control.led_on -> THREAD_vt_crazyflie_start_demo.led_on_vt;
+	unprotected_crazyflie_has_pending_msg : subprogram access PASSIVE_crazyflie_v2_partition_taste_api.crazyflie_has_pending_msg -> THREAD_vt_crazyflie_start_demo.check_queue_vt;
+  end exportedComponent.others;
+
+  system PASSIVE_crazyflie
+    features
+	pulse : provides subprogram access exportedComponent::fv::pulse.others
+	  { taste::Coordinates => "200 215 200 215";
+	    taste::RCMoperationKind => protected;
+	    taste::RCMperiod => 2000;};
+	start_demo : provides subprogram access exportedComponent::fv::start_demo.others
+	  { taste::Coordinates => "200 260 200 260";
+	    taste::RCMoperationKind => protected;
+	    taste::RCMperiod => 0;};
+	led_on : requires subprogram access exportedComponent::fv::led_on.others
+	  { taste::Coordinates => "450 215 450 215";
+	    taste::RCMoperationKind => unprotected;
+	    taste::RCMperiod => 0;};
+	check_queue : requires subprogram access exportedComponent::fv::crazyflie_has_pending_msg.others
+	  { taste::Coordinates => "450 260 450 260";
+	    taste::RCMoperationKind => unprotected;
+	    taste::RCMperiod => 0;};
+    properties
+	source_language => C;
+	taste::coordinates => "200 200 450 290";
+	taste::instance_name => "crazyflie";
+  end PASSIVE_crazyflie;
+
+  system implementation PASSIVE_crazyflie.others
+    subcomponents
+	pulse_impl : subprogram exportedComponent::FV::pulse.others
+	  { compute_execution_time => 0ms..0ms;};
+	start_demo_impl : subprogram exportedComponent::FV::start_demo.others
+	  { compute_execution_time => 0ms..0ms;};
+	led_on_impl : subprogram exportedComponent::FV::led_on.others
+	  { compute_execution_time => 0ms..0ms;};
+	check_queue_impl : subprogram exportedComponent::FV::crazyflie_has_pending_msg.others
+	  { compute_execution_time => 0ms..0ms;};
+    connections
+	subprogram access pulse_impl -> pulse;
+	subprogram access start_demo_impl -> start_demo;
+	subprogram access led_on_impl -> led_on;
+	subprogram access check_queue_impl -> check_queue;
+  end PASSIVE_crazyflie.others;
+
+  system THREAD_ground
+    features
+	start_demo : requires subprogram access exportedComponent::fv::artificial_start_demo.others
+	  { taste::Coordinates => "850 215 850 215";
+	    taste::RCMoperationKind => sporadic;
+	    taste::RCMperiod => 0;};
+	gui_polling_ground : provides subprogram access exportedComponent::fv::gui_polling_ground.others
+	  { taste::Coordinates => "600 215 600 215";
+	    taste::RCMoperationKind => cyclic;
+	    taste::RCMperiod => 40;};
+    properties
+	source_language => C;
+	taste::coordinates => "600 200 850 245";
+	taste::instance_name => "ground";
+  end THREAD_ground;
+
+  system implementation THREAD_ground.others
+    subcomponents
+	start_demo_impl : subprogram exportedComponent::FV::artificial_start_demo.others
+	  { compute_execution_time => 0ms..0ms;};
+	gui_polling_ground_impl : subprogram exportedComponent::FV::gui_polling_ground.others
+	  { compute_execution_time => 0ms..0ms;};
+    connections
+	subprogram access start_demo_impl -> start_demo;
+	subprogram access gui_polling_ground_impl -> gui_polling_ground;
+  end THREAD_ground.others;
+
+  system PASSIVE_led_control
+    features
+	led_on : provides subprogram access exportedComponent::fv::led_on.others
+	  { taste::Coordinates => "1000 215 1000 215";
+	    taste::RCMoperationKind => unprotected;
+	    taste::RCMperiod => 0;};
+    properties
+	source_language => C;
+	taste::coordinates => "1000 200 1250 245";
+	taste::instance_name => "led_control";
+  end PASSIVE_led_control;
+
+  system implementation PASSIVE_led_control.others
+    subcomponents
+	led_on_impl : subprogram exportedComponent::FV::led_on.others
+	  { compute_execution_time => 0ms..0ms;};
+    connections
+	subprogram access led_on_impl -> led_on;
+  end PASSIVE_led_control.others;
+
+  system PASSIVE_crazyflie_v2_partition_taste_api
+    features
+	crazyflie_has_pending_msg : provides subprogram access exportedComponent::fv::check_queue.others
+	  { taste::Coordinates => "1400 215 1400 215";
+	    taste::RCMoperationKind => unprotected;
+	    taste::RCMperiod => 0;};
+    properties
+	source_language => C;
+	taste::coordinates => "1400 200 1650 245";
+	taste::instance_name => "crazyflie_v2_partition_taste_api";
+  end PASSIVE_crazyflie_v2_partition_taste_api;
+
+  system implementation PASSIVE_crazyflie_v2_partition_taste_api.others
+    subcomponents
+	crazyflie_has_pending_msg_impl : subprogram exportedComponent::FV::check_queue.others
+	  { compute_execution_time => 0ms..0ms;};
+    connections
+	subprogram access crazyflie_has_pending_msg_impl -> crazyflie_has_pending_msg;
+  end PASSIVE_crazyflie_v2_partition_taste_api.others;
+
+  system THREAD_vt_crazyflie_pulse
+    features
+	artificial_pulse : provides subprogram access exportedComponent::fv::pulse.others
+	  { taste::Coordinates => "1800 215 1800 215";
+	    taste::RCMoperationKind => cyclic;
+	    taste::RCMperiod => 2000;};
+	pulse : requires subprogram access exportedComponent::fv::pulse.others
+	  { taste::Coordinates => "2050 215 2050 215";
+	    taste::RCMoperationKind => protected;
+	    taste::RCMperiod => 2000;};
+	led_on_vt : requires subprogram access exportedComponent::fv::led_on.others
+	  { taste::Coordinates => "2050 260 2050 260";
+	    taste::RCMoperationKind => unprotected;
+	    taste::RCMperiod => 0;};
+	check_queue_vt : requires subprogram access exportedComponent::fv::crazyflie_has_pending_msg.others
+	  { taste::Coordinates => "2050 305 2050 305";
+	    taste::RCMoperationKind => unprotected;
+	    taste::RCMperiod => 0;};
+    properties
+	source_language => C;
+	taste::coordinates => "1800 200 2050 335";
+	taste::instance_name => "vt_crazyflie_pulse";
+  end THREAD_vt_crazyflie_pulse;
+
+  system implementation THREAD_vt_crazyflie_pulse.others
+    subcomponents
+	artificial_pulse_impl : subprogram exportedComponent::FV::pulse.others
+	  { compute_execution_time => 0ms..0ms;};
+	pulse_impl : subprogram exportedComponent::FV::pulse.others
+	  { compute_execution_time => 0ms..0ms;};
+	led_on_vt_impl : subprogram exportedComponent::FV::led_on.others
+	  { compute_execution_time => 0ms..0ms;};
+	check_queue_vt_impl : subprogram exportedComponent::FV::crazyflie_has_pending_msg.others
+	  { compute_execution_time => 0ms..0ms;};
+    connections
+	subprogram access artificial_pulse_impl -> artificial_pulse;
+	subprogram access pulse_impl -> pulse;
+	subprogram access led_on_vt_impl -> led_on_vt;
+	subprogram access check_queue_vt_impl -> check_queue_vt;
+  end THREAD_vt_crazyflie_pulse.others;
+
+  system THREAD_vt_crazyflie_start_demo
+    features
+	artificial_start_demo : provides subprogram access exportedComponent::fv::start_demo.others
+	  { taste::Coordinates => "2200 215 2200 215";
+	    taste::RCMoperationKind => sporadic;
+	    taste::RCMperiod => 0;};
+	start_demo : requires subprogram access exportedComponent::fv::start_demo.others
+	  { taste::Coordinates => "2450 215 2450 215";
+	    taste::RCMoperationKind => protected;
+	    taste::RCMperiod => 0;};
+	led_on_vt : requires subprogram access exportedComponent::fv::led_on.others
+	  { taste::Coordinates => "2450 260 2450 260";
+	    taste::RCMoperationKind => unprotected;
+	    taste::RCMperiod => 0;};
+	check_queue_vt : requires subprogram access exportedComponent::fv::crazyflie_has_pending_msg.others
+	  { taste::Coordinates => "2450 305 2450 305";
+	    taste::RCMoperationKind => unprotected;
+	    taste::RCMperiod => 0;};
+    properties
+	source_language => C;
+	taste::coordinates => "2200 200 2450 335";
+	taste::instance_name => "vt_crazyflie_start_demo";
+  end THREAD_vt_crazyflie_start_demo;
+
+  system implementation THREAD_vt_crazyflie_start_demo.others
+    subcomponents
+	artificial_start_demo_impl : subprogram exportedComponent::FV::start_demo.others
+	  { compute_execution_time => 0ms..0ms;};
+	start_demo_impl : subprogram exportedComponent::FV::start_demo.others
+	  { compute_execution_time => 0ms..0ms;};
+	led_on_vt_impl : subprogram exportedComponent::FV::led_on.others
+	  { compute_execution_time => 0ms..0ms;};
+	check_queue_vt_impl : subprogram exportedComponent::FV::crazyflie_has_pending_msg.others
+	  { compute_execution_time => 0ms..0ms;};
+    connections
+	subprogram access artificial_start_demo_impl -> artificial_start_demo;
+	subprogram access start_demo_impl -> start_demo;
+	subprogram access led_on_vt_impl -> led_on_vt;
+	subprogram access check_queue_vt_impl -> check_queue_vt;
+  end THREAD_vt_crazyflie_start_demo.others;
+
+properties
+  taste::coordinates => "0 0 2970 2100";
+
+end generated_cv::IV;
+
+package exportedComponent::FV
+public
+with dataview;
+with taste;
+
+  subprogram pulse
+  end pulse;
+
+  subprogram start_demo
+  end start_demo;
+
+  subprogram led_on
+  end led_on;
+
+  subprogram crazyflie_has_pending_msg
+  end crazyflie_has_pending_msg;
+
+  subprogram artificial_start_demo
+  end artificial_start_demo;
+
+  subprogram gui_polling_ground
+  end gui_polling_ground;
+
+  subprogram check_queue
+  end check_queue;
+
+end exportedComponent::FV;

@@ -1,0 +1,12 @@
+polyorb_hi_drivers_crazyflie_ble.adb:40:06: warning: no entities of "Syslink" are referenced
+polyorb_hi_drivers_crazyflie_ble.adb:43:06: warning: no entities of "Tasks" are referenced
+polyorb_hi_drivers_crazyflie_ble.adb:47:20: warning: no entities of "Ada.Interrupts.Names" are referenced
+polyorb_hi_drivers_crazyflie_ble.adb:49:09: warning: unit "Ada.Exceptions" is not referenced
+polyorb_hi_drivers_crazyflie_ble.adb:53:16: warning: no entities of "PolyORB_HI.Output" are referenced
+polyorb_hi_drivers_crazyflie_ble.adb:97:13: warning: function "To_PO_HI_Message_Length_Stream" is not referenced
+polyorb_hi_drivers_crazyflie_ble.adb:116:07: warning: types for unchecked conversion have different sizes
+polyorb_hi_drivers_crazyflie_ble.adb:135:16: warning: violation of restriction "NO_SECONDARY_STACK" at /home/taste/tool-inst/include/ocarina/runtime/polyorb-hi-ada/gnat_runtime.adc:7
+polyorb_hi_drivers_crazyflie_ble.adb:135:55: warning: violation of restriction "NO_SECONDARY_STACK" at /home/taste/tool-inst/include/ocarina/runtime/polyorb-hi-ada/gnat_runtime.adc:7
+polyorb_hi_drivers_crazyflie_ble.adb:248:07: warning: variable "Has_Succeed" is assigned but never read
+polyorb_hi_drivers_crazyflie_ble.adb:310:42: warning: "Rx_Byte" may be referenced before it has a value
+polyorb_hi_drivers_crazyflie_ble.adb:323:21: warning: variable "E" is not referenced

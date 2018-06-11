@@ -1,0 +1,14 @@
+/home/taste/test1/Certyflie/crazyflie_support/src/power_management.ads:52:9:Power_Syslink_Infoeq	0	static
+/home/taste/test1/Certyflie/crazyflie_support/src/power_management.ads:52:9:Power_Syslink_Infoip	0	static
+/home/taste/test1/Certyflie/crazyflie_support/src/power_management.ads:87:4:Power_Management_Task_Typevip	64	static
+/home/taste/test1/Certyflie/crazyflie_support/src/power_management.adb:47:4:Power_Management_Init	24	static
+/home/taste/test1/Certyflie/crazyflie_support/src/power_management.adb:71:4:Power_Management_Set_Battery_Voltage	0	static
+/home/taste/test1/Certyflie/crazyflie_support/src/power_management.adb:88:4:Power_Management_Get_Battery_Voltage	0	static
+/home/taste/test1/Certyflie/crazyflie_support/src/power_management.adb:95:4:Power_Management_Get_Charge_From_Voltage	0	static
+/home/taste/test1/Certyflie/crazyflie_support/src/power_management.adb:112:4:Power_Management_Syslink_Update	8	static
+/home/taste/test1/Certyflie/crazyflie_support/src/power_management.adb:126:4:Power_Management_Get_State	24	static
+/home/taste/test1/Certyflie/crazyflie_support/src/power_management.adb:165:4:Power_Management_Is_Discharging	8	static
+/home/taste/test1/Certyflie/crazyflie_support/src/power_management.adb:177:4:Set_Power_Leds	8	static
+/home/taste/test1/Certyflie/crazyflie_support/src/power_management.adb:198:4:Power_Management_Task_Typet	32	static
+/home/taste/test1/Certyflie/crazyflie_support/src/power_management.adb:34:1:Power_Management	0	static
+/home/taste/test1/Certyflie/crazyflie_support/src/power_management.ads:36:1:Power_Management	16	static

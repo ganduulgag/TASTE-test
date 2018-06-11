@@ -1,0 +1,481 @@
+V "GNAT Lib v2017"
+A -O1
+A -gnatA
+A --RTS=/usr/gnat/arm-eabi/lib/gnat/ravenscar-full-stm32f4/
+A -mlittle-endian
+A -mfloat-abi=hard
+A -mcpu=cortex-m4
+A -mfpu=fpv4-sp-d16
+A -mthumb
+A -g
+A -gnatwa
+A -gnatwG
+A -gnat12
+A -fstack-usage
+A -g
+A -gnata
+A -gnato
+A -g
+P DB LC TF  ES ZX
+
+RN
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_FLOATING_POINT
+RR NO_STREAMS
+RR NO_UNCHECKED_DEALLOCATION
+RV NO_IMPLEMENTATION_ASPECT_SPECIFICATIONS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLEMENTATION_RESTRICTIONS
+RV NO_OBSOLESCENT_FEATURES
+RV SPARK_05
+
+U stabilizer%b		stabilizer.adb		c5d38fe3 NE OO PK
+W config%s		config.ads		config.ali
+W log%s			log.adb			log.ali
+W safety%s		safety.ads		safety.ali
+W system%s		system.ads		system.ali
+W system.assertions%s	s-assert.adb		s-assert.ali
+
+U stabilizer%s		stabilizer.ads		0613c87d BN EE NE OO PK
+W ada%s			ada.ads			ada.ali
+W ada.real_time%s	a-reatim.adb		a-reatim.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
+W commander%s		commander.adb		commander.ali
+W controller%s		controller.adb		controller.ali
+W crtp%s		crtp.adb		crtp.ali
+W free_fall%s		free_fall.adb		free_fall.ali
+W imu%s			imu.adb			imu.ali
+W lps25h%s		lps25h.adb		lps25h.ali
+W motors%s		motors.adb		motors.ali
+W pid%s			pid.adb			pid.ali  EA
+W pid_parameters%s	pid_parameters.ads	pid_parameters.ali
+W power_management%s	power_management.adb	power_management.ali
+Z safety%s		safety.ads		safety.ali
+W sensfusion6%s		sensfusion6.adb		sensfusion6.ali
+W system.assertions%s	s-assert.adb		s-assert.ali
+W types%s		types.ads		types.ali
+
+D ada.ads		20170517144320 76789da1 ada%s
+D a-except.ads		20170517144320 291912d5 ada.exceptions%s
+D a-finali.ads		20170517144320 bf4f806b ada.finalization%s
+D a-interr.ads		20170517144320 bdf68b51 ada.interrupts%s
+D a-intnam.ads		20170517144320 cdde51a1 ada.interrupts.names%s
+D a-numeri.ads		20170517144320 bb51c45a ada.numerics%s
+D a-reatim.ads		20170517144320 bb781ad1 ada.real_time%s
+D a-rttiev.ads		20170517144320 f8eb9b1f ada.real_time.timing_events%s
+D a-sytaco.ads		20170517144320 cb042d0a ada.synchronous_task_control%s
+D a-tags.ads		20170517144320 d3a89129 ada.tags%s
+D a-taside.ads		20170517144320 c6417f71 ada.task_identification%s
+D a-unccon.ads		20170517144320 31484697 ada.unchecked_conversion%s
+D ak8963.ads		20180608084415 ee27c928 ak8963%s
+D commander.ads		20180608084407 e93063b7 commander%s
+D config.ads		20180608084407 f94c56ee config%s
+D controller.ads	20180608084407 52ee7f22 controller%s
+D crtp.ads		20180608084407 28118101 crtp%s
+D filter.ads		20180608084407 da22adf9 filter%s
+D free_fall.ads		20180608084407 71783bfd free_fall%s
+D generic_queue.ads	20180608084407 4cb410a9 generic_queue%s
+D hal.ads		20180608084415 2b42c80e hal%s
+D hal-audio.ads		20180608084415 6baea1e9 hal.audio%s
+D hal-block_drivers.ads	20180608084415 3a6f071f hal.block_drivers%s
+D hal-gpio.ads		20180608084415 146364b8 hal.gpio%s
+D hal-i2c.ads		20180608084415 0ed73138 hal.i2c%s
+D hal-real_time_clock.ads  20180608084415 9dd52fca hal.real_time_clock%s
+D hal-sdmmc.ads		20180608084415 7293c891 hal.sdmmc%s
+D hal-spi.ads		20180608084415 fe139819 hal.spi%s
+D hal-time.ads		20180608084415 f5295cd7 hal.time%s
+D hal-uart.ads		20180608084415 d58316b4 hal.uart%s
+D imu.ads		20180608084407 e5cf47da imu%s
+D interfac.ads		20170517144320 5ab55268 interfaces%s
+D i-c.ads		20170517144320 5421119b interfaces.c%s
+D i-cexten.ads		20170517144320 b33ea64a interfaces.c.extensions%s
+D i-stm32.ads		20170517144320 4d2e1e9b interfaces.stm32%s
+D i-stm32-pwr.ads	20170517144320 10ed2a13 interfaces.stm32.pwr%s
+D i-stm32-rcc.ads	20170517144320 ed083a96 interfaces.stm32.rcc%s
+D leds.ads		20180608100909 1ed6915b leds%s
+D log.ads		20180608084407 ffd2f526 log%s
+D lps25h.ads		20180608084407 735e3f34 lps25h%s
+D motors.ads		20180608084407 f6440898 motors%s
+D mpu9250.ads		20180608084415 11ad30ab mpu9250%s
+D pid.ads		20180608084407 da50deda pid%s
+D pid.adb		20180608084407 7f121aac pid%b
+D pid_parameters.ads	20180608084407 9170652a pid_parameters%s
+D power_management.ads	20180608084407 be846ff3 power_management%s
+D ravenscar_time.ads	20180608084415 7a23edc6 ravenscar_time%s
+D safety.ads		20180608084407 3d0aca50 safety%s
+D sdmmc_svd_periph.ads	20180608084415 b49674fe sdmmc_svd_periph%s
+D sensfusion6.ads	20180608084407 0f50e35a sensfusion6%s
+D stabilizer.ads	20180609184151 04575d94 stabilizer%s
+D stabilizer.adb	20180609183734 fa10bbef stabilizer%b
+D stm32.ads		20180608084415 698e2c3b stm32%s
+D stm32-adc.ads		20180608084415 a0a7f671 stm32.adc%s
+D stm32-board.ads	20180608084415 69000a83 stm32.board%s
+D stm32-crc.ads		20180608084415 9ef7b3c1 stm32.crc%s
+D stm32-dac.ads		20180608084415 bbc963b4 stm32.dac%s
+D stm32-device.ads	20180608084415 b860d86c stm32.device%s
+D stm32-dma.ads		20180608084415 a485c5f7 stm32.dma%s
+D stm32-dma-interrupts.ads  20180608084415 35afaa6f stm32.dma.interrupts%s
+D stm32-exti.ads	20180608084415 27a7d05f stm32.exti%s
+D stm32-gpio.ads	20180608084415 dfe90a82 stm32.gpio%s
+D stm32-i2c.ads		20180608084415 e73ffae8 stm32.i2c%s
+D stm32-i2c-dma.ads	20180608084415 75d445d8 stm32.i2c.dma%s
+D stm32-i2s.ads		20180608084415 8099fbc7 stm32.i2s%s
+D stm32-pwm.ads		20180608084415 172b9ba5 stm32.pwm%s
+D stm32-rtc.ads		20180608084415 ff58a3e8 stm32.rtc%s
+D stm32-sdmmc.ads	20180608084415 4cae3006 stm32.sdmmc%s
+D stm32-sdmmc_interrupt.ads  20180608084415 6fda8a6a stm32.sdmmc_interrupt%s
+D stm32-spi.ads		20180608084415 98127252 stm32.spi%s
+D stm32-spi-dma.ads	20180608084415 030a0921 stm32.spi.dma%s
+D stm32-timers.ads	20180608084415 63c500b2 stm32.timers%s
+D stm32-usarts.ads	20180608084415 c32302c7 stm32.usarts%s
+D stm32_svd.ads		20180608084415 eeda8404 stm32_svd%s
+D stm32_svd-adc.ads	20180608084415 0c4598f6 stm32_svd.adc%s
+D stm32_svd-crc.ads	20180608084415 f8fb8ec8 stm32_svd.crc%s
+D stm32_svd-dac.ads	20180608084415 7ce3d16d stm32_svd.dac%s
+D stm32_svd-dma.ads	20180608084415 cbdaf790 stm32_svd.dma%s
+D stm32_svd-gpio.ads	20180608084415 d1b361bd stm32_svd.gpio%s
+D stm32_svd-i2c.ads	20180608084415 bbdaed5e stm32_svd.i2c%s
+D stm32_svd-sdio.ads	20180608084415 586e3cc2 stm32_svd.sdio%s
+D stm32_svd-spi.ads	20180608084415 9452a68a stm32_svd.spi%s
+D stm32_svd-usart.ads	20180608084415 e4981db8 stm32_svd.usart%s
+D syslink.ads		20180608084407 08b9a7cd syslink%s
+D system.ads		20170517144320 db831581 system%s
+D s-assert.ads		20170517144320 cd8d2c94 system.assertions%s
+D s-bb.ads		20170517144320 09e072ae system.bb%s
+D s-bbbopa.ads		20170517144320 95d97b26 system.bb.board_parameters%s
+D s-bbbosu.ads		20170517144320 9b59a61f system.bb.board_support%s
+D s-bbcppr.ads		20170517144320 bcfa73ad system.bb.cpu_primitives%s
+D s-bcprmu.ads		20170517144320 043d3736 system.bb.cpu_primitives.multiprocessors%s
+D s-bbinte.ads		20170517144320 d9fc23b0 system.bb.interrupts%s
+D s-bbmcpa.ads		20170517144320 c4c55388 system.bb.mcu_parameters%s
+D s-bbpara.ads		20170517144320 77379e7b system.bb.parameters%s
+D s-bbthre.ads		20170517144320 d6c36e4f system.bb.threads%s
+D s-bbthqu.ads		20170517144320 db3cad46 system.bb.threads.queues%s
+D s-bbtime.ads		20170517144320 ad086247 system.bb.time%s
+D s-bbtiev.ads		20170517144320 14ca2877 system.bb.timing_events%s
+D s-exnllf.ads		20170517144320 bc7ebbdc system.exn_llf%s
+D s-finmas.ads		20170517144320 7811a767 system.finalization_masters%s
+D s-finroo.ads		20170517144320 4ff27390 system.finalization_root%s
+D s-interr.ads		20170517144320 36300b98 system.interrupts%s
+D s-multip.ads		20170517144320 f33e0e35 system.multiprocessors%s
+D s-mufalo.ads		20170517144320 3dca0374 system.multiprocessors.fair_locks%s
+D s-musplo.ads		20170517144320 69fa25c4 system.multiprocessors.spin_locks%s
+D s-osinte.ads		20170517144320 2d4f0621 system.os_interface%s
+D s-parame.ads		20170517144320 c9fe535f system.parameters%s
+D s-pooglo.ads		20170517144320 ede33ef8 system.pool_global%s
+D s-stalib.ads		20170517144320 09bd3940 system.standard_library%s
+D s-stm32.ads		20170517144320 e898dba2 system.stm32%s
+D s-stoele.ads		20170517144320 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20170517144320 ed88f8fb system.storage_elements%b
+D s-stopoo.ads		20170517144320 b16154c2 system.storage_pools%s
+D s-tasinf.ads		20170517144320 801abd01 system.task_info%s
+D s-taspri.ads		20170517144320 351848fa system.task_primitives%s
+D s-taskin.ads		20170517144320 a1f44ab3 system.tasking%s
+D s-taprob.ads		20170517144320 c8fc0753 system.tasking.protected_objects%s
+D s-tpoben.ads		20170517144320 8351b91e system.tasking.protected_objects.entries%s
+D s-tposen.ads		20170517144320 828b4fcc system.tasking.protected_objects.single_entry%s
+D s-tasres.ads		20170517144320 0c8ef6fb system.tasking.restricted%s
+D s-tarest.ads		20170517144320 4cbcd33f system.tasking.restricted.stages%s
+D s-traent.ads		20170517144320 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20170517144320 34867c83 system.unsigned_types%s
+D types.ads		20180608084407 c1aa6e7e types%s
+D uart_syslink.ads	20180608084407 99883042 uart_syslink%s
+D /home/taste/tool-inst/include/ocarina/runtime/polyorb-hi-ada/gnat_runtime.adc  20180607235124 00000000
+X 1 ada.ads
+16K9*Ada 20e8 51|30r6 30r28
+X 7 a-reatim.ads
+41K13*Real_Time 155e18 51|30w10 30r32
+43@22*Clock_Time 51|113r30
+X 14 commander.ads
+36K9*Commander 171e14 51|35w6 35r28
+38@21*Commander_State 51|114r30 140r31
+45E9*RPY_Type 45e34 51|339r27 341r27 343r27
+45n22*RATE{45E9} 51|343r39 52|272r22 276r23 280r21
+45n28*ANGLE{45E9} 51|339r39 341r39
+72U14*Commander_Get_RPY 52|431s7
+80U14*Commander_Get_RPY_Type 52|435s7
+88U14*Commander_Get_Thrust 52|467s10
+95U14*Commander_Get_Alt_Hold 52|307s7
+101U14*Commander_Watchdog 52|473s10
+X 15 config.ads
+32K9*Config 43e11 52|30w6 30r18
+34b4*QUAD_FORMATION_X{boolean} 52|204r10
+X 16 controller.ads
+36K9*Controller 134e15 51|36w6 36r28
+38@22*Attitude_PIDs 51|94r30 126r30 156r30
+38@37*Rate_PIDs 51|95r30 127r30 166r30
+38@48*Controller_State 51|93r30
+60U14*Controller_Init 52|107s7
+73U14*Controller_Correct_Rate_PID 52|284s7
+86U14*Controller_Correct_Attitude_Pid 52|254s7
+97U14*Controller_Reset_All_Pid 52|486s10
+103U14*Controller_Get_Actuator_Output 52|288s7
+113U14*Controller_Get_Desired_Rate 52|260s7
+X 17 crtp.ads
+36K9*CRTP 236e9 51|37w6 37r28
+37@26*CRTP_State 51|115r30
+X 19 free_fall.ads
+38K9*Free_Fall 175e14 51|38w6 38r28
+40@22*FF_State 51|116r30
+53U14*FF_Check_Event 52|428s7
+59U14*FF_Get_Recovery_Commands 52|439s7
+68U14*FF_Get_Recovery_Thrust 52|469s10
+X 22 hal-audio.ads
+61h9*Audio_Stream
+X 23 hal-block_drivers.ads
+34h9*Block_Driver
+X 24 hal-gpio.ads
+44h9*GPIO_Point
+X 25 hal-i2c.ads
+48h9*I2C_Port
+X 26 hal-real_time_clock.ads
+79h9*RTC_Device
+X 27 hal-sdmmc.ads
+380h9*SDMMC_Driver
+X 28 hal-spi.ads
+48h9*SPI_Port
+X 29 hal-time.ads
+34h9*Delays
+X 30 hal-uart.ads
+48h9*UART_Port
+X 31 imu.ads
+37K9*IMU 321e8 51|32w6 32r28
+39@21*IMU_State 51|111r30
+47F12*T_Rate{float} 51|231r26 233r26 235r26
+52F12*T_Acc{float}
+54F12*T_Mag{float}
+69R9*Gyroscope_Data 73e14 51|204r11
+70f7*X{47F12} 52|231r34 284r41
+71f7*Y{47F12} 52|231r42 284r50
+72f7*Z{47F12} 52|231r50 284r58
+77R9*Accelerometer_Data 81e14 51|206r11
+78f7*X{52F12} 52|232r33 240r59 243r23 243r31
+79f7*Y{52F12} 52|232r40 241r59 243r41 243r49
+80f7*Z{52F12} 52|232r47 242r59 243r59 243r67
+85R9*Magnetometer_Data 89e14 51|208r11
+86f7*X{54F12} 52|233r33
+87f7*Y{54F12} 52|233r40
+88f7*Z{54F12} 52|233r47
+93N4*IMU_UPDATE_FREQ 51|189r33 197r46
+144U14*IMU_9_Read 52|420s7
+157V13*IMU_Has_Barometer{boolean} 52|453s10 464s30
+X 32 interfac.ads
+49I9*Integer_16<short_integer>
+52I9*Integer_32<integer>
+66M9*Unsigned_16
+74M9*Unsigned_32
+X 39 log.ads
+32K9*Log 95e8 52|32w6 112r10 114r44 117r10 119r44 122r10 124r44 127r10 129r44
+. 133r10 135r44 138r10 140r44 143r10 145r44 148r10 150r44
+38n7*LOG_UINT16{36E9} 52|114r48 119r48 124r48 129r48 150r48
+43n7*LOG_FLOAT{36E9} 52|135r48 140r48 145r48
+82U14*Add_Log_Variable 52|112s14 117s14 122s14 127s14 133s14 138s14 143s14
+. 148s14
+83a7 Group{string} 52|112r32 117r32 122r32 127r32 133r32 138r32 143r32 148r32
+84a7 Name{string} 52|113r32 118r32 123r32 128r32 134r32 139r32 144r32 149r32
+85e7 Log_Type{36E9} 52|114r32 119r32 124r32 129r32 135r32 140r32 145r32 150r32
+86m7 Variable{85|80M9} 52|115r32 120r32 125r32 130r32 136r32 141r32 146r32
+. 151r32
+87b7 Success{boolean} 52|116r32 121r32 126r32 131r32 137r32 142r32 147r32
+. 152r32
+X 40 lps25h.ads
+32K9*LPS25h 52e11 51|33w6 33r28
+38F12*T_Pressure{float} 51|241r19
+39F12*T_Temperature{float} 51|239r19
+40F12*T_Altitude{float} 51|80r7 81r7 243r19 245r19 247r19 275r23 279r23 281r23
+. 52|303r29 313r28 314r28 317r33 318r33 360r40 361r40 368r40 369r40 389r40
+. 390r40 394r40 395r40
+44U14*LPS25h_Get_Data 52|310s7
+X 41 motors.ads
+36K9*Motors 102e11 51|39w6 39r28
+37@27*Motors_State 51|117r30 176r29
+42n22*MOTOR_M1{42E9} 52|219r46
+60U14*Motor_Set_Power_With_Bat_Compensation 52|219s7
+X 43 pid.ads
+41k9*Pid 166e8 51|40w6 45r23 79r32
+52F12*T_I_Limit{float}
+57R9*Pid_Object 51|265r32[79]
+61f7*Integ{52F12[51|79]} 52|334m23[51|79] 343r37[51|79] 355m23[51|79]
+78U14*Pid_Init 52|346s23[51|79]
+93U14*Pid_Update 52|357s23[51|79] 380s23[51|79]
+101V13*Pid_Get_Output{float} 52|358s53[51|79] 387s53[51|79]
+107U14*Pid_Set_Desired 52|370s23[51|79]
+117U14*Pid_Set_Error 52|379s23[51|79]
+X 45 pid_parameters.ads
+30K9*Pid_Parameters 74e19 51|41w6 41r28
+64N4*DEFAULT_PID_INTEGRATION_LIMIT 52|351r34 352r33
+71N4*MIN_ALTITUDE_COEFF 51|84r7
+72N4*MAX_ALTITUDE_COEFF 51|85r7
+X 46 power_management.ads
+36K9*Power_Management 160e21 51|42w6 42r28
+37@27*Power_Management_State 51|112r30 139r31
+80V13*Power_Management_Is_Discharging{boolean} 52|333s14
+X 48 safety.ads
+4K9*Safety 73e11 52|31w6 31r18
+10V13*Dead_Band{float} 52|248s30 322s32 373s36
+24V13*Saturate{float} 52|247s18 312s17 315s22 322s22 327s18 358s30 366s29
+. 373s26 382s26 387s30 392s30
+37V13*Saturate{124|16M9} 52|399s29
+50V13*Truncate_To_T_Int16{124|8I12} 52|397s24
+X 50 sensfusion6.ads
+33K9*SensFusion6 102e16 51|43w6 43r28
+35@22*SensFusion6_State 51|118r30 154r30
+48U14*SensFusion6_Update_Q 52|231s7
+63U14*SensFusion6_Get_Euler_RPY 52|236s7
+69V13*SensFusion6_Get_AccZ_Without_Gravity{float} 52|240s17
+X 51 stabilizer.ads
+47K9*Stabilizer 185E4 380l5 380e15 52|34b14 490l5 490t15
+49@22*Stabilizer_State 63r22 92r30 100r28 200r22 52|36r21
+50@22*IMU_Outputs 64r22 119r30 150r30 163r30 205r22 207r22 209r22 52|37r21
+51@22*Actual_Angles 65r22 122r30 152r30 214r22 216r22 218r22 52|40r21
+52@22*Desired_Angles 66r22 120r30 149r30 162r30 222r22 224r22 226r22 52|43r21
+53@22*Desired_Rates 67r22 121r30 153r30 165r30 232r22 234r22 236r22 52|46r21
+54@22*Command_Types 68r22 123r30 161r30 340r22 342r22 344r22 52|49r21
+55@22*Actuator_Commands 69r22 124r30 144r31 164r30 348r22 350r22 352r22 354r22
+. 52|52r21
+56@22*Motor_Powers 70r22 125r30 175r29 358r22 360r22 362r22 364r22 52|56r21
+57@22*V_Speed_Parameters 71r22 108r30 138r31 151r30 293r22 295r22 297r22
+. 299r22 301r22 303r22 52|60r21
+58@22*Asl_Parameters 72r22 109r30 136r31 307r22 309r22 311r22 52|66r21
+59@22*Alt_Hold_Parameters 73r22 110r30 137r31 315r22 319r22 325r22 327r22
+. 329r22 331r22 336r22 52|69r21
+60@22*V_Speed_Variables 74r22 128r30 141r31 155r30 252r22 254r22 256r22 258r22
+. 260r22 52|76r21
+61@22*Asl_Variables 75r22 129r30 142r31 240r22 242r22 244r22 246r22 248r22
+. 52|81r21
+62@22*Alt_Hold_Variables 76r22 130r30 143r31 268r22 272r22 274r22 276r22
+. 278r22 280r22 282r22 52|86r21
+79K12*Altitude_Pid[43|41] 265r19 52|346r10 357r10 358r40 370r10 379r10 380r10
+. 387r40
+90U14*Stabilizer_Init 52|101b14 156l8 156t23
+98V13*Stabilizer_Test{boolean} 52|162b13 165l8 165t23
+104U14*Stabilizer_Control_Loop 105=7 106=7 52|413b14 488l8 488t31
+105m7 Attitude_Update_Counter{124|17M9} 52|414b7 423m7 423r34 446r10 450m10
+106m7 Alt_Hold_Update_Counter{124|17M9} 52|415b7 424m7 424r34 454r9 459m10
+134U14*Stabilizer_Alt_Hold_Update 52|297b14 405l8 405t34 457s10
+147U14*Stabilizer_Update_Attitude 52|229b14 262l8 262t34 448s10
+159U14*Stabilizer_Update_Rate 52|268b14 291l8 291t30 462s7
+169U14*Stabilizer_Distribute_Power 170>7 171>7 172>7 173>7 52|192b14 223l8
+. 223t35 482s10 485s10
+170m7 Thrust{124|16M9} 52|193b7 199r40
+171i7 Roll{124|8I12} 52|194b7 200r31
+172i7 Pitch{124|8I12} 52|195b7 201r31
+173i7 Yaw{124|8I12} 52|196b7 202r40
+185N4 ATTITUDE_UPDATE_RATE_DIVIDER 52|446r37
+186N4 ATTITUDE_UPDATE_RATE_DIVIDER_F 190r28
+188f4 FUSION_UPDATE_DT{float} 52|234r29 249r30
+193N4 ALTHOLD_UPDATE_RATE_DIVIDER 52|454r36
+194N4 ALTHOLD_UPDATE_RATE_DIVIDER_F
+196f4 ALTHOLD_UPDATE_DT{float} 52|353r33
+199b4 Is_Init{boolean} 52|36r44 103r10 155m7 164r14
+204r4 Gyro{31|69R9} 52|38r45 231r29 231r37 231r45 284r36 284r45 284r53 420m19
+. 420r19
+206r4 Acc{31|77R9} 52|37r45 232r29 232r36 232r43 240r55 241r55 242r55 243r19
+. 243r27 243r37 243r45 243r55 243r63 420m25 420r25 428r23
+208r4 Mag{31|85R9} 52|39r45 233r29 233r36 233r43 420m30 420r30
+213f4 Euler_Roll_Actual{124|43F12} 52|40r45 136m44 136r44 236m34 254r40
+215f4 Euler_Pitch_Actual{124|43F12} 52|41r45 141m44 141r44 237m34 255r40
+217f4 Euler_Yaw_Actual{124|43F12} 52|42r45 146m44 146r44 238m34 256r40
+221f4 Euler_Roll_Desired{124|43F12} 52|43r45 257r40 273r31 431m26 439m33
+. 439r33
+223f4 Euler_Pitch_Desired{124|43F12} 52|44r45 258r40 277r32 432m26 440m33
+. 440r33
+225f4 Euler_Yaw_Desired{124|43F12} 52|45r45 259r41 281r31 433m26
+231f4 Roll_Rate_Desired{31|47F12} 52|46r45 260m36 273m10 285r36
+233f4 Pitch_Rate_Desired{31|47F12} 52|47r45 260m55 277m10 286r36
+235f4 Yaw_Rate_Desired{31|47F12} 52|48r45 261m36 281m10 287r36
+239f4 Temperature{40|39F12} 52|81r45 310m34
+241f4 Pressure{40|38F12} 52|82r45 310m24
+243f4 Asl{40|40F12} 52|83r45 312m10 312r27 322r43 341r29 347r33 357r49 373r47
+. 380r49
+245f4 Asl_Raw{40|40F12} 52|84r45 310m47 312r45 316r35
+247f4 Asl_Long{40|40F12} 52|85r45 315m10 315r32 322r49
+251f4 Acc_WZ{float} 52|76r45 240m7 248r41
+253f4 Acc_MAG{float} 52|77r45 243m7
+255f4 V_Speed_ASL{124|47F12} 52|80r45 322m7 328r31 384r39
+257f4 V_Speed_Acc{124|47F12} 52|79r45 330m7 383r40
+259f4 V_Speed{124|47F12} 52|78r45 247m7 247r28 327m7 327r28 330r22
+265r4 Alt_Hold_PID{43|57R9[79]} 52|86r45 334m10 343r24 346m33 355m10 357m35
+. 357r35 359r41 370m40 370r40 379m38 379r38 380m35 380r35 388r41
+271b4 Alt_Hold{boolean} 52|87r45 307m31 364r10 464r14
+273b4 Set_Alt_Hold{boolean} 52|88r45 307m41 339r10
+275f4 Alt_Hold_PID_Val{40|40F12} 52|89r45 358m10 392m10 392r56 398r13
+277f4 Alt_Hold_Err{float} 52|90r45 373m10 379r53
+279f4 Alt_Hold_Change{40|40F12} 52|91r45 307m55 367r40
+281f4 Alt_Hold_Target{40|40F12} 52|92r45 341m10 366m10 366r39 370r54 373r53
+287f4 ALT_HOLD_KP{float} 52|348r33 349r33
+288f4 ALT_HOLD_KI{float}
+289f4 ALT_HOLD_KD{float} 52|350r33
+292f4 V_Speed_ASL_Fac{124|47F12} 52|60r45 384r53
+294f4 V_Speed_Acc_Fac{124|47F12} 52|61r45 383r54
+296f4 V_Acc_Deadband{124|31F12} 52|62r45 248r49
+298f4 V_Speed_ASL_Deadband{124|31F12} 52|63r45 323r33
+300f4 V_Speed_Limit{124|47F12} 52|64r45 250r29 251r29 324r34 324r49 329r30
+. 329r45
+302f4 V_Bias_Alpha{124|39F12} 52|65r45 327r38 328r52
+306f4 Asl_Err_Deadband{124|31F12} 52|66r45 374r37
+308f4 Asl_Alpha{124|39F12} 52|67r45 312r33 312r62
+310f4 Asl_Alpha_Long{124|39F12} 52|68r45 315r43 316r52
+314f4 Alt_Hold_Err_Max{124|39F12} 52|69r45 375r38 376r37
+318f4 Alt_Hold_Change_SENS{124|50F12} 52|70r45 367r58
+324f4 Alt_Pid_Asl_Fac{124|53F12} 52|71r45 398r32
+326f4 Alt_Pid_Alpha{124|39F12} 52|72r45 382r43 392r40
+328m4 Alt_Hold_Min_Thrust{124|16M9} 52|74r45 401r40
+330m4 Alt_Hold_Base_Thrust{124|16M9} 52|73r45 400r51
+335m4 Alt_Hold_Max_Thrust{124|16M9} 52|75r45 402r40
+339e4 Roll_Type{14|45E9} 52|49r45 272r10 435m31 441m33 441r33
+341e4 Pitch_Type{14|45E9} 52|50r45 276r10 435m42 442m33 442r33
+343e4 Yaw_Type{14|45E9} 52|51r45 280r10 435m54
+347m4 Actuator_Thrust{124|16M9} 52|52r45 151m44 151r44 399m10 467m32 469m34
+. 469r34 476r10 482r39
+349i4 Actuator_Roll{124|8I12} 52|53r45 288m39 482r56
+351i4 Actuator_Pitch{124|8I12} 52|54r45 289m39 483r39
+353i4 Actuator_Yaw{124|8I12} 52|55r45 290m39 478r13 479m13 483r56
+357m4 Motor_Power_M4{124|16M9} 52|59r45 130m44 130r44 211m10 216m10
+359m4 Motor_Power_M2{124|16M9} 52|57r45 120m44 120r44 209m10 214m10
+361m4 Motor_Power_M1{124|16M9} 52|56r45 115m44 115r44 208m10 213m10 219r56
+363m4 Motor_Power_M3{124|16M9} 52|58r45 125m44 125r44 210m10 215m10
+377V13 Limit_Thrust{124|16M9} 377>27 378r19 52|171b13 186l8 186t20 208s28
+. 209s28 210s28 211s28 213s28 214s28 215s28 216s28 399s39
+377i27 Value{124|9I12} 52|171b27 176r10 178r13 181r25 182r27
+X 52 stabilizer.adb
+110b10 Dummy{boolean} 116m44 121m44 126m44 131m44 137m44 142m44 147m44 152m44
+174m7 Res{124|16M9} 177m10 179m10 182m10 185r14
+199i7 T{124|9I12} 208r42 209r42 210r42 211r42 213r42 214r42 215r42 216r42
+200i7 R{124|9I12} 205m10 205r15 208r46 209r46 210r46 211r46 214r46 216r46
+201i7 P{124|9I12} 206m10 206r15 208r50 209r50 210r50 211r50 213r46 215r46
+202i7 Y{124|9I12} 208r54 209r54 210r54 211r54 213r50 214r50 215r50 216r50
+300b7 LPS25H_Data_Valid{boolean} 310m56 311r10
+301f7 Prev_Integ{float} 343m10 355r32
+302f7 Baro_V_Speed{124|47F12} 382m10 393r42
+303f7 Alt_Hold_PID_Out{40|40F12} 387m10 393r57
+304i7 Raw_Thrust{124|8I12} 397m10 399r62
+X 85 system.ads
+80M9*Address
+X 91 s-bcprmu.ads
+39U14*Start_All_CPUs 40i<c,__gnat_start_slave_cpus>22
+X 98 s-bbtiev.ads
+42R9*Timing_Event
+X 102 s-interr.ads
+101U14*Install_Restricted_Handlers_Sequential 102i<c,__gnat_attach_all_handlers>22
+X 116 s-taskin.ads
+413V13*Get_Sec_Stack{85|80M9} 414i<c,__gnat_get_secondary_stack>22
+X 121 s-tarest.ads
+225U14*Activate_All_Tasks_Sequential 226i<c,__gnat_activate_all_tasks>22
+X 124 types.ads
+3K9*Types 51|44w6 44r28 124|59e10
+8I12*T_Int16{32|49I9} 51|171r16 172r16 173r16 349r22 351r22 353r22 52|194r16
+. 195r16 196r16 304r29 417r16 478r28 479r30
+9I12*T_Int32{32|52I9} 51|377r35 52|171r35 173r16 176r18 181r34 198r16 199r20
+. 199r31 200r11 200r22 201r11 201r22 202r20 202r31 299r16 399r53 400r42
+16M9*T_Uint16<32|66M9> 51|170r16 328r31 330r31 335r27 347r22 357r22 359r22
+. 361r22 363r22 377r51 52|171r51 174r13 176r27 177r17 181r43 182r17 193r16
+17M9*T_Uint32<32|74M9> 51|105r40 106r40 52|414r40 415r40
+31F12*Natural_Float{float} 51|296r27 298r27 306r27
+39F12*T_Alpha{float} 51|302r27 308r27 310r27 314r27 326r31
+43F12*T_Degrees{float} 51|213r26 215r26 217r26 221r26 223r26 225r26
+47F12*T_Speed{float} 51|255r19 257r19 259r19 292r27 294r27 300r27 52|302r29
+. 385r36 386r36
+50F12*T_Sensitivity{float} 51|318r27
+53F12*T_Motor_Fac{float} 51|324r31
+

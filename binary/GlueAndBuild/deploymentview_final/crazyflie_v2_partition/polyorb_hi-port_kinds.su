@@ -1,0 +1,4 @@
+/home/taste/tool-inst/include/ocarina/runtime/polyorb-hi-ada/polyorb_hi-port_kinds.adb:38:4:Is_In	0	static
+/home/taste/tool-inst/include/ocarina/runtime/polyorb-hi-ada/polyorb_hi-port_kinds.adb:47:4:Is_Out	0	static
+/home/taste/tool-inst/include/ocarina/runtime/polyorb-hi-ada/polyorb_hi-port_kinds.adb:56:4:Is_Event	0	static
+/home/taste/tool-inst/include/ocarina/runtime/polyorb-hi-ada/polyorb_hi-port_kinds.adb:67:4:Is_Data	0	static

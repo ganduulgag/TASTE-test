@@ -1,0 +1,11 @@
+/home/taste/tool-inst/include/ocarina/runtime/polyorb-hi-ada/polyorb_hi-messages.ads:112:9:Message_Typeip	0	static
+/home/taste/tool-inst/include/ocarina/runtime/polyorb-hi-ada/polyorb_hi-messages.ads:118:4:Size	0	static
+/home/taste/tool-inst/include/ocarina/runtime/polyorb-hi-ada/polyorb_hi-messages.ads:121:4:Valid	0	static
+/home/taste/tool-inst/include/ocarina/runtime/polyorb-hi-ada/polyorb_hi-messages.adb:71:4:Encapsulate	56	static
+/home/taste/tool-inst/include/ocarina/runtime/polyorb-hi-ada/polyorb_hi-messages.adb:92:4:Sender	8	static
+/home/taste/tool-inst/include/ocarina/runtime/polyorb-hi-ada/polyorb_hi-messages.adb:97:4:Sender	8	static
+/home/taste/tool-inst/include/ocarina/runtime/polyorb-hi-ada/polyorb_hi-messages.adb:106:4:Read	48	static
+/home/taste/tool-inst/include/ocarina/runtime/polyorb-hi-ada/polyorb_hi-messages.adb:140:4:Reallocate	0	static
+/home/taste/tool-inst/include/ocarina/runtime/polyorb-hi-ada/polyorb_hi-messages.adb:150:4:Write	40	static
+/home/taste/tool-inst/include/ocarina/runtime/polyorb-hi-ada/polyorb_hi-messages.adb:171:4:To_Length	16	static
+/home/taste/tool-inst/include/ocarina/runtime/polyorb-hi-ada/polyorb_hi-messages.adb:182:4:To_Buffer	24	static

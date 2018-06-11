@@ -1,0 +1,76 @@
+adaasn1rtl.adb:10:01: warning: "Integer_64" is already use-visible through previous use_type_clause at adaasn1rtl.ads:3
+adaasn1rtl.adb:11:01: warning: "Interfaces" is already use-visible through previous use clause at adaasn1rtl.ads:2
+adaasn1rtl.adb:52:07: warning: formal parameter "Left" is not referenced
+adaasn1rtl.adb:52:13: warning: formal parameter "Right" is not referenced
+adaasn1rtl.adb:1144:15: warning: condition can only be False if invalid values present
+adaasn1rtl.adb:1144:15: warning: condition is always True
+adaasn1rtl.adb:1145:15: warning: condition can only be False if invalid values present
+adaasn1rtl.adb:1145:15: warning: condition is always True
+adaasn1rtl.adb:2257:53: warning: condition can only be False if invalid values present
+adaasn1rtl.adb:2257:53: warning: condition is always True
+adaasn1rtl.adb:2309:19: warning: condition can only be False if invalid values present
+adaasn1rtl.adb:2309:19: warning: condition is always True
+adaasn1rtl.adb:2424:56: warning: condition can only be False if invalid values present
+adaasn1rtl.adb:2424:56: warning: condition is always True
+adaasn1rtl.adb:2471:53: warning: condition can only be False if invalid values present
+adaasn1rtl.adb:2471:53: warning: condition is always True
+adaasn1rtl.adb:2518:07: warning: useless assignment to "IntVal", value overwritten at line 2520
+adaasn1rtl.adb:2556:07: warning: constant "max_aux" is not referenced
+adaasn1rtl.adb:2557:07: warning: variable "negative" is not referenced
+adaasn1rtl.adb:2571:60: warning: condition can only be False if invalid values present
+adaasn1rtl.adb:2571:60: warning: condition is always True
+adaasn1rtl.ads:3:20: warning: "Integer_64" is already use-visible through package use clause at line 2
+adaasn1rtl.ads:18:04: warning: pragma Pack for "BitArray" ignored
+adaasn1rtl.ads:18:04: warning: explicit component size given at line 17
+adaasn1rtl.ads:228:30: warning: condition can only be False if invalid values present
+adaasn1rtl.ads:273:15: warning: comparison with True is redundant
+adaasn1rtl.ads:309:15: warning: comparison with True is redundant
+adaasn1rtl.ads:329:15: warning: comparison with True is redundant
+adaasn1rtl.ads:400:25: warning: condition can only be False if invalid values present
+adaasn1rtl.ads:413:25: warning: condition can only be False if invalid values present
+adaasn1rtl.ads:424:25: warning: condition can only be False if invalid values present
+adaasn1rtl.ads:435:25: warning: condition can only be False if invalid values present
+adaasn1rtl.ads:446:25: warning: condition can only be False if invalid values present
+adaasn1rtl.ads:454:25: warning: condition can only be False if invalid values present
+adaasn1rtl.ads:465:25: warning: condition can only be False if invalid values present
+adaasn1rtl.ads:476:25: warning: condition can only be False if invalid values present
+adaasn1rtl.ads:484:25: warning: condition can only be False if invalid values present
+adaasn1rtl.ads:539:25: warning: condition can only be False if invalid values present
+adaasn1rtl.ads:540:14: warning: condition can only be False if invalid values present
+adaasn1rtl.ads:572:25: warning: condition can only be False if invalid values present
+adaasn1rtl.ads:573:14: warning: condition can only be False if invalid values present
+adaasn1rtl.ads:592:25: warning: condition can only be False if invalid values present
+adaasn1rtl.ads:605:25: warning: condition can only be False if invalid values present
+adaasn1rtl.ads:613:25: warning: condition can only be False if invalid values present
+adaasn1rtl.ads:640:14: warning: condition can only be False if invalid values present
+adaasn1rtl.ads:642:14: warning: condition can only be False if invalid values present
+adaasn1rtl.ads:699:23: warning: comparison with True is redundant
+adaasn1rtl.ads:713:23: warning: comparison with True is redundant
+adaasn1rtl.ads:727:23: warning: comparison with True is redundant
+adaasn1rtl.ads:741:23: warning: comparison with True is redundant
+adaasn1rtl.ads:755:23: warning: comparison with True is redundant
+adaasn1rtl.ads:769:23: warning: comparison with True is redundant
+adaasn1rtl.ads:783:23: warning: comparison with True is redundant
+adaasn1rtl.ads:797:23: warning: comparison with True is redundant
+adaasn1rtl.ads:811:23: warning: comparison with True is redundant
+adaasn1rtl.ads:833:23: warning: comparison with True is redundant
+adaasn1rtl.ads:850:23: warning: comparison with True is redundant
+adaasn1rtl.ads:867:23: warning: comparison with True is redundant
+adaasn1rtl.ads:884:23: warning: comparison with True is redundant
+adaasn1rtl.ads:898:23: warning: comparison with True is redundant
+adaasn1rtl.ads:915:23: warning: comparison with True is redundant
+adaasn1rtl.ads:932:23: warning: comparison with True is redundant
+adaasn1rtl.ads:946:23: warning: comparison with True is redundant
+adaasn1rtl.ads:974:14: warning: condition can only be False if invalid values present
+adaasn1rtl.ads:978:23: warning: comparison with True is redundant
+adaasn1rtl.ads:991:23: warning: comparison with True is redundant
+adaasn1rtl.ads:991:47: warning: condition can only be False if invalid values present
+adaasn1rtl.ads:1005:23: warning: comparison with True is redundant
+adaasn1rtl.ads:1026:23: warning: comparison with True is redundant
+adaasn1rtl.ads:1047:23: warning: comparison with True is redundant
+adaasn1rtl.ads:1060:23: warning: comparison with True is redundant
+adaasn1rtl.ads:1073:23: warning: comparison with True is redundant
+adaasn1rtl.ads:1084:23: warning: comparison with True is redundant
+adaasn1rtl.ads:1084:49: warning: condition can only be False if invalid values present
+adaasn1rtl.ads:1097:23: warning: comparison with True is redundant
+adaasn1rtl.ads:1097:49: warning: condition can only be False if invalid values present

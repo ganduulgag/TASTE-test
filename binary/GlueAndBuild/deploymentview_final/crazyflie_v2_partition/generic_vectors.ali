@@ -1,0 +1,87 @@
+V "GNAT Lib v2017"
+A -O1
+A -gnatA
+A --RTS=/usr/gnat/arm-eabi/lib/gnat/ravenscar-full-stm32f4/
+A -mlittle-endian
+A -mfloat-abi=hard
+A -mcpu=cortex-m4
+A -mfpu=fpv4-sp-d16
+A -mthumb
+A -g
+A -gnatwa
+A -gnatwG
+A -gnat12
+A -fstack-usage
+A -g
+A -gnata
+A -gnato
+A -g
+P DB ES ZX
+
+RN
+RV NO_ACCESS_SUBPROGRAMS
+RV NO_STANDARD_STORAGE_POOLS
+RR NO_STREAMS
+RR NO_UNCHECKED_DEALLOCATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_ATTRIBUTES
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLEMENTATION_RESTRICTIONS
+RV NO_OBSOLESCENT_FEATURES
+RV SPARK_05
+
+U generic_vectors%b	generic_vectors.adb	0d9ccebf NE OO PK GE
+W system%s		system.ads		system.ali
+W system.address_to_access_conversions%s
+
+U generic_vectors%s	generic_vectors.ads	04d47fda BN EE NE OO PK GE
+
+D generic_vectors.ads	20180608084407 04d47fda generic_vectors%s
+D generic_vectors.adb	20180608084407 457e604a generic_vectors%b
+D system.ads		20170517144320 db831581 system%s
+D s-atacco.ads		20170517144320 4c36d12f system.address_to_access_conversions%s
+D /home/taste/tool-inst/include/ocarina/runtime/polyorb-hi-ada/gnat_runtime.adc  20180607235124 00000000
+X 1 generic_vectors.ads
+31+9 Element_Type 39r49 43r29 47r51 50r49 64r51 2|39r14 45r61 50r51 53r51
+32k9*Generic_Vectors 31z9 64E9 72l5 72e20 2|32b14 88l5 88t20
+35R9*Vector 35d17 37p13 37r28 39p14 39r34 42p13 42r29 46p13 46r43 52p14 52r36
+. 55p14 55r36 60p14 60r35 66c9 70e17 2|34r28 38r19 45r29 52r43 60r21 69r21
+. 76r35
+35i17 Capacity{positive} 40r35 66r17 69r38
+37V13*Length{natural} 37>21 40s18 44s26 48s26 58s26 2|34b13
+37r21 This{35R9} 2|35r10
+39U14*Append 39=22 39>42 2|37b14 43l8 43t14
+39r22 To{35R9} 40r26 40r32 2|38b7 41m7 41r18 42m7 42r20
+39*42 Item{31+9} 2|39b7 42r32
+42V13*Element{31+9} 42>22 42>37 2|45b13
+42r22 This{35R9} 44r34 2|46r10
+42i37 Index{natural} 44r18 2|46r25
+46V13*Element_Access(31+9) 46=29 46>51 2|52b13 57l8 57t22
+46r29 This{35R9} 48r34 2|52b29 56m38 56r38
+46i51 Index{natural} 48r18 2|52b51 56r53
+50P9*Action 50=37 53r40 57r40 60r52 2|61r25 71r25 76r52
+50*37 On{31+9}
+52U14*Act_On 52=22 53>22 2|59b14 66l8 66t14
+52r22 This{35R9} 2|60b7 63r21 64m18 64r18
+53p22 Taking{50P9} 2|61b7 64r10
+55U14*Act_On 55=22 56>22 57>22 2|68b14 74l8 74t14
+55r22 This{35R9} 58r34 2|69b7 73m15 73r15
+56i22 Index{natural} 58r18 2|70b7 73r30
+57p22 Taking{50P9} 2|71b7 73r7
+60U14*Clear 60=21 60>43 2|76b14 86l8 86t13
+60r21 This{35R9} 2|76b21 79r24 80m21 80r21 84m7 84r27 85m7
+60p43 Taking{50P9} 2|76b43 78r10 80r13
+64A9 Components(31+9)<integer> 69r21
+68i10 Last{natural} 2|35r15 41m10 41r21 42r23 63r26 79r29 84r32 85m12
+69a10 Elements{64A9} 2|42m10 46r15 56m43 64m23 73m20 80m26 84m12
+X 2 generic_vectors.adb
+49K12 Conversions[4|39] 56r14
+63i11 J{integer} 64r33
+79i14 J{integer} 80r36
+X 3 system.ads
+50K9*System 2|30r6 50r13 3|164e11
+X 4 s-atacco.ads
+39k16*Address_To_Access_Conversions 2|30w13 50r20 4|63e41
+47P9 Object_Pointer(1|31+9)
+57V13*To_Pointer{47P9[2|49]} 2|56s26[49]
+

@@ -1,0 +1,11 @@
+/home/taste/test1/binary/GlueAndBuild/crazyflie_wrappers.ads:30:1:protected_crazyflietvip	8	static
+/home/taste/test1/binary/GlueAndBuild/crazyflie_wrappers.ads:12:1:finalize_spec	0	static
+/home/taste/test1/binary/GlueAndBuild/crazyflie_wrappers.adb:17:4:c_init_crazyflie	8	static
+/home/taste/test1/binary/GlueAndBuild/crazyflie_wrappers.adb:28:4:vm_led_on	16	static
+/home/taste/test1/binary/GlueAndBuild/crazyflie_wrappers.adb:36:4:vm_check_queue	16	static
+/home/taste/test1/binary/GlueAndBuild/crazyflie_wrappers.adb:47:4:pulsen	8	static
+/home/taste/test1/binary/GlueAndBuild/crazyflie_wrappers.adb:47:4:pulsep	16	static
+/home/taste/test1/binary/GlueAndBuild/crazyflie_wrappers.adb:59:4:start_demon	8	static
+/home/taste/test1/binary/GlueAndBuild/crazyflie_wrappers.adb:59:4:start_demop	16	static
+/home/taste/test1/binary/GlueAndBuild/crazyflie_wrappers.adb:15:1:crazyflie_wrappers	8	static
+/home/taste/test1/binary/GlueAndBuild/crazyflie_wrappers.ads:12:1:crazyflie_wrappers	8	static

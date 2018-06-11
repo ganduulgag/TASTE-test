@@ -1,0 +1,150 @@
+V "GNAT Lib v2017"
+A -O1
+A -gnatA
+A --RTS=/usr/gnat/arm-eabi/lib/gnat/ravenscar-full-stm32f4/
+A -mlittle-endian
+A -mfloat-abi=hard
+A -mcpu=cortex-m4
+A -mfpu=fpv4-sp-d16
+A -mthumb
+A -g
+A -gnatwa
+A -gnatwG
+A -gnat12
+A -fstack-usage
+A -g
+A -gnata
+A -gnato
+A -g
+P DB LC TF  ES SS ZX
+
+RN
+RV NO_DELAY
+RV NO_FIXED_POINT
+RV NO_IMPLICIT_CONDITIONALS
+RR NO_STREAMS
+RV NO_TASKING
+RR NO_UNCHECKED_DEALLOCATION
+RV STATIC_PRIORITIES
+RV STATIC_STORAGE_SIZE
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLEMENTATION_RESTRICTIONS
+RV NO_OBSOLESCENT_FEATURES
+RV SPARK_05
+
+U polyorb_hi.periodic_task%b  polyorb_hi-periodic_task.adb  ae001e76 NE OO PK GE
+W polyorb_hi%s		polyorb_hi.ads		polyorb_hi.ali
+W polyorb_hi.output%s	polyorb_hi-output.adb	polyorb_hi-output.ali
+W polyorb_hi.suspenders%s  polyorb_hi-suspenders.adb  polyorb_hi-suspenders.ali  EA
+W polyorb_hi.utils%s	polyorb_hi-utils.adb	polyorb_hi-utils.ali
+
+U polyorb_hi.periodic_task%s  polyorb_hi-periodic_task.ads  744358be BN EE NE OO PK GE
+W ada%s			ada.ads			ada.ali
+W ada.real_time%s	a-reatim.adb		a-reatim.ali
+W polyorb_hi%s		polyorb_hi.ads		polyorb_hi.ali
+W polyorb_hi.errors%s	polyorb_hi-errors.ads	polyorb_hi-errors.ali
+W polyorb_hi_generated%s  polyorb_hi_generated.ads  polyorb_hi_generated.ali
+W polyorb_hi_generated.deployment%s  polyorb_hi_generated-deployment.ads  polyorb_hi_generated-deployment.ali
+W system%s		system.ads		system.ali
+
+D ada.ads		20170517144320 76789da1 ada%s
+D a-reatim.ads		20170517144320 bb781ad1 ada.real_time%s
+D a-unccon.ads		20170517144320 31484697 ada.unchecked_conversion%s
+D interfac.ads		20170517144320 5ab55268 interfaces%s
+D i-stm32.ads		20170517144320 4d2e1e9b interfaces.stm32%s
+D i-stm32-pwr.ads	20170517144320 10ed2a13 interfaces.stm32.pwr%s
+D i-stm32-rcc.ads	20170517144320 ed083a96 interfaces.stm32.rcc%s
+D polyorb_hi.ads	20180607235124 f77a07a6 polyorb_hi%s
+D polyorb_hi-errors.ads	20180607235124 6deb16d4 polyorb_hi.errors%s
+D polyorb_hi-output.ads	20180607235124 ccf271eb polyorb_hi.output%s
+D polyorb_hi-periodic_task.ads  20180607235124 165462da polyorb_hi.periodic_task%s
+D polyorb_hi-periodic_task.adb  20180607235124 13e5e077 polyorb_hi.periodic_task%b
+D polyorb_hi-streams.ads  20180607235124 54018470 polyorb_hi.streams%s
+D polyorb_hi-suspenders.ads  20180607235124 eb2f55ee polyorb_hi.suspenders%s
+D polyorb_hi-utils.ads	20180607235124 8c6cb8de polyorb_hi.utils%s
+D polyorb_hi_generated.ads  20180607235124 32a22d97 polyorb_hi_generated%s
+D polyorb_hi_generated-deployment.ads  20180611081810 987d2446 polyorb_hi_generated.deployment%s
+D system.ads		20170517144320 db831581 system%s
+D s-assert.ads		20170517144320 cd8d2c94 system.assertions%s
+D s-bb.ads		20170517144320 09e072ae system.bb%s
+D s-bbbopa.ads		20170517144320 95d97b26 system.bb.board_parameters%s
+D s-bbbosu.ads		20170517144320 9b59a61f system.bb.board_support%s
+D s-bbcppr.ads		20170517144320 bcfa73ad system.bb.cpu_primitives%s
+D s-bcprmu.ads		20170517144320 043d3736 system.bb.cpu_primitives.multiprocessors%s
+D s-bbinte.ads		20170517144320 d9fc23b0 system.bb.interrupts%s
+D s-bbmcpa.ads		20170517144320 c4c55388 system.bb.mcu_parameters%s
+D s-bbpara.ads		20170517144320 77379e7b system.bb.parameters%s
+D s-bbthre.ads		20170517144320 d6c36e4f system.bb.threads%s
+D s-bbthqu.ads		20170517144320 db3cad46 system.bb.threads.queues%s
+D s-bbtime.ads		20170517144320 ad086247 system.bb.time%s
+D s-multip.ads		20170517144320 f33e0e35 system.multiprocessors%s
+D s-osinte.ads		20170517144320 2d4f0621 system.os_interface%s
+D s-secsta.ads		20170517144320 0b22b54c system.secondary_stack%s
+D s-stm32.ads		20170517144320 e898dba2 system.stm32%s
+D s-stoele.ads		20170517144320 2dc34a04 system.storage_elements%s
+D s-unstyp.ads		20170517144320 34867c83 system.unsigned_types%s
+D /home/taste/tool-inst/include/ocarina/runtime/polyorb-hi-ada/gnat_runtime.adc  20180607235124 00000000
+X 1 ada.ads
+16K9*Ada 20e8 11|36r6 44r29 45r9 48r25 51r25 78r34 12|41r8 52r20 111r31 119r34
+X 2 a-reatim.ads
+41K13*Real_Time 155e18 11|36w10 44r33 45r13 48r29 51r29 78r38 12|41r12 52r24
+. 111r35 119r38
+53M9*Time<30|46M9> 11|78r48 12|49r24 52r34 119r48
+63I9*Time_Span<30|81I9> 11|44r43 48r39 51r39
+70V13*Clock{53M9}<30|134p13> 12|111s45
+74V14*"+"{53M9} 12|73s41 79s39 81s9 81s27 110s42 111s51
+102V13*To_Time_Span{63I9} 11|45s23
+X 8 polyorb_hi.ads
+35K9*PolyORB_HI 39e15 11|37r6 60r43 71r9 81r5 12|34r6 35r6 37r6 39r14 43r8
+. 44r8 45r8 46r8 124r5
+X 9 polyorb_hi-errors.ads
+32K20*Errors 39e22 11|37w17 60r54 12|43r19
+34E9*Error_Kind 37e7 11|60r61 12|54r15
+35n7*Error_None{34E9} 12|93r22
+X 10 polyorb_hi-output.ads
+38K20*Output 81e22 12|34w17 44r19
+59b4*Verbose{boolean} 12|67r21 84r24 104r24
+63U14*Put_Line 12|68s21 85s24 105s24
+X 11 polyorb_hi-periodic_task.ads
+41e4 Entity{17|65E8} 12|59r20 69r45 72r19 86r48 106r48
+44i4 Dispatch_Offset{2|63I9} 12|73r43 81r11
+48i4 Task_Period{2|63I9} 12|79r41 110r44
+51i4 Task_Deadline{2|63I9} 12|81r29 111r53
+54i4 Task_Priority{18|116I12} 74r24
+57i4 Task_Stack_Size{natural} 75r28
+60U19 Job 60<24 12|91s10
+60e24 Return_Value{9|34E9}
+63U19 Activate_Entrypoint 12|63s7
+67U19 Recover_Entrypoint 12|94s13
+71k20*Periodic_Task 8|35k9 11|41z4 44z4 48z4 51z4 54z4 57z4 60z19 63z19 67z19
+. 81l16 81e29 12|39b25 124l16 124t29
+73t9*The_Periodic_Task 12|51b14 113l8 113t25
+78V13*Next_Deadline{2|53M9} 12|119b13 122l8 122t21
+X 12 polyorb_hi-periodic_task.adb
+49m4 Next_Deadline_Val{2|53M9} 80m7 111m10 121r14
+52m7 Next_Start{2|53M9} 73m7 75r19 79m7 79r28 109r22 110m10 110r31
+54e7 Error{9|34E9} 91m15 93r13
+X 14 polyorb_hi-suspenders.ads
+40K20*Suspenders 12|35w17 36r34 45r19 14|57e26
+47m4*System_Startup_Time{2|53M9} 12|73r21 80r28
+50U14*Block_Task 12|72s7
+X 15 polyorb_hi-utils.ads
+40K20*Utils 12|37w17 46r19 15|144e21
+123U14*Set_Task_Id 12|59s7
+X 16 polyorb_hi_generated.ads
+34K9*PolyORB_HI_Generated 11|38r6 41r25 12|47r8 16|38e25
+X 17 polyorb_hi_generated-deployment.ads
+10K30*Deployment 11|38w27 41r46 12|47r29 17|200e36
+65E8*Entity_Type 11|41r57 17|69e28
+117A11*UT_Deployment_Crazyflie_V2_Partition_Entity_Image_Component{string}<integer>
+121A8*UT_Deployment_Crazyflie_V2_Partition_Entity_Image_Array(117A11)<65E8>
+125a3*Entity_Image{121A8} 12|69r31 86r34 106r34
+X 18 system.ads
+50K9*System 11|35w6 54r25 18|164e11
+116I12*Any_Priority{integer} 11|54r32
+X 24 s-bcprmu.ads
+39U14*Start_All_CPUs 40i<c,__gnat_start_slave_cpus>22
+X 30 s-bbtime.ads
+46M9*Time
+81I9*Time_Span<long_long_integer>
+

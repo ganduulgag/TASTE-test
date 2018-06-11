@@ -1,0 +1,1 @@
+uart_syslink.adb:72:04: warning: constant "UART_DATA_TIMEOUT_MS" is not referenced

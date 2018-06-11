@@ -1,0 +1,59 @@
+[GENERATED OBJECT FILE]
+b__x86_partition.o
+[PROJECT FILES]
+/home/taste/test1/binary/GlueAndBuild/deploymentview_final/x86_partition/x86_partition.gpr
+20180611081810
+/home/taste/tool-inst/include/ocarina/runtime/polyorb-hi-ada/polyorb_hi.gpr
+20180607235124
+[BOUND OBJECT FILES]
+/home/taste/test1/binary/GlueAndBuild/deploymentview_final/x86_partition/polyorb_hi.o
+/home/taste/test1/binary/GlueAndBuild/deploymentview_final/x86_partition/polyorb_hi-streams.o
+/home/taste/test1/binary/GlueAndBuild/deploymentview_final/x86_partition/polyorb_hi_generated.o
+/home/taste/test1/binary/GlueAndBuild/deploymentview_final/x86_partition/polyorb_hi_generated-deployment.o
+/home/taste/test1/binary/GlueAndBuild/deploymentview_final/x86_partition/polyorb_hi-utils.o
+/home/taste/test1/binary/GlueAndBuild/deploymentview_final/x86_partition/polyorb_hi-messages.o
+/home/taste/test1/binary/GlueAndBuild/deploymentview_final/x86_partition/adaasn1rtl.o
+/home/taste/test1/binary/GlueAndBuild/deploymentview_final/x86_partition/pohicdriver_bluetooth.o
+/home/taste/test1/binary/GlueAndBuild/deploymentview_final/x86_partition/deviceconfig_node1_crazyflie_ble_pohiada.o
+/home/taste/test1/binary/GlueAndBuild/deploymentview_final/x86_partition/deviceconfig_node2_client_ble_pohiada.o
+/home/taste/test1/binary/GlueAndBuild/deploymentview_final/x86_partition/polyorb_hi-errors.o
+/home/taste/test1/binary/GlueAndBuild/deploymentview_final/x86_partition/polyorb_hi-marshallers_g.o
+/home/taste/test1/binary/GlueAndBuild/deploymentview_final/x86_partition/polyorb_hi-output_low_level_native.o
+/home/taste/test1/binary/GlueAndBuild/deploymentview_final/x86_partition/polyorb_hi-port_kinds.o
+/home/taste/test1/binary/GlueAndBuild/deploymentview_final/x86_partition/polyorb_hi-port_type_marshallers.o
+/home/taste/test1/binary/GlueAndBuild/deploymentview_final/x86_partition/polyorb_hi-port_types.o
+/home/taste/test1/binary/GlueAndBuild/deploymentview_final/x86_partition/polyorb_hi-suspenders.o
+/home/taste/test1/binary/GlueAndBuild/deploymentview_final/x86_partition/polyorb_hi-output.o
+/home/taste/test1/binary/GlueAndBuild/deploymentview_final/x86_partition/polyorb_hi-periodic_task.o
+/home/taste/test1/binary/GlueAndBuild/deploymentview_final/x86_partition/polyorb_hi-background_task.o
+/home/taste/test1/binary/GlueAndBuild/deploymentview_final/x86_partition/polyorb_hi-time_marshallers.o
+/home/taste/test1/binary/GlueAndBuild/deploymentview_final/x86_partition/polyorb_hi-unprotected_queue.o
+/home/taste/test1/binary/GlueAndBuild/deploymentview_final/x86_partition/polyorb_hi-thread_interrogators.o
+/home/taste/test1/binary/GlueAndBuild/deploymentview_final/x86_partition/polyorb_hi_generated-naming.o
+/home/taste/test1/binary/GlueAndBuild/deploymentview_final/x86_partition/polyorb_hi_generated-subprograms.o
+/home/taste/test1/binary/GlueAndBuild/deploymentview_final/x86_partition/polyorb_hi_generated-transport.o
+/home/taste/test1/binary/GlueAndBuild/deploymentview_final/x86_partition/polyorb_hi_drivers_client_ble.o
+/home/taste/test1/binary/GlueAndBuild/deploymentview_final/x86_partition/polyorb_hi_generated-types.o
+/home/taste/test1/binary/GlueAndBuild/deploymentview_final/x86_partition/ground_wrappers.o
+/home/taste/test1/binary/GlueAndBuild/deploymentview_final/x86_partition/ground_async_ri_wrappers.o
+/home/taste/test1/binary/GlueAndBuild/deploymentview_final/x86_partition/polyorb_hi_generated-marshallers.o
+/home/taste/test1/binary/GlueAndBuild/deploymentview_final/x86_partition/polyorb_hi_generated-activity.o
+/home/taste/test1/binary/GlueAndBuild/deploymentview_final/x86_partition/x86_partition.o
+[GENERATED SOURCE FILES]
+b__x86_partition.ads
+b__x86_partition.adb
+b__x86_partition.ali
+[RESULTING OPTIONS]
+-L/home/taste/test1/binary/GlueAndBuild/deploymentview_final/x86_partition/
+-L/home/taste/test1/binary/GlueAndBuild/deploymentview_final/x86_partition/
+-L/home/taste/tool-inst/include/ocarina/runtime/polyorb-hi-ada/
+-L/usr/lib/gcc/i686-linux-gnu/6/adalib/
+-shared
+-shared-libgcc
+-lgnarl-6
+-lgnat-6
+-lpthread
+-lrt
+[RUN PATH OPTION]
+/usr/lib/gcc/i686-linux-gnu/6/adalib/
+/usr/lib

@@ -1,0 +1,7 @@
+polyorb_hi-marshallers_g.adb:53:4:Marshall	48	dynamic,bounded
+polyorb_hi-marshallers_g.adb:67:4:Unmarshall	48	dynamic,bounded
+polyorb_hi_generated-marshallers.adb:21:3:Marshall	32	dynamic,bounded
+polyorb_hi_generated-marshallers.adb:40:3:Unmarshall	4	static
+polyorb_hi_generated-marshallers.adb:61:13:Marshall	32	dynamic,bounded
+polyorb_hi_generated-marshallers.adb:66:13:Unmarshall	32	dynamic,bounded
+polyorb_hi_generated-marshallers.adb:13:1:Marshallers	4	static

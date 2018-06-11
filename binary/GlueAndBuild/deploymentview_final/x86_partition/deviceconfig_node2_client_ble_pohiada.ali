@@ -1,0 +1,73 @@
+V "GNAT Lib v6"
+A -O1
+A -gnatA
+A -g
+A -gnatwa
+A -gnatwG
+A -gnat12
+A -fstack-usage
+A -g
+A -gnata
+A -gnato
+A -g
+A -mtune=generic
+A -march=i686
+P ZX
+
+RN
+RR NO_ACCESS_SUBPROGRAMS
+RR NO_ALLOCATORS
+RR NO_DISPATCH
+RR NO_IO
+RR NO_RECURSION
+RR NO_UNCHECKED_ACCESS
+RR NO_UNCHECKED_DEALLOCATION
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLEMENTATION_RESTRICTIONS
+RV NO_OBSOLESCENT_FEATURES
+RV SPARK_05
+
+U deviceconfig_node2_client_ble_pohiada%s  deviceconfig_node2_client_ble_pohiada.ads  254fb824 NE OO PK KU
+W adaasn1rtl%s		adaasn1rtl.adb		adaasn1rtl.ali
+W pohicdriver_bluetooth%s  pohicdriver_bluetooth.adb  pohicdriver_bluetooth.ali
+
+D ada.ads		20070406091342 3ffc8e18 ada%s
+D a-charac.ads		20070912115821 2d3ec45b ada.characters%s
+D a-chlat1.ads		20140225151544 66457d31 ada.characters.latin_1%s
+D adaasn1rtl.ads	20180611081821 e9ad266d adaasn1rtl%s
+D deviceconfig_node2_client_ble_pohiada.ads  20180611081807 bd5e8441 deviceconfig_node2_client_ble_pohiada%s
+D interfac.ads		20151118101227 4be8ce1b interfaces%s
+D pohicdriver_bluetooth.ads  20180611081806 71bc1a08 pohicdriver_bluetooth%s
+D system.ads		20151123113124 c6f79445 system%s
+D s-unstyp.ads		20140731130224 9d58a4c0 system.unsigned_types%s
+D /home/taste/tool-inst/include/ocarina/runtime/polyorb-hi-ada/native.adc  20180607235124 00000000
+X 4 adaasn1rtl.ads
+8K9*adaasn1rtl 1380e15 5|2w6 3r5 4r10 5r10 6r10 7r10 8r10
+15M9*BIT 5|8r21
+16A9*BitArray(15M9)<integer> 5|5r21
+20M12*Asn1Byte{6|62M9}
+21A9*OctetBuffer(20M12)<integer> 5|4r21
+23I12*Asn1Int{6|54I9} 5|7r21
+24M12*Asn1UInt{6|76M9} 5|6r21
+X 5 deviceconfig_node2_client_ble_pohiada.ads
+13K9*DeviceConfig_node2_client_ble_pohiada 30l5 30e42
+18r1*pohidrv_node2_client_ble_pohiada_cv{7|44R6}
+X 6 interfac.ads
+54I9*Integer_64<long_long_integer>
+62M9*Unsigned_8
+76M9*Unsigned_64
+X 7 pohicdriver_bluetooth.ads
+12K9*POHICDRIVER_BLUETOOTH 5|9w6 9r33 18r48 18r89 20r17 23r14 7|76e26
+17n33*d2M{17E6} 5|20r39
+28A9*Address_T_array{4|21A9}<integer> 5|21r35
+29R6*Address_T 5|21r16 7|31e11
+30a5*Data{28A9} 5|21m27
+40R6*Bluetooth_Conf_T_EXIST 5|23r36 7|43e11
+41m5*datarate{4|15M9} 5|23m60
+42m5*address{4|15M9} 5|23m74
+44R6*Bluetooth_Conf_T 5|18r70 18r111 7|51e11
+45m5*channel{37M9} 5|19m5
+46e5*datarate{17E6} 5|20m5
+47r5*address{29R6} 5|21m5
+49r5*Exist{40R6} 5|23m5
+

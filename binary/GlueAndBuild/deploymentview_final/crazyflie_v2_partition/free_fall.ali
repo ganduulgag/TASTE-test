@@ -1,0 +1,227 @@
+V "GNAT Lib v2017"
+A -O1
+A -gnatA
+A --RTS=/usr/gnat/arm-eabi/lib/gnat/ravenscar-full-stm32f4/
+A -mlittle-endian
+A -mfloat-abi=hard
+A -mcpu=cortex-m4
+A -mfpu=fpv4-sp-d16
+A -mthumb
+A -g
+A -gnatwa
+A -gnatwG
+A -gnat12
+A -fstack-usage
+A -g
+A -gnata
+A -gnato
+A -g
+P DB LC TF  ES ZX
+
+RN
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_FLOATING_POINT
+RR NO_STREAMS
+RR NO_UNCHECKED_DEALLOCATION
+RV NO_DEFAULT_INITIALIZATION
+RV NO_IMPLEMENTATION_ASPECT_SPECIFICATIONS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLEMENTATION_RESTRICTIONS
+RV NO_IMPLICIT_LOOPS
+RV NO_ELABORATION_CODE
+RV NO_OBSOLESCENT_FEATURES
+RV SPARK_05
+
+U free_fall%b		free_fall.adb		d35ac159 NE OO PK
+W interfaces%s		interfac.ads		interfac.ali
+W safety%s		safety.ads		safety.ali
+
+U free_fall%s		free_fall.ads		e04adcee BN EE OO PK
+W ada%s			ada.ads			ada.ali
+W ada.real_time%s	a-reatim.adb		a-reatim.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
+W commander%s		commander.adb		commander.ali
+W imu%s			imu.adb			imu.ali
+W interfaces%s		interfac.ads		interfac.ali
+W interfaces.c%s	i-c.adb			i-c.ali
+W interfaces.c.extensions%s  i-cexten.ads	i-cexten.ali
+W types%s		types.ads		types.ali
+
+D ada.ads		20170517144320 76789da1 ada%s
+D a-except.ads		20170517144320 291912d5 ada.exceptions%s
+D a-finali.ads		20170517144320 bf4f806b ada.finalization%s
+D a-numeri.ads		20170517144320 bb51c45a ada.numerics%s
+D a-reatim.ads		20170517144320 bb781ad1 ada.real_time%s
+D a-tags.ads		20170517144320 d3a89129 ada.tags%s
+D a-unccon.ads		20170517144320 31484697 ada.unchecked_conversion%s
+D commander.ads		20180608084407 e93063b7 commander%s
+D crtp.ads		20180608084407 28118101 crtp%s
+D filter.ads		20180608084407 da22adf9 filter%s
+D free_fall.ads		20180608084407 71783bfd free_fall%s
+D free_fall.adb		20180608084407 9f2830f4 free_fall%b
+D generic_queue.ads	20180608084407 4cb410a9 generic_queue%s
+D hal.ads		20180608084415 2b42c80e hal%s
+D hal-i2c.ads		20180608084415 0ed73138 hal.i2c%s
+D hal-time.ads		20180608084415 f5295cd7 hal.time%s
+D imu.ads		20180608084407 e5cf47da imu%s
+D interfac.ads		20170517144320 5ab55268 interfaces%s
+D i-c.ads		20170517144320 5421119b interfaces.c%s
+D i-cexten.ads		20170517144320 b33ea64a interfaces.c.extensions%s
+D i-stm32.ads		20170517144320 4d2e1e9b interfaces.stm32%s
+D i-stm32-pwr.ads	20170517144320 10ed2a13 interfaces.stm32.pwr%s
+D i-stm32-rcc.ads	20170517144320 ed083a96 interfaces.stm32.rcc%s
+D mpu9250.ads		20180608084415 11ad30ab mpu9250%s
+D safety.ads		20180608084407 3d0aca50 safety%s
+D system.ads		20170517144320 db831581 system%s
+D s-bb.ads		20170517144320 09e072ae system.bb%s
+D s-bbbopa.ads		20170517144320 95d97b26 system.bb.board_parameters%s
+D s-bbbosu.ads		20170517144320 9b59a61f system.bb.board_support%s
+D s-bbcppr.ads		20170517144320 bcfa73ad system.bb.cpu_primitives%s
+D s-bcprmu.ads		20170517144320 043d3736 system.bb.cpu_primitives.multiprocessors%s
+D s-bbinte.ads		20170517144320 d9fc23b0 system.bb.interrupts%s
+D s-bbmcpa.ads		20170517144320 c4c55388 system.bb.mcu_parameters%s
+D s-bbpara.ads		20170517144320 77379e7b system.bb.parameters%s
+D s-bbthre.ads		20170517144320 d6c36e4f system.bb.threads%s
+D s-bbthqu.ads		20170517144320 db3cad46 system.bb.threads.queues%s
+D s-bbtime.ads		20170517144320 ad086247 system.bb.time%s
+D s-exnllf.ads		20170517144320 bc7ebbdc system.exn_llf%s
+D s-finmas.ads		20170517144320 7811a767 system.finalization_masters%s
+D s-finroo.ads		20170517144320 4ff27390 system.finalization_root%s
+D s-multip.ads		20170517144320 f33e0e35 system.multiprocessors%s
+D s-mufalo.ads		20170517144320 3dca0374 system.multiprocessors.fair_locks%s
+D s-musplo.ads		20170517144320 69fa25c4 system.multiprocessors.spin_locks%s
+D s-osinte.ads		20170517144320 2d4f0621 system.os_interface%s
+D s-parame.ads		20170517144320 c9fe535f system.parameters%s
+D s-pooglo.ads		20170517144320 ede33ef8 system.pool_global%s
+D s-stalib.ads		20170517144320 09bd3940 system.standard_library%s
+D s-stm32.ads		20170517144320 e898dba2 system.stm32%s
+D s-stoele.ads		20170517144320 2dc34a04 system.storage_elements%s
+D s-stopoo.ads		20170517144320 b16154c2 system.storage_pools%s
+D s-tasinf.ads		20170517144320 801abd01 system.task_info%s
+D s-taspri.ads		20170517144320 351848fa system.task_primitives%s
+D s-taskin.ads		20170517144320 a1f44ab3 system.tasking%s
+D s-taprob.ads		20170517144320 c8fc0753 system.tasking.protected_objects%s
+D s-tpoben.ads		20170517144320 8351b91e system.tasking.protected_objects.entries%s
+D s-tasres.ads		20170517144320 0c8ef6fb system.tasking.restricted%s
+D s-tarest.ads		20170517144320 4cbcd33f system.tasking.restricted.stages%s
+D s-traent.ads		20170517144320 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20170517144320 34867c83 system.unsigned_types%s
+D types.ads		20180608084407 c1aa6e7e types%s
+D /home/taste/tool-inst/include/ocarina/runtime/polyorb-hi-ada/gnat_runtime.adc  20180607235124 00000000
+X 1 ada.ads
+16K9*Ada 20e8 11|30r6 30r35
+X 5 a-reatim.ads
+41K13*Real_Time 155e18 11|30w10 30r39
+43@22*Clock_Time 11|55r29
+53M9*Time<37|46M9> 11|133r31 135r31 12|236r31 247r31
+54m4*Time_First{53M9} 11|133r39 135r39
+63I9*Time_Span<37|81I9> 11|90r50 94r50 166r48 171r50 12|130r37 148r42 234r48
+. 245r50
+70V13*Clock{53M9}<37|134p13> 12|165s31 175s35 236s39 247s39
+76V14*"-"{63I9} 12|238s27 249s27
+98V14*">"{boolean} 12|134r54 173r33
+106V13*Milliseconds{63I9} 11|91s9 95s9
+X 8 commander.ads
+36K9*Commander 171e14 11|32w6 32r35
+45E9*RPY_Type 45e34 11|62r36 63r36 12|190r36 191r36
+45n28*ANGLE{45E9} 12|204r20 205r21
+X 11 free_fall.ads
+38K9*Free_Fall 77E4 175l5 175e14 12|32b14 252l5 252t14
+40@22*FF_State 41r22 56r29 65r28 70r29 124r22 128r22 130r22 132r22 134r22
+. 136r22 138r22 12|34r21
+45E9*Free_Fall_Mode 45e46 46r8 47r8 123r41
+45n28*DISABLED{45E9} 46r28 12|136r21 152r20
+45n38*ENABLED{45E9} 46r43 123r59
+53U14*FF_Check_Event 53>30 12|144b14 181l8 181t22
+53r30 Acc{17|77R9} 12|144b30 158r43 170r28
+59U14*FF_Get_Recovery_Commands 60=7 61=7 62=7 63=7 12|187b14 206l8 206t32
+60f7 Euler_Roll_Desired{float} 12|188b7 200m7
+61f7 Euler_Pitch_Desired{float} 12|189b7 201m7
+62e7 Roll_Type{8|45E9} 12|190b7 204m7
+63e7 Pitch_Type{8|45E9} 12|191b7 205m7
+68U14*FF_Get_Recovery_Thrust 68=38 12|212b14 228l8 228t30
+68m38 Thrust{60|16M9} 12|212b38 217r29 224m7
+77i4 LANDING_NUMBER_OF_SAMPLES{natural} 111r25
+80m4 MAX_RECOVERY_THRUST{60|16M9} 131r43 12|177r29
+81m4 MIN_RECOVERY_THRUST{60|16M9} 12|117r32 225r28
+82m4 RECOVERY_THRUST_DECREMENT{60|16M9} 12|226r47
+86m4 FF_DURATION{60|16M9} 12|90r22 95r45
+90i4 STABILIZATION_PERIOD_AFTER_LANDING{5|63I9} 12|173r35
+94i4 RECOVERY_TIMEOUT{5|63I9} 12|134r56
+99f4 LANDING_DERIVATIVE_THRESHOLD{60|39F12} 12|118r29
+106F12 Free_Fall_Threshold{17|52F12} 12|83r19 84r18 85r18
+110I12 T_Acc_Data_Collector_Index{integer} 116r30 117r17
+115R9 FF_Acc_Data_Collector 118e14 137r31 158r31 163r24 12|49r33 62r24
+116a7*Samples{17|57A9} 12|51m22 54r50 65r27 67r59 68r31 70r31 70r55
+117i7*Index{110I12} 12|51r46 53m22 54r25 65r51 67r31 68r55
+123e4 FF_Mode{45E9} 12|34r39 136m10 152r10
+127m4 FF_Duration_Counter{60|16M9} 12|35r39 87m10 88r22 92m10 95r22
+129m4 In_Recovery{20|59M12} 12|36r39 110r10 134r10 135m10 153m10 166m10 172r10
+. 176m10 194r10 217r10 218m10
+131m4 Recovery_Thrust{60|16M9} 12|37r39 117r13 177m10 224r17 225r10 226m10
+. 226r29
+133m4 Last_Landing_Time{5|53M9} 12|38r39 165m10 238r29
+135m4 Last_FF_Detected_Time{5|53M9} 12|39r39 175m10 249r29
+137r4 Landing_Data_Collector{115R9} 12|40r39 112r51 159m43 159r43
+143U14 FF_Detect_Free_Fall 144>7 145<7 12|79b14 96l8 96t27 170s7
+144r7 Acc{17|77R9} 12|80b7 83r10 84r9 85r9
+145b7 FF_Detected{boolean} 12|81b7 95m7
+148U14 FF_Detect_Landing 148<33 12|102b14 123l8 123t25 162s7
+148b33 Landing_Detected{boolean} 12|102b33 106m7 120m13
+152U14 FF_Watchdog 12|129b14 138l8 138t19 180s7
+156U14 Add_Acc_Z_Sample 157>7 158=7 159r19 12|47b14 55l8 55t24 158s7
+157f7 Acc_Z{17|52F12} 12|48b7 51r56 158r25
+158r7 Data_Collector{115R9} 12|49b7 51m7 51r31 53m7 54r10 54r35 159r25
+162V13 Calculate_Last_Derivative{float} 163>7 12|61b13 73l8 73t33 112s24
+163r7 Data_Collector{115R9} 12|62b7 65r12 65r36 67r16 67r44 68r16 68r40 70r16
+. 70r40
+166V13 Get_Time_Since_Last_Landing{5|63I9} 12|149s35 234b13 239l8 239t35
+171V13 Get_Time_Since_Last_Free_Fall{5|63I9} 12|130s50 245b13 250l8 250t37
+X 12 free_fall.adb
+64f7 Last_Sample{float} 72r15
+66f7 Penultimate_Sample{float} 72r29
+104f7 Derivative{float} 112m10 118r16
+130i7 Time_Since_Last_FF{5|63I9} 134r35
+146b7 Has_Detected_FF{boolean} 170m33 172r30
+147b7 Has_Landed{boolean} 162m26 164r10
+148i7 Time_Since_Last_Landing{5|63I9} 173r9
+236m7 Current_Time{5|53M9} 238r14
+247m7 Current_Time{5|53M9} 249r14
+X 17 imu.ads
+37K9*IMU 11|33w6 33r35 17|321e8
+52F12*T_Acc{float} 11|106r35 157r24 12|48r26
+57A9*T_Acc_Array(52F12)<integer> 11|116r17
+77R9*Accelerometer_Data 11|53r36 144r21 12|80r22 144r36 17|81e14
+78f7*X{52F12} 12|83r14
+79f7*Y{52F12} 12|84r13
+80f7*Z{52F12} 12|85r13 158r47
+X 18 interfac.ads
+38K9*Interfaces 11|34r6 34r35 35r6 35r35 47r32 18|184e15
+66M9*Unsigned_16
+X 19 i-c.ads
+18K20*C 11|34w17 34r46 35r17 35r46 47r43 19|230e17
+35I9*int<integer> 11|47r45
+47M9*unsigned_char
+50M12*plain_char{47M9}
+X 20 i-cexten.ads
+37K22*Extensions 11|35w19 35r48 20|458e28
+59M12*bool{19|50M12} 11|129r31
+X 25 safety.ads
+4K9*Safety 12|30w6 30r18 25|73e11
+37V13*Saturate{60|16M9} 12|88s12
+X 26 system.ads
+80M9*Address
+X 31 s-bcprmu.ads
+39U14*Start_All_CPUs 40i<c,__gnat_start_slave_cpus>22
+X 37 s-bbtime.ads
+46M9*Time
+81I9*Time_Span<long_long_integer>
+X 53 s-taskin.ads
+413V13*Get_Sec_Stack{26|80M9} 414i<c,__gnat_get_secondary_stack>22
+X 57 s-tarest.ads
+225U14*Activate_All_Tasks_Sequential 226i<c,__gnat_activate_all_tasks>22
+X 60 types.ads
+3K9*Types 11|36w6 36r35 60|59e10
+16M9*T_Uint16<18|66M9> 11|68r54 80r41 81r41 82r41 86r41 127r31 131r31 12|212r54
+39F12*T_Alpha{float} 11|99r50
+

@@ -1,0 +1,29 @@
+--  This file was generated automatically: DO NOT MODIFY IT !
+
+--  This file contains a part of the system CONCURRENCY VIEW.
+--  It is an input file for OCARINA.
+
+package ground_CV_Thread
+public
+	with Deployment;
+	with process_package;
+	with Dataview;
+
+THREAD ground_ground
+features
+	OUTPORT_start_demo : OUT EVENT DATA PORT DataView::T_Uint16_Buffer.impl;
+END ground_ground;
+
+THREAD IMPLEMENTATION ground_ground.others
+PROPERTIES
+	Initialize_Entrypoint_Source_Text => "ground_wrappers.C_Init_ground";
+	Compute_Entrypoint_Source_Text => "ground_wrappers.gui_polling_ground";
+	Dispatch_Protocol      => Periodic;
+	Period                 => 40 ms;
+	Dispatch_Offset        => 0 ms;
+	Compute_Execution_Time => 1 ms .. 1 ms;
+	Stack_Size             => 100 KByte;
+	Priority               => 10;
+END ground_ground.others;
+
+end ground_CV_Thread;

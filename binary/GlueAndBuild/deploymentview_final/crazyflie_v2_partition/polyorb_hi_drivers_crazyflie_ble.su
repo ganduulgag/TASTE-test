@@ -1,0 +1,5 @@
+/home/taste/tool-inst/include/ocarina/runtime/polyorb-hi-ada/polyorb_hi_drivers_crazyflie_ble.adb:83:9:NODE_RECORDIP	0	static
+/home/taste/tool-inst/include/ocarina/runtime/polyorb-hi-ada/polyorb_hi_drivers_crazyflie_ble.adb:87:4:TNODESBIP	0	static
+/home/taste/tool-inst/include/ocarina/runtime/polyorb-hi-ada/polyorb_hi_drivers_crazyflie_ble.adb:110:4:INITIALIZE	240	dynamic
+/home/taste/tool-inst/include/ocarina/runtime/polyorb-hi-ada/polyorb_hi_drivers_crazyflie_ble.adb:278:4:RECEIVE	96	static
+/home/taste/tool-inst/include/ocarina/runtime/polyorb-hi-ada/polyorb_hi_drivers_crazyflie_ble.adb:340:4:SEND	160	dynamic

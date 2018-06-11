@@ -1,0 +1,1 @@
+polyorb_hi-utils.ads:142:09: warning: violation of restriction "No_Secondary_Stack" at /home/taste/tool-inst/include/ocarina/runtime/polyorb-hi-ada/gnat_runtime.adc:7

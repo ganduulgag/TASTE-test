@@ -1,0 +1,150 @@
+V "GNAT Lib v6"
+A -O1
+A -gnatA
+A -g
+A -gnatwa
+A -gnatwG
+A -gnat12
+A -fstack-usage
+A -g
+A -gnata
+A -gnato
+A -g
+A -mtune=generic
+A -march=i686
+P LC SS ZX
+
+RN
+RR NO_ACCESS_SUBPROGRAMS
+RR NO_ALLOCATORS
+RV NO_DELAY
+RR NO_DISPATCH
+RV NO_FIXED_POINT
+RR NO_IO
+RV NO_IMPLICIT_CONDITIONALS
+RR NO_RECURSION
+RV NO_TASKING
+RR NO_UNCHECKED_ACCESS
+RR NO_UNCHECKED_DEALLOCATION
+RV STATIC_PRIORITIES
+RV STATIC_STORAGE_SIZE
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLEMENTATION_RESTRICTIONS
+RV NO_OBSOLESCENT_FEATURES
+RV SPARK_05
+
+U polyorb_hi.periodic_task%b  polyorb_hi-periodic_task.adb  ae001e76 NE OO PK GE
+W polyorb_hi%s		polyorb_hi.ads		polyorb_hi.ali
+W polyorb_hi.output%s	polyorb_hi-output.adb	polyorb_hi-output.ali
+W polyorb_hi.suspenders%s  polyorb_hi-suspenders.adb  polyorb_hi-suspenders.ali  EA
+W polyorb_hi.utils%s	polyorb_hi-utils.adb	polyorb_hi-utils.ali
+
+U polyorb_hi.periodic_task%s  polyorb_hi-periodic_task.ads  01eae279 BN EE NE OO PK GE
+W ada%s			ada.ads			ada.ali
+W ada.real_time%s	a-reatim.adb		a-reatim.ali
+W polyorb_hi%s		polyorb_hi.ads		polyorb_hi.ali
+W polyorb_hi.errors%s	polyorb_hi-errors.ads	polyorb_hi-errors.ali
+W polyorb_hi_generated%s  polyorb_hi_generated.ads  polyorb_hi_generated.ali
+W polyorb_hi_generated.deployment%s  polyorb_hi_generated-deployment.ads  polyorb_hi_generated-deployment.ali
+W system%s		system.ads		system.ali
+
+D ada.ads		20070406091342 3ffc8e18 ada%s
+D a-except.ads		20151016123252 291912d5 ada.exceptions%s
+D a-reatim.ads		20151026154432 428ef5f7 ada.real_time%s
+D a-unccon.ads		20070406091342 f9eb8f06 ada.unchecked_conversion%s
+D interfac.ads		20151118101227 4be8ce1b interfaces%s
+D i-c.ads		20110801143639 5421119b interfaces.c%s
+D polyorb_hi.ads	20180607235124 f77a07a6 polyorb_hi%s
+D polyorb_hi-errors.ads	20180607235124 6deb16d4 polyorb_hi.errors%s
+D polyorb_hi-output.ads	20180607235124 ccf271eb polyorb_hi.output%s
+D polyorb_hi-periodic_task.ads  20180607235124 165462da polyorb_hi.periodic_task%s
+D polyorb_hi-periodic_task.adb  20180607235124 13e5e077 polyorb_hi.periodic_task%b
+D polyorb_hi-streams.ads  20180607235124 54018470 polyorb_hi.streams%s
+D polyorb_hi-suspenders.ads  20180607235124 eb2f55ee polyorb_hi.suspenders%s
+D polyorb_hi-utils.ads	20180607235124 8c6cb8de polyorb_hi.utils%s
+D polyorb_hi_generated.ads  20180607235124 32a22d97 polyorb_hi_generated%s
+D polyorb_hi_generated-deployment.ads  20180611081810 0956f063 polyorb_hi_generated.deployment%s
+D system.ads		20151123113124 c6f79445 system%s
+D s-atacco.ads		20120515093410 4c36d12f system.address_to_access_conversions%s
+D s-assert.ads		20140225151544 cd8d2c94 system.assertions%s
+D s-exctab.ads		20140225151139 54135002 system.exception_table%s
+D s-linux.ads		20150107101203 2fda6ad1 system.linux%s
+D s-multip.ads		20101011073009 38ac9f73 system.multiprocessors%s
+D s-oscons.ads		20180214165320 7ae90cd4 system.os_constants%s
+D s-osinte.ads		20151016132500 64f6e3c7 system.os_interface%s
+D s-parame.ads		20140801093848 7e2a0d7f system.parameters%s
+D s-secsta.ads		20140225151139 86a2856d system.secondary_stack%s
+D s-soflin.ads		20151020124036 14e1eb6c system.soft_links%s
+D s-stache.ads		20140225151139 a37c21ec system.stack_checking%s
+D s-stausa.ads		20110804134155 017a0a05 system.stack_usage%s
+D s-stalib.ads		20151112104907 09bd3940 system.standard_library%s
+D s-stoele.ads		20140225151139 2dc34a04 system.storage_elements%s
+D s-tasinf.ads		20140613095942 2b3f8252 system.task_info%s
+D s-taspri.ads		20141120144719 e3ab4429 system.task_primitives%s
+D s-taprop.ads		20140521131406 1dd2e1b6 system.task_primitives.operations%s
+D s-taskin.ads		20151023124846 0766baa7 system.tasking%s
+D s-traent.ads		20140730135025 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20140731130224 9d58a4c0 system.unsigned_types%s
+D /home/taste/tool-inst/include/ocarina/runtime/polyorb-hi-ada/native.adc  20180607235124 00000000
+X 1 ada.ads
+16K9*Ada 19e8 10|36r6 44r29 45r9 48r25 51r25 78r34 11|41r8 52r20 111r31 119r34
+X 3 a-reatim.ads
+39K13*Real_Time 186e18 10|36w10 44r33 45r13 48r29 51r29 78r38 11|41r12 52r24
+. 111r35 119r38
+50O9*Time<duration> 10|78r48 11|49r24 52r34 119r48
+55O9*Time_Span<duration> 10|44r43 48r39 51r39
+62V13*Clock{50O9} 11|111s45
+66V14*"+"{50O9} 11|73s41 79s39 81s9 81s27 110s42 111s51
+113V13*To_Time_Span{55O9} 10|45s23
+X 7 polyorb_hi.ads
+35K9*PolyORB_HI 39e15 10|37r6 60r43 71r9 81r5 11|34r6 35r6 37r6 39r14 43r8
+. 44r8 45r8 46r8 124r5
+X 8 polyorb_hi-errors.ads
+32K20*Errors 39e22 10|37w17 60r54 11|43r19
+34E9*Error_Kind 37e7 10|60r61 11|54r15
+35n7*Error_None{34E9} 11|93r22
+X 9 polyorb_hi-output.ads
+38K20*Output 81e22 11|34w17 44r19
+59b4*Verbose{boolean} 11|67r21 84r24 104r24
+63U14*Put_Line 11|68s21 85s24 105s24
+X 10 polyorb_hi-periodic_task.ads
+41e4 Entity{16|65E8} 11|59r20 69r45 72r19 86r48 106r48
+44o4 Dispatch_Offset{3|55O9} 11|73r43 81r11
+48o4 Task_Period{3|55O9} 11|79r41 110r44
+51o4 Task_Deadline{3|55O9} 11|81r29 111r53
+54i4 Task_Priority{17|108I12} 74r24
+57i4 Task_Stack_Size{natural} 75r28
+60U19 Job 60<24 11|91s10
+60e24 Return_Value{8|34E9}
+63U19 Activate_Entrypoint 11|63s7
+67U19 Recover_Entrypoint 11|94s13
+71k20*Periodic_Task 7|35k9 10|41z4 44z4 48z4 51z4 54z4 57z4 60z19 63z19 67z19
+. 81l16 81e29 11|39b25 124l16 124t29
+73t9*The_Periodic_Task 11|51b14 113l8 113t25
+78V13*Next_Deadline{3|50O9} 11|119b13 122l8 122t21
+X 11 polyorb_hi-periodic_task.adb
+49o4 Next_Deadline_Val{3|50O9} 80m7 111m10 121r14
+52o7 Next_Start{3|50O9} 73m7 75r19 79m7 79r28 109r22 110m10 110r31
+54e7 Error{8|34E9} 91m15 93r13
+X 13 polyorb_hi-suspenders.ads
+40K20*Suspenders 11|35w17 36r34 45r19 13|57e26
+47o4*System_Startup_Time{3|50O9} 11|73r21 80r28
+50U14*Block_Task 11|72s7
+X 14 polyorb_hi-utils.ads
+40K20*Utils 11|37w17 46r19 14|144e21
+123U14*Set_Task_Id 11|59s7
+X 15 polyorb_hi_generated.ads
+34K9*PolyORB_HI_Generated 10|38r6 41r25 11|47r8 15|38e25
+X 16 polyorb_hi_generated-deployment.ads
+10K30*Deployment 10|38w27 41r46 11|47r29 16|200e36
+65E8*Entity_Type 10|41r57 16|69e34
+117A11*UT_Deployment_X86_Partition_Entity_Image_Component{string}<integer>
+121A8*UT_Deployment_X86_Partition_Entity_Image_Array(117A11)<65E8>
+125a3*Entity_Image{121A8} 11|69r31 86r34 106r34
+X 17 system.ads
+37K9*System 10|35w6 54r25 17|156e11
+108I12*Any_Priority{integer} 10|54r32
+X 29 s-stausa.ads
+203U14*Initialize 204i<c,__gnat_stack_usage_initialize>22
+268U14*Output_Results 272i<c,__gnat_stack_usage_output_results>22
+

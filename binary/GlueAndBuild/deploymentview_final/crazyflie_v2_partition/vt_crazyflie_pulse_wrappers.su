@@ -1,0 +1,4 @@
+/home/taste/test1/binary/GlueAndBuild/vt_crazyflie_pulse_wrappers.adb:21:4:artificial_pulse	8	static
+/home/taste/test1/binary/GlueAndBuild/vt_crazyflie_pulse_wrappers.adb:30:4:vm_pulse	8	static
+/home/taste/test1/binary/GlueAndBuild/vt_crazyflie_pulse_wrappers.adb:38:4:vm_led_on_vt	16	static
+/home/taste/test1/binary/GlueAndBuild/vt_crazyflie_pulse_wrappers.adb:46:4:vm_check_queue_vt	16	static

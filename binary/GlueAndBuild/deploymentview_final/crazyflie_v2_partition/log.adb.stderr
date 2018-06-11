@@ -1,0 +1,4 @@
+log.adb:195:12: warning: type "Operation_Identifier" is not referenced
+log.adb:566:25: warning: violation of restriction "No_Secondary_Stack" at /home/taste/tool-inst/include/ocarina/runtime/polyorb-hi-ada/gnat_runtime.adc:7
+log.adb:859:37: warning: violation of restriction "No_Secondary_Stack" at /home/taste/tool-inst/include/ocarina/runtime/polyorb-hi-ada/gnat_runtime.adc:7
+log.adb:1025:25: warning: violation of restriction "No_Secondary_Stack" at /home/taste/tool-inst/include/ocarina/runtime/polyorb-hi-ada/gnat_runtime.adc:7

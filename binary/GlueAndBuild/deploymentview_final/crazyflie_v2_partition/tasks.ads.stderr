@@ -1,0 +1,2 @@
+tasks.ads:31:06: warning: no entities of "CRTP" are referenced
+tasks.ads:32:06: warning: no entities of "Log" are referenced

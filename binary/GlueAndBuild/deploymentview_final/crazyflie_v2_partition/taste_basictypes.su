@@ -1,0 +1,15 @@
+/home/taste/test1/binary/led_control/led_control/taste_basictypes.adb:13:1:Asn1scct_Int32_Equal	0	static
+/home/taste/test1/binary/led_control/led_control/taste_basictypes.adb:21:1:Asn1scct_Int32_Init	0	static
+/home/taste/test1/binary/led_control/led_control/taste_basictypes.adb:29:1:Asn1scct_Int32_Isconstraintvalid	0	static
+/home/taste/test1/binary/led_control/led_control/taste_basictypes.adb:39:1:Asn1scct_Uint32_Equal	0	static
+/home/taste/test1/binary/led_control/led_control/taste_basictypes.adb:47:1:Asn1scct_Uint32_Init	0	static
+/home/taste/test1/binary/led_control/led_control/taste_basictypes.adb:55:1:Asn1scct_Uint32_Isconstraintvalid	0	static
+/home/taste/test1/binary/led_control/led_control/taste_basictypes.adb:65:1:Asn1scct_Int8_Equal	0	static
+/home/taste/test1/binary/led_control/led_control/taste_basictypes.adb:73:1:Asn1scct_Int8_Init	0	static
+/home/taste/test1/binary/led_control/led_control/taste_basictypes.adb:81:1:Asn1scct_Int8_Isconstraintvalid	0	static
+/home/taste/test1/binary/led_control/led_control/taste_basictypes.adb:91:1:Asn1scct_Uint8_Equal	0	static
+/home/taste/test1/binary/led_control/led_control/taste_basictypes.adb:99:1:Asn1scct_Uint8_Init	0	static
+/home/taste/test1/binary/led_control/led_control/taste_basictypes.adb:107:1:Asn1scct_Uint8_Isconstraintvalid	0	static
+/home/taste/test1/binary/led_control/led_control/taste_basictypes.adb:117:1:Asn1scct_Boolean_Equal	0	static
+/home/taste/test1/binary/led_control/led_control/taste_basictypes.adb:125:1:Asn1scct_Boolean_Init	0	static
+/home/taste/test1/binary/led_control/led_control/taste_basictypes.adb:133:1:Asn1scct_Boolean_Isconstraintvalid	0	static

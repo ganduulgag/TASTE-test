@@ -1,0 +1,227 @@
+V "GNAT Lib v2017"
+A -O1
+A -gnatA
+A --RTS=/usr/gnat/arm-eabi/lib/gnat/ravenscar-full-stm32f4/
+A -mlittle-endian
+A -mfloat-abi=hard
+A -mcpu=cortex-m4
+A -mfpu=fpv4-sp-d16
+A -mthumb
+A -g
+A -gnatwa
+A -gnatwG
+A -gnat12
+A -fstack-usage
+A -g
+A -gnata
+A -gnato
+A -g
+P DB LC TF  ES ZX
+
+RN
+RR NO_STREAMS
+RV NO_UNCHECKED_CONVERSION
+RR NO_UNCHECKED_DEALLOCATION
+RV NO_DEFAULT_INITIALIZATION
+RV NO_IMPLEMENTATION_ATTRIBUTES
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLEMENTATION_RESTRICTIONS
+RV NO_IMPLICIT_LOOPS
+RV NO_OBSOLESCENT_FEATURES
+RV SPARK_05
+
+U memory%b		memory.adb		2ce564cb NE OO PK
+W ada%s			ada.ads			ada.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
+W ada.unchecked_conversion%s
+W interfaces%s		interfac.ads		interfac.ali
+W types%s		types.ads		types.ali
+
+U memory%s		memory.ads		e0033e8f EE NE OO PK
+W crtp%s		crtp.adb		crtp.ali
+W system.unsigned_types%s  s-unstyp.ads		s-unstyp.ali
+
+D ada.ads		20170517144320 76789da1 ada%s
+D a-except.ads		20170517144320 291912d5 ada.exceptions%s
+D a-finali.ads		20170517144320 bf4f806b ada.finalization%s
+D a-interr.ads		20170517144320 bdf68b51 ada.interrupts%s
+D a-intnam.ads		20170517144320 cdde51a1 ada.interrupts.names%s
+D a-reatim.ads		20170517144320 bb781ad1 ada.real_time%s
+D a-rttiev.ads		20170517144320 f8eb9b1f ada.real_time.timing_events%s
+D a-tags.ads		20170517144320 d3a89129 ada.tags%s
+D a-taside.ads		20170517144320 c6417f71 ada.task_identification%s
+D a-unccon.ads		20170517144320 31484697 ada.unchecked_conversion%s
+D ak8963.ads		20180608084415 ee27c928 ak8963%s
+D crtp.ads		20180608084407 28118101 crtp%s
+D crtp.adb		20180608084407 b29edda0 crtp%b
+D generic_queue.ads	20180608084407 4cb410a9 generic_queue%s
+D hal.ads		20180608084415 2b42c80e hal%s
+D hal-audio.ads		20180608084415 6baea1e9 hal.audio%s
+D hal-block_drivers.ads	20180608084415 3a6f071f hal.block_drivers%s
+D hal-gpio.ads		20180608084415 146364b8 hal.gpio%s
+D hal-i2c.ads		20180608084415 0ed73138 hal.i2c%s
+D hal-real_time_clock.ads  20180608084415 9dd52fca hal.real_time_clock%s
+D hal-sdmmc.ads		20180608084415 7293c891 hal.sdmmc%s
+D hal-spi.ads		20180608084415 fe139819 hal.spi%s
+D hal-time.ads		20180608084415 f5295cd7 hal.time%s
+D hal-uart.ads		20180608084415 d58316b4 hal.uart%s
+D interfac.ads		20170517144320 5ab55268 interfaces%s
+D i-stm32.ads		20170517144320 4d2e1e9b interfaces.stm32%s
+D i-stm32-pwr.ads	20170517144320 10ed2a13 interfaces.stm32.pwr%s
+D i-stm32-rcc.ads	20170517144320 ed083a96 interfaces.stm32.rcc%s
+D leds.ads		20180608100909 1ed6915b leds%s
+D link_interface.ads	20180608084407 63ce6922 link_interface%s
+D memory.ads		20180608084407 c812bf8e memory%s
+D memory.adb		20180608084407 1415f3ac memory%b
+D mpu9250.ads		20180608084415 11ad30ab mpu9250%s
+D ravenscar_time.ads	20180608084415 7a23edc6 ravenscar_time%s
+D sdmmc_svd_periph.ads	20180608084415 b49674fe sdmmc_svd_periph%s
+D stm32.ads		20180608084415 698e2c3b stm32%s
+D stm32-adc.ads		20180608084415 a0a7f671 stm32.adc%s
+D stm32-board.ads	20180608084415 69000a83 stm32.board%s
+D stm32-crc.ads		20180608084415 9ef7b3c1 stm32.crc%s
+D stm32-dac.ads		20180608084415 bbc963b4 stm32.dac%s
+D stm32-device.ads	20180608084415 b860d86c stm32.device%s
+D stm32-dma.ads		20180608084415 a485c5f7 stm32.dma%s
+D stm32-dma-interrupts.ads  20180608084415 35afaa6f stm32.dma.interrupts%s
+D stm32-exti.ads	20180608084415 27a7d05f stm32.exti%s
+D stm32-gpio.ads	20180608084415 dfe90a82 stm32.gpio%s
+D stm32-i2c.ads		20180608084415 e73ffae8 stm32.i2c%s
+D stm32-i2c-dma.ads	20180608084415 75d445d8 stm32.i2c.dma%s
+D stm32-i2s.ads		20180608084415 8099fbc7 stm32.i2s%s
+D stm32-rtc.ads		20180608084415 ff58a3e8 stm32.rtc%s
+D stm32-sdmmc.ads	20180608084415 4cae3006 stm32.sdmmc%s
+D stm32-sdmmc_interrupt.ads  20180608084415 6fda8a6a stm32.sdmmc_interrupt%s
+D stm32-spi.ads		20180608084415 98127252 stm32.spi%s
+D stm32-spi-dma.ads	20180608084415 030a0921 stm32.spi.dma%s
+D stm32-timers.ads	20180608084415 63c500b2 stm32.timers%s
+D stm32-usarts.ads	20180608084415 c32302c7 stm32.usarts%s
+D stm32_svd.ads		20180608084415 eeda8404 stm32_svd%s
+D stm32_svd-adc.ads	20180608084415 0c4598f6 stm32_svd.adc%s
+D stm32_svd-crc.ads	20180608084415 f8fb8ec8 stm32_svd.crc%s
+D stm32_svd-dac.ads	20180608084415 7ce3d16d stm32_svd.dac%s
+D stm32_svd-dma.ads	20180608084415 cbdaf790 stm32_svd.dma%s
+D stm32_svd-gpio.ads	20180608084415 d1b361bd stm32_svd.gpio%s
+D stm32_svd-i2c.ads	20180608084415 bbdaed5e stm32_svd.i2c%s
+D stm32_svd-sdio.ads	20180608084415 586e3cc2 stm32_svd.sdio%s
+D stm32_svd-spi.ads	20180608084415 9452a68a stm32_svd.spi%s
+D stm32_svd-usart.ads	20180608084415 e4981db8 stm32_svd.usart%s
+D system.ads		20170517144320 db831581 system%s
+D s-bb.ads		20170517144320 09e072ae system.bb%s
+D s-bbbopa.ads		20170517144320 95d97b26 system.bb.board_parameters%s
+D s-bbbosu.ads		20170517144320 9b59a61f system.bb.board_support%s
+D s-bbcppr.ads		20170517144320 bcfa73ad system.bb.cpu_primitives%s
+D s-bcprmu.ads		20170517144320 043d3736 system.bb.cpu_primitives.multiprocessors%s
+D s-bbinte.ads		20170517144320 d9fc23b0 system.bb.interrupts%s
+D s-bbmcpa.ads		20170517144320 c4c55388 system.bb.mcu_parameters%s
+D s-bbpara.ads		20170517144320 77379e7b system.bb.parameters%s
+D s-bbthre.ads		20170517144320 d6c36e4f system.bb.threads%s
+D s-bbthqu.ads		20170517144320 db3cad46 system.bb.threads.queues%s
+D s-bbtime.ads		20170517144320 ad086247 system.bb.time%s
+D s-bbtiev.ads		20170517144320 14ca2877 system.bb.timing_events%s
+D s-finmas.ads		20170517144320 7811a767 system.finalization_masters%s
+D s-finroo.ads		20170517144320 4ff27390 system.finalization_root%s
+D s-interr.ads		20170517144320 36300b98 system.interrupts%s
+D s-multip.ads		20170517144320 f33e0e35 system.multiprocessors%s
+D s-mufalo.ads		20170517144320 3dca0374 system.multiprocessors.fair_locks%s
+D s-musplo.ads		20170517144320 69fa25c4 system.multiprocessors.spin_locks%s
+D s-osinte.ads		20170517144320 2d4f0621 system.os_interface%s
+D s-parame.ads		20170517144320 c9fe535f system.parameters%s
+D s-pooglo.ads		20170517144320 ede33ef8 system.pool_global%s
+D s-stalib.ads		20170517144320 09bd3940 system.standard_library%s
+D s-stm32.ads		20170517144320 e898dba2 system.stm32%s
+D s-stoele.ads		20170517144320 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20170517144320 ed88f8fb system.storage_elements%b
+D s-stopoo.ads		20170517144320 b16154c2 system.storage_pools%s
+D s-tasinf.ads		20170517144320 801abd01 system.task_info%s
+D s-taspri.ads		20170517144320 351848fa system.task_primitives%s
+D s-taskin.ads		20170517144320 a1f44ab3 system.tasking%s
+D s-taprob.ads		20170517144320 c8fc0753 system.tasking.protected_objects%s
+D s-tpoben.ads		20170517144320 8351b91e system.tasking.protected_objects.entries%s
+D s-tpobop.ads		20170517144320 1882ba41 system.tasking.protected_objects.operations%s
+D s-tposen.ads		20170517144320 828b4fcc system.tasking.protected_objects.single_entry%s
+D s-tasres.ads		20170517144320 0c8ef6fb system.tasking.restricted%s
+D s-tarest.ads		20170517144320 4cbcd33f system.tasking.restricted.stages%s
+D s-traent.ads		20170517144320 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20170517144320 34867c83 system.unsigned_types%s
+D types.ads		20180608084407 c1aa6e7e types%s
+D /home/taste/tool-inst/include/ocarina/runtime/polyorb-hi-ada/gnat_runtime.adc  20180607235124 00000000
+X 1 ada.ads
+16K9*Ada 20e8 32|30r6 73r54 99r49
+X 10 a-unccon.ads
+20v14*Unchecked_Conversion 32|30w10 73r58 99r53
+X 12 crtp.ads
+36K9*CRTP 236e9 31|33w6 33r16
+51M9*CRTP_Channel<104|15M9> 32|74r10
+59n23*CRTP_PORT_MEM{56E9} 32|47r31 117r10
+78A12*CRTP_Data{104|23A9}<integer>
+88R9*CRTP_Packet 103e14 31|77r44 80r48 32|67r44 93r48
+93m13*Channel{51M9} 32|77r57
+96a13*Data_1{78A12} 32|114r52
+110R9*CRTP_Packet_Handler 203e14 32|110r24
+115V13*CRTP_Create_Packet{110R9} 32|116s25
+124V13*CRTP_Get_Packet_From_Handler{88R9} 32|132s16
+130u14*CRTP_Append_Data 32|106r49
+161U14*CRTP_Send_Packet 32|131s13
+168U14*CRTP_Register_Callback 32|47s7
+X 16 hal-audio.ads
+61h9*Audio_Stream
+X 17 hal-block_drivers.ads
+34h9*Block_Driver
+X 18 hal-gpio.ads
+44h9*GPIO_Point
+X 19 hal-i2c.ads
+48h9*I2C_Port
+X 20 hal-real_time_clock.ads
+79h9*RTC_Device
+X 21 hal-sdmmc.ads
+380h9*SDMMC_Driver
+X 22 hal-spi.ads
+48h9*SPI_Port
+X 23 hal-time.ads
+34h9*Delays
+X 24 hal-uart.ads
+48h9*UART_Port
+X 25 interfac.ads
+63M9*Unsigned_8
+X 31 memory.ads
+35K9*Memory 71E4 82l5 82e11 32|33b14 139l5 139t11
+40E9*Memory_Channel 43e20 44r8 48r8 32|74r24 75r17 117r25
+41n7*MEM_SETTINGS_CH{40E9} 45r7 32|80r15 117r50
+42n7*MEM_READ_CH{40E9} 46r7 32|82r15
+43n7*MEM_WRITE_CH{40E9} 47r7 32|84r15
+51E9*Memory_Command 53e24 54r8 57r8 32|100r19 109r24 120r10
+52n7*MEM_CMD_GET_NBR{51E9} 55r7 32|124r15
+53n7*MEM_CMD_GET_INFO{51E9} 56r7 32|134r15
+62U14*Memory_Init 32|41b14 50l8 50t19
+65V13*Memory_Test{boolean} 32|56b13 59l8 59t19
+71b4 Is_Init{boolean} 32|43r10 49m7 58r14
+77U14 Memory_CRTP_Handler 77>35 32|47r46 67b14 87l8 87t27
+77r35 Packet{12|88R9} 32|67b35 77r50 81r38
+80U14 Memory_Settings_Process 80>39 32|81s13 93b14 137l8 137t31
+80r39 Packet{12|88R9} 32|93b39 114r45
+X 32 memory.adb
+73V16 CRTP_Channel_To_Memory_Channel[10|20]{31|40E9} 77s18
+75e7 Channel{31|40E9} 77m7 79r12
+99V16 T_Uint8_To_Memory_Command[10|20]{31|51E9} 114s18
+106U17 CRTP_Append_T_Uint8_Data[12|130] 13|159b14 32|118s7 127s13
+109e7 Command{31|51E9} 114m7 120r35 123r12
+110r7 Packet_Handler{12|110R9} 116m7 119m10 119r10 128m16 128r16 132r46
+111b7 Has_Succeed{boolean} 112r28 121m10 130m16 133m16
+X 66 system.ads
+80M9*Address
+X 71 s-bcprmu.ads
+39U14*Start_All_CPUs 40i<c,__gnat_start_slave_cpus>22
+X 78 s-bbtiev.ads
+42R9*Timing_Event
+X 81 s-interr.ads
+101U14*Install_Restricted_Handlers_Sequential 102i<c,__gnat_attach_all_handlers>22
+X 95 s-taskin.ads
+413V13*Get_Sec_Stack{66|80M9} 414i<c,__gnat_get_secondary_stack>22
+X 101 s-tarest.ads
+225U14*Activate_All_Tasks_Sequential 226i<c,__gnat_activate_all_tasks>22
+X 104 types.ads
+3K9*Types 32|31w6 31r36 104|59e10
+15M9*T_Uint8<25|63M9> 32|100r10 107r10
+23A9*T_Uint8_Array(15M9)<integer>
+

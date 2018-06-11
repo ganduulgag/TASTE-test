@@ -1,0 +1,122 @@
+V "GNAT Lib v6"
+A -O1
+A -gnatA
+A -g
+A -gnatwa
+A -gnatwG
+A -gnat12
+A -fstack-usage
+A -g
+A -gnata
+A -gnato
+A -g
+A -mtune=generic
+A -march=i686
+P LC SS ZX
+
+RN
+RR NO_ACCESS_SUBPROGRAMS
+RR NO_ALLOCATORS
+RR NO_DISPATCH
+RR NO_IO
+RR NO_RECURSION
+RR NO_UNCHECKED_ACCESS
+RR NO_UNCHECKED_DEALLOCATION
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLEMENTATION_RESTRICTIONS
+RV NO_OBSOLESCENT_FEATURES
+RV SPARK_05
+
+U ground_wrappers%b	ground_wrappers.adb	f725230f NE OO PK IL
+W polyorb_hi%s		polyorb_hi.ads		polyorb_hi.ali
+W polyorb_hi.output%s	polyorb_hi-output.adb	polyorb_hi-output.ali
+W polyorb_hi.utils%s	polyorb_hi-utils.adb	polyorb_hi-utils.ali
+W polyorb_hi_generated%s  polyorb_hi_generated.ads  polyorb_hi_generated.ali
+W polyorb_hi_generated.activity%s  polyorb_hi_generated-activity.adb  polyorb_hi_generated-activity.ali
+
+U ground_wrappers%s	ground_wrappers.ads	d1554465 EE NE OO PK IL
+W ground_async_ri_wrappers%s  ground_async_ri_wrappers.adb  ground_async_ri_wrappers.ali
+W interfaces%s		interfac.ads		interfac.ali
+W interfaces.c%s	i-c.adb			i-c.ali
+W polyorb_hi_generated%s  polyorb_hi_generated.ads  polyorb_hi_generated.ali
+W polyorb_hi_generated.deployment%s  polyorb_hi_generated-deployment.ads  polyorb_hi_generated-deployment.ali
+W polyorb_hi_generated.types%s  polyorb_hi_generated-types.adb  polyorb_hi_generated-types.ali
+
+D ada.ads		20070406091342 3ffc8e18 ada%s
+D a-except.ads		20151016123252 291912d5 ada.exceptions%s
+D a-reatim.ads		20151026154432 428ef5f7 ada.real_time%s
+D a-unccon.ads		20070406091342 f9eb8f06 ada.unchecked_conversion%s
+D ground_async_ri_wrappers.ads  20180611081810 e282a968 ground_async_ri_wrappers%s
+D ground_wrappers.ads	20180611081810 d2e3c565 ground_wrappers%s
+D ground_wrappers.adb	20180611081810 98f11814 ground_wrappers%b
+D interfac.ads		20151118101227 4be8ce1b interfaces%s
+D i-c.ads		20110801143639 5421119b interfaces.c%s
+D polyorb_hi.ads	20180607235124 f77a07a6 polyorb_hi%s
+D polyorb_hi-background_task.ads  20180607235124 1bd0d23f polyorb_hi.background_task%s
+D polyorb_hi-errors.ads	20180607235124 6deb16d4 polyorb_hi.errors%s
+D polyorb_hi-output.ads	20180607235124 ccf271eb polyorb_hi.output%s
+D polyorb_hi-periodic_task.ads  20180607235124 165462da polyorb_hi.periodic_task%s
+D polyorb_hi-streams.ads  20180607235124 54018470 polyorb_hi.streams%s
+D polyorb_hi-utils.ads	20180607235124 8c6cb8de polyorb_hi.utils%s
+D polyorb_hi_generated.ads  20180607235124 32a22d97 polyorb_hi_generated%s
+D polyorb_hi_generated-activity.ads  20180611081810 fda9374b polyorb_hi_generated.activity%s
+D polyorb_hi_generated-deployment.ads  20180611081810 0956f063 polyorb_hi_generated.deployment%s
+D polyorb_hi_generated-types.ads  20180611081810 bc43c990 polyorb_hi_generated.types%s
+D system.ads		20151123113124 c6f79445 system%s
+D s-atacco.ads		20120515093410 4c36d12f system.address_to_access_conversions%s
+D s-assert.ads		20140225151544 cd8d2c94 system.assertions%s
+D s-exctab.ads		20140225151139 54135002 system.exception_table%s
+D s-linux.ads		20150107101203 2fda6ad1 system.linux%s
+D s-multip.ads		20101011073009 38ac9f73 system.multiprocessors%s
+D s-oscons.ads		20180214165320 7ae90cd4 system.os_constants%s
+D s-osinte.ads		20151016132500 64f6e3c7 system.os_interface%s
+D s-parame.ads		20140801093848 7e2a0d7f system.parameters%s
+D s-secsta.ads		20140225151139 86a2856d system.secondary_stack%s
+D s-soflin.ads		20151020124036 14e1eb6c system.soft_links%s
+D s-stache.ads		20140225151139 a37c21ec system.stack_checking%s
+D s-stausa.ads		20110804134155 017a0a05 system.stack_usage%s
+D s-stalib.ads		20151112104907 09bd3940 system.standard_library%s
+D s-stoele.ads		20140225151139 2dc34a04 system.storage_elements%s
+D s-tasinf.ads		20140613095942 2b3f8252 system.task_info%s
+D s-taspri.ads		20141120144719 e3ab4429 system.task_primitives%s
+D s-taprop.ads		20140521131406 1dd2e1b6 system.task_primitives.operations%s
+D s-taskin.ads		20151023124846 0766baa7 system.tasking%s
+D s-tassta.ads		20121029110946 70812003 system.tasking.stages%s
+D s-traent.ads		20140730135025 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20140731130224 9d58a4c0 system.unsigned_types%s
+D /home/taste/tool-inst/include/ocarina/runtime/polyorb-hi-ada/native.adc  20180607235124 00000000
+X 5 ground_async_ri_wrappers.ads
+12K9*ground_Async_RI_Wrappers 20e29 6|11w6
+17U14*vm_start_demo 18i<c,vm_async_ground_start_demo>22
+X 6 ground_wrappers.ads
+13K9*ground_Wrappers 22l5 22e20 7|13b14 35l5 35t20
+15U14*C_Init_ground 7|15b14 21l8 21t21
+20U14*gui_polling_ground 20>34 7|26b14 33l8 33t26
+20e34 Entity{19|65E8} 7|26b34
+X 7 ground_wrappers.adb
+16U17*Init_ground 17b<c,init_ground>25 20s7
+28U17*C_ground_gui_polling_ground 29b<c,ground_gui_polling_ground>25 32s7
+X 8 interfac.ads
+38K9*Interfaces 6|6r6 8|183e15
+X 9 i-c.ads
+18K20*C 6|6w17 9|230e17
+X 10 polyorb_hi.ads
+35K9*PolyORB_HI 7|7r6 9r6 11r6 10|39e15
+X 13 polyorb_hi-output.ads
+38K20*Output 7|11w17 13|81e22
+X 16 polyorb_hi-utils.ads
+40K20*Utils 7|7w17 9r17 16|144e21
+X 17 polyorb_hi_generated.ads
+34K9*PolyORB_HI_Generated 6|7r6 8r6 9r6 20r43 7|6r6 8r6 26r43 17|38e25
+X 18 polyorb_hi_generated-activity.ads
+18K30*Activity 7|6w27 8r27 18|80e34
+X 19 polyorb_hi_generated-deployment.ads
+10K30*Deployment 6|8w27 9r27 20r64 7|26r64 19|200e36
+65E8*Entity_Type 6|20r75 7|26r75 19|69e34
+X 20 polyorb_hi_generated-types.ads
+11K30*Types 6|7w27 20|68e31
+30V12*Length{integer} 36i<c,t_uint16_buffer_max_impl__length>5
+X 33 s-stausa.ads
+203U14*Initialize 204i<c,__gnat_stack_usage_initialize>22
+268U14*Output_Results 272i<c,__gnat_stack_usage_output_results>22
+

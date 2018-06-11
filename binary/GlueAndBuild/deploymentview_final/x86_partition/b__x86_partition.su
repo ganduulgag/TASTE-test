@@ -1,0 +1,4 @@
+b__x86_partition.adb:70:4:finalize_library	16	static
+b__x86_partition.adb:135:4:adafinal	32	dynamic,bounded
+b__x86_partition.adb:153:4:adainit	64	dynamic,bounded
+b__x86_partition.adb:347:4:main	80	dynamic,bounded

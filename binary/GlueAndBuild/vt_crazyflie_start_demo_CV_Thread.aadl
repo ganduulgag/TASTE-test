@@ -1,0 +1,31 @@
+--  This file was generated automatically: DO NOT MODIFY IT !
+
+--  This file contains a part of the system CONCURRENCY VIEW.
+--  It is an input file for OCARINA.
+
+package vt_crazyflie_start_demo_CV_Thread
+public
+	with Deployment;
+	with process_package;
+	with Dataview;
+
+THREAD vt_crazyflie_start_demo_vt_crazyflie_start_demo
+features
+	INPORT_artificial_start_demo : IN EVENT DATA PORT DataView::T_Uint16_Buffer.impl
+		{ Compute_Execution_Time => 0 ms .. 0 ms;
+		  Queue_Size => 1;
+		  Compute_Entrypoint_Source_Text => "vt_crazyflie_start_demo_wrappers.artificial_start_demo"; };
+END vt_crazyflie_start_demo_vt_crazyflie_start_demo;
+
+THREAD IMPLEMENTATION vt_crazyflie_start_demo_vt_crazyflie_start_demo.others
+PROPERTIES
+	Initialize_Entrypoint_Source_Text => "crazyflie_wrappers.C_Init_crazyflie";
+	Dispatch_Protocol      => Sporadic;
+	Period                 => 1 ms;
+	Dispatch_Offset        => 0 ms;
+	Compute_Execution_Time => 0 ms .. 10 ms;
+	Stack_Size             => 5 KByte;
+	Priority               => 10;
+END vt_crazyflie_start_demo_vt_crazyflie_start_demo.others;
+
+end vt_crazyflie_start_demo_CV_Thread;

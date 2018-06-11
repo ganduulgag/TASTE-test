@@ -1,0 +1,12 @@
+/home/taste/tool-inst/include/ocarina/runtime/polyorb-hi-ada/polyorb_hi-output.adb:160:4:Unprotected_Put	56	static
+/home/taste/tool-inst/include/ocarina/runtime/polyorb-hi-ada/polyorb_hi-output.adb:67:7:Locktvip	8	static
+/home/taste/tool-inst/include/ocarina/runtime/polyorb-hi-ada/polyorb_hi-output.adb:89:10:Put_Linen	32	static
+/home/taste/tool-inst/include/ocarina/runtime/polyorb-hi-ada/polyorb_hi-output.adb:89:10:Put_Linep	72	static
+/home/taste/tool-inst/include/ocarina/runtime/polyorb-hi-ada/polyorb_hi-output.adb:112:10:Putn	8	static
+/home/taste/tool-inst/include/ocarina/runtime/polyorb-hi-ada/polyorb_hi-output.adb:112:10:Putp	24	static
+/home/taste/tool-inst/include/ocarina/runtime/polyorb-hi-ada/polyorb_hi-output.adb:118:7:Put_Line	56	static
+/home/taste/tool-inst/include/ocarina/runtime/polyorb-hi-ada/polyorb_hi-output.adb:127:7:Put	8	static
+/home/taste/tool-inst/include/ocarina/runtime/polyorb-hi-ada/polyorb_hi-output.adb:138:4:Put_Line	48	static
+/home/taste/tool-inst/include/ocarina/runtime/polyorb-hi-ada/polyorb_hi-output.adb:151:4:Put	8	static
+/home/taste/tool-inst/include/ocarina/runtime/polyorb-hi-ada/polyorb_hi-output.adb:190:4:Dump	104	static
+/home/taste/tool-inst/include/ocarina/runtime/polyorb-hi-ada/polyorb_hi-output.adb:41:1:Output	8	static

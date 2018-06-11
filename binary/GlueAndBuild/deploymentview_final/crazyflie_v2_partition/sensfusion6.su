@@ -1,0 +1,5 @@
+/home/taste/test1/Certyflie/src/sensfusion6.adb:89:4:Sensfusion6_Init	0	static
+/home/taste/test1/Certyflie/src/sensfusion6.adb:102:4:Sensfusion6_Test	0	static
+/home/taste/test1/Certyflie/src/sensfusion6.adb:415:4:Sensfusion6_Update_Q	96	static
+/home/taste/test1/Certyflie/src/sensfusion6.adb:444:4:Sensfusion6_Get_Euler_Rpy	24	static
+/home/taste/test1/Certyflie/src/sensfusion6.adb:472:4:Sensfusion6_Get_Accz_Without_Gravity	8	static

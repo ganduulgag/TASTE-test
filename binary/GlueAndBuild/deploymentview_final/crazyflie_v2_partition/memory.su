@@ -1,0 +1,6 @@
+/home/taste/test1/Certyflie/crazyflie_support/src/crtp.adb:159:4:CRTP_APPEND_T_UINT8_DATA	8	static
+/home/taste/test1/Certyflie/src/memory.ads:51:9:Memory_Commandrp	8	static
+/home/taste/test1/Certyflie/src/memory.adb:41:4:Memory_Init	8	static
+/home/taste/test1/Certyflie/src/memory.adb:56:4:Memory_Test	0	static
+/home/taste/test1/Certyflie/src/memory.adb:93:4:Memory_Settings_Process	128	static
+/home/taste/test1/Certyflie/src/memory.adb:67:4:Memory_Crtp_Handler	8	static

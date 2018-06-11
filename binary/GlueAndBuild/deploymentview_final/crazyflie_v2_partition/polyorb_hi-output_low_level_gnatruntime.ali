@@ -1,0 +1,47 @@
+V "GNAT Lib v2017"
+A -O1
+A -gnatA
+A --RTS=/usr/gnat/arm-eabi/lib/gnat/ravenscar-full-stm32f4/
+A -mlittle-endian
+A -mfloat-abi=hard
+A -mcpu=cortex-m4
+A -mfpu=fpv4-sp-d16
+A -mthumb
+A -g
+A -gnatwa
+A -gnatwG
+A -gnat12
+A -fstack-usage
+A -g
+A -gnata
+A -gnato
+A -g
+P ES ZX
+
+RN
+RR NO_STREAMS
+RR NO_UNCHECKED_DEALLOCATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLEMENTATION_RESTRICTIONS
+RV NO_OBSOLESCENT_FEATURES
+
+U polyorb_hi.output_low_level%b  polyorb_hi-output_low_level_gnatruntime.adb  9d4cd14c NE OO PK
+W polyorb_hi%s		polyorb_hi.ads		polyorb_hi.ali
+
+U polyorb_hi.output_low_level%s  polyorb_hi-output_low_level.ads  51afa983 EE NE OO PK
+W polyorb_hi%s		polyorb_hi.ads		polyorb_hi.ali
+
+D polyorb_hi.ads	20180607235124 f77a07a6 polyorb_hi%s
+D polyorb_hi-output_low_level.ads  20180607235124 a6d5ae25 polyorb_hi.output_low_level%s
+D polyorb_hi-output_low_level_gnatruntime.adb  20180607235124 3b997f69 polyorb_hi.output_low_level%b
+D system.ads		20170517144320 db831581 system%s
+D /home/taste/tool-inst/include/ocarina/runtime/polyorb-hi-ada/gnat_runtime.adc  20180607235124 00000000
+X 1 polyorb_hi.ads
+35K9*PolyORB_HI 39e15 2|34r9 40r5 3|32r14 52r5
+X 2 polyorb_hi-output_low_level.ads
+34K20*Output_Low_Level 1|35k9 2|40l16 40e32 3|32b25 52l16 52t32
+36U14*New_Line 3|47b14 50l8 50t16
+38U14*Put 38>19 3|38b14 41l8 41t11
+38a19 S{string} 3|38b19
+

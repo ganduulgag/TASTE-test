@@ -1,0 +1,2 @@
+ground_wrappers.adb:15:4:c_init_ground	16	static
+ground_wrappers.adb:26:4:gui_polling_ground	16	static

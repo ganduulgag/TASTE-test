@@ -1,0 +1,204 @@
+---------------------------------------------------
+-- AADL2.1
+-- TASTE type interfaceview
+-- 
+-- generated code: do not edit
+---------------------------------------------------
+
+PACKAGE interfaceview::FV::crazyflie
+PUBLIC
+
+WITH Taste;
+WITH DataView;
+WITH TASTE_IV_Properties;
+SUBPROGRAM PI_pulse
+PROPERTIES
+  Taste::Associated_Queue_Size => 1;
+END PI_pulse;
+
+SUBPROGRAM IMPLEMENTATION PI_pulse.others
+PROPERTIES
+  Compute_Execution_Time => 0 ms .. 0 ms;
+END PI_pulse.others;
+
+SUBPROGRAM PI_start_demo
+FEATURES
+  a : IN PARAMETER DataView::T_Uint16 {
+    Taste::encoding => UPER;
+  };
+PROPERTIES
+  Taste::Associated_Queue_Size => 1;
+END PI_start_demo;
+
+SUBPROGRAM IMPLEMENTATION PI_start_demo.others
+PROPERTIES
+  Compute_Execution_Time => 0 ms .. 0 ms;
+END PI_start_demo.others;
+
+SUBPROGRAM RI_led_on
+FEATURES
+  a : IN PARAMETER DataView::T_Uint16 {
+    Taste::encoding => UPER;
+  };
+END RI_led_on;
+
+SUBPROGRAM IMPLEMENTATION RI_led_on.others
+END RI_led_on.others;
+
+END interfaceview::FV::crazyflie;
+
+PACKAGE interfaceview::FV::ground
+PUBLIC
+
+WITH Taste;
+WITH DataView;
+WITH TASTE_IV_Properties;
+SUBPROGRAM RI_start_demo
+FEATURES
+  a : IN PARAMETER DataView::T_Uint16 {
+    Taste::encoding => UPER;
+  };
+END RI_start_demo;
+
+SUBPROGRAM IMPLEMENTATION RI_start_demo.others
+END RI_start_demo.others;
+
+END interfaceview::FV::ground;
+
+PACKAGE interfaceview::FV::led_control
+PUBLIC
+
+WITH Taste;
+WITH DataView;
+WITH TASTE_IV_Properties;
+SUBPROGRAM PI_led_on
+FEATURES
+  a : IN PARAMETER DataView::T_Uint16 {
+    Taste::encoding => UPER;
+  };
+PROPERTIES
+  Taste::Associated_Queue_Size => 1;
+END PI_led_on;
+
+SUBPROGRAM IMPLEMENTATION PI_led_on.others
+PROPERTIES
+  Compute_Execution_Time => 0 ms .. 0 ms;
+END PI_led_on.others;
+
+END interfaceview::FV::led_control;
+
+PACKAGE interfaceview::IV
+PUBLIC
+
+WITH interfaceview::FV::led_control;
+WITH interfaceview::FV::crazyflie;
+WITH Taste;
+WITH DataView;
+WITH TASTE_IV_Properties;
+WITH interfaceview::FV::ground;
+SYSTEM crazyflie
+FEATURES
+  PI_pulse : PROVIDES SUBPROGRAM ACCESS interfaceview::FV::crazyflie::PI_pulse.others {
+    Taste::coordinates => "99368 49133";
+    Taste::RCMoperationKind => cyclic;
+    Taste::RCMperiod => 2000 ms;
+    Taste::Deadline => 0 ms;
+    Taste::InterfaceName => "pulse";
+  };
+  PI_start_demo : PROVIDES SUBPROGRAM ACCESS interfaceview::FV::crazyflie::PI_start_demo.others {
+    Taste::coordinates => "119682 72911";
+    Taste::RCMoperationKind => sporadic;
+    Taste::RCMperiod => 0 ms;
+    Taste::Deadline => 0 ms;
+    Taste::InterfaceName => "start_demo";
+  };
+  RI_led_on : REQUIRES SUBPROGRAM ACCESS interfaceview::FV::led_control::PI_led_on.others {
+    Taste::coordinates => "128343 61733";
+    Taste::RCMoperationKind => any;
+    Taste::InterfaceName => "led_on";
+    Taste::labelInheritance => "true";
+  };
+PROPERTIES
+  Source_Language => (SDL);
+  Taste::Active_Interfaces => any;
+END crazyflie;
+
+SYSTEM IMPLEMENTATION crazyflie.others
+SUBCOMPONENTS
+  pulse_impl : SUBPROGRAM interfaceview::FV::crazyflie::PI_pulse.others;
+  start_demo_impl : SUBPROGRAM interfaceview::FV::crazyflie::PI_start_demo.others;
+CONNECTIONS
+  OpToPICnx_pulse_impl : SUBPROGRAM ACCESS pulse_impl -> PI_pulse;
+  OpToPICnx_start_demo_impl : SUBPROGRAM ACCESS start_demo_impl -> PI_start_demo;
+END crazyflie.others;
+
+SYSTEM ground
+FEATURES
+  RI_start_demo : REQUIRES SUBPROGRAM ACCESS interfaceview::FV::crazyflie::PI_start_demo.others {
+    Taste::coordinates => "119643 92331";
+    Taste::RCMoperationKind => any;
+    Taste::InterfaceName => "start_demo";
+    Taste::labelInheritance => "true";
+  };
+PROPERTIES
+  Source_Language => (GUI);
+  Taste::Active_Interfaces => any;
+END ground;
+
+SYSTEM IMPLEMENTATION ground.others
+END ground.others;
+
+SYSTEM led_control
+FEATURES
+  PI_led_on : PROVIDES SUBPROGRAM ACCESS interfaceview::FV::led_control::PI_led_on.others {
+    Taste::coordinates => "157183 61732";
+    Taste::RCMoperationKind => unprotected;
+    Taste::RCMperiod => 0 ms;
+    Taste::Deadline => 0 ms;
+    Taste::InterfaceName => "led_on";
+  };
+PROPERTIES
+  Source_Language => (Ada);
+  Taste::Active_Interfaces => any;
+END led_control;
+
+SYSTEM IMPLEMENTATION led_control.others
+SUBCOMPONENTS
+  led_on_impl : SUBPROGRAM interfaceview::FV::led_control::PI_led_on.others;
+CONNECTIONS
+  OpToPICnx_led_on_impl : SUBPROGRAM ACCESS led_on_impl -> PI_led_on;
+END led_control.others;
+
+SYSTEM interfaceview
+PROPERTIES
+  Taste::dataView => ("DataView");
+  Taste::dataViewPath => ("DataView.aadl");
+END interfaceview;
+
+SYSTEM IMPLEMENTATION interfaceview.others
+SUBCOMPONENTS
+  crazyflie : SYSTEM interfaceview::IV::crazyflie.others {
+    Taste::coordinates => "91482 49133 128343 72911";
+  };
+  ground : SYSTEM interfaceview::IV::ground.others {
+    Taste::coordinates => "97593 92331 128931 117212";
+  };
+  led_control : SYSTEM interfaceview::IV::led_control.others {
+    Taste::coordinates => "157183 49132 188521 71336";
+  };
+CONNECTIONS
+  crazyflie_PI_start_demo_ground_RI_start_demo : SUBPROGRAM ACCESS crazyflie.PI_start_demo -> ground.RI_start_demo {
+    Taste::coordinates => "119643 92331 119643 81730 119682 81730 119682 72911";
+  };
+  led_control_PI_led_on_crazyflie_RI_led_on : SUBPROGRAM ACCESS led_control.PI_led_on -> crazyflie.RI_led_on {
+    Taste::coordinates => "128343 61733 141649 61733 141649 61732 157183 61732";
+  };
+END interfaceview.others;
+
+PROPERTIES
+  Taste::dataView => ("DataView");
+  Taste::dataViewPath => ("DataView.aadl");
+  Taste::coordinates => "0 0 297000 210000";
+  Taste::version => "1.3";
+END interfaceview::IV;
+

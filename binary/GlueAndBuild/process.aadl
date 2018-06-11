@@ -1,0 +1,80 @@
+--  This file was generated automatically: DO NOT MODIFY IT !
+
+--  This file contains a part of the system CONCURRENCY VIEW.
+--  It is an input file for OCARINA.
+
+package process_package
+public
+	with Deployment;
+	with DataView;
+	with interfaceview::IV;
+	with deploymentview::DV;
+	with ocarina_processors_arm;
+	with deploymentview::dv::node1;
+	with ocarina_processors_x86;
+	with deploymentview::dv::node2;
+	with ocarina_buses;
+	with vt_crazyflie_pulse_CV_Thread;
+	with vt_crazyflie_start_demo_CV_Thread;
+	with ground_CV_Thread;
+
+process crazyflie_v2_partition extends deploymentview::DV::node1::crazyflie_v2_partition
+features
+	INPORT_vt_crazyflie_start_demo_start_demo : IN EVENT DATA PORT DataView::T_Uint16_Buffer.impl;
+end crazyflie_v2_partition;
+
+process implementation crazyflie_v2_partition.final
+subcomponents
+	vt_crazyflie_pulse : thread vt_crazyflie_pulse_CV_Thread::vt_crazyflie_pulse_vt_crazyflie_pulse.others;
+	vt_crazyflie_start_demo : thread vt_crazyflie_start_demo_CV_Thread::vt_crazyflie_start_demo_vt_crazyflie_start_demo.others;
+connections
+	PORT INPORT_vt_crazyflie_start_demo_start_demo -> vt_crazyflie_start_demo.INPORT_artificial_start_demo;
+end crazyflie_v2_partition.final;
+
+
+process x86_partition extends deploymentview::DV::node2::x86_partition
+features
+	OUTPORT_ground_start_demo : OUT EVENT DATA PORT DataView::T_Uint16_Buffer.impl;
+end x86_partition;
+
+process implementation x86_partition.final
+subcomponents
+	ground : thread ground_CV_Thread::ground_ground.others;
+connections
+	PORT ground.OUTPORT_start_demo -> OUTPORT_ground_start_demo;
+end x86_partition.final;
+
+system deploymentview
+end deploymentview;
+
+system implementation deploymentview.final
+subcomponents
+  bluetooth_crazyflie_cv : bus ocarina_buses::bluetooth.crazyflie;
+  crazyflie_v2_partition: process crazyflie_v2_partition.final;
+  node1_crazyflie_ble_pohiada_cv : device deploymentview::dv::node1::crazyflie_ble_pohiada.others
+	{
+		Source_Text => ("../DriversConfig/crazyflie_v2_partition/DeviceConfig-node1-crazyflie-ble-pohiada.ads");
+		Type_Source_Name => "DeviceConfig_node1_crazyflie_ble_pohiada.pohidrv_node1_crazyflie_ble_pohiada_cv";
+	};
+  x86_partition: process x86_partition.final;
+  node2_client_ble_pohiada_cv : device deploymentview::dv::node2::client_ble_pohiada.others
+	{
+		Source_Text => ("../DriversConfig/x86_partition/DeviceConfig-node2-client-ble-pohiada.ads");
+		Type_Source_Name => "DeviceConfig_node2_client_ble_pohiada.pohidrv_node2_client_ble_pohiada_cv";
+	};
+  node1_crazyflie_v2_gnat_cv : processor ocarina_processors_arm::crazyflie_v2.gnat;
+  node2_x86_linux_cv : processor ocarina_processors_x86::x86.linux;
+connections
+  crazyflie_v2_partition_start_demo_ground_conn_cv : port x86_partition.OUTPORT_ground_start_demo -> crazyflie_v2_partition.INPORT_vt_crazyflie_start_demo_start_demo;
+  bus access bluetooth_crazyflie_cv -> node1_crazyflie_ble_pohiada_cv.link;
+  bus access bluetooth_crazyflie_cv -> node2_client_ble_pohiada_cv.link;
+properties
+  Actual_Processor_Binding => (reference (node1_crazyflie_v2_gnat_cv)) applies to crazyflie_v2_partition;
+  Actual_Processor_Binding => (reference (node2_x86_linux_cv)) applies to x86_partition;
+  Actual_Processor_Binding => (reference (node1_crazyflie_v2_gnat_cv)) applies to node1_crazyflie_ble_pohiada_cv;
+  Actual_Processor_Binding => (reference (node2_x86_linux_cv)) applies to node2_client_ble_pohiada_cv;
+  Actual_Connection_Binding => (reference (bluetooth_crazyflie_cv)) applies to crazyflie_v2_partition_start_demo_ground_conn_cv;
+end deploymentview.final;
+end process_package;
+
+-- deploymentview.final

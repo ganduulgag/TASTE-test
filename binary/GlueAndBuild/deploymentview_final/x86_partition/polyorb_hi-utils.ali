@@ -1,0 +1,160 @@
+V "GNAT Lib v6"
+A -O1
+A -gnatA
+A -g
+A -gnatwa
+A -gnatwG
+A -gnat12
+A -fstack-usage
+A -g
+A -gnata
+A -gnato
+A -g
+A -mtune=generic
+A -march=i686
+P SS ZX
+
+RN
+RR NO_ACCESS_SUBPROGRAMS
+RR NO_ALLOCATORS
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RR NO_DISPATCH
+RR NO_IO
+RV NO_IMPLICIT_LOOPS
+RR NO_RECURSION
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RR NO_UNCHECKED_ACCESS
+RV NO_UNCHECKED_CONVERSION
+RR NO_UNCHECKED_DEALLOCATION
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLEMENTATION_RESTRICTIONS
+RV NO_ELABORATION_CODE
+RV NO_OBSOLESCENT_FEATURES
+RV SPARK_05
+
+U polyorb_hi.utils%b	polyorb_hi-utils.adb	597c946a OO PK
+W ada%s			ada.ads			ada.ali
+W ada.task_identification%s  a-taside.adb	a-taside.ali
+W polyorb_hi%s		polyorb_hi.ads		polyorb_hi.ali
+W system.assertions%s	s-assert.adb		s-assert.ali
+
+U polyorb_hi.utils%s	polyorb_hi-utils.ads	06b49a43 EE NE OO PR PK
+W ada%s			ada.ads			ada.ali
+W ada.unchecked_conversion%s
+W interfaces%s		interfac.ads		interfac.ali
+W polyorb_hi%s		polyorb_hi.ads		polyorb_hi.ali
+W polyorb_hi_generated%s  polyorb_hi_generated.ads  polyorb_hi_generated.ali
+W polyorb_hi_generated.deployment%s  polyorb_hi_generated-deployment.ads  polyorb_hi_generated-deployment.ali
+W system%s		system.ads		system.ali
+W system.assertions%s	s-assert.adb		s-assert.ali
+W system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+
+D ada.ads		20070406091342 3ffc8e18 ada%s
+D a-except.ads		20151016123252 291912d5 ada.exceptions%s
+D a-taside.ads		20151026154432 60271635 ada.task_identification%s
+D a-unccon.ads		20070406091342 f9eb8f06 ada.unchecked_conversion%s
+D interfac.ads		20151118101227 4be8ce1b interfaces%s
+D i-c.ads		20110801143639 5421119b interfaces.c%s
+D polyorb_hi.ads	20180607235124 f77a07a6 polyorb_hi%s
+D polyorb_hi-utils.ads	20180607235124 8c6cb8de polyorb_hi.utils%s
+D polyorb_hi-utils.adb	20180607235124 b5373a81 polyorb_hi.utils%b
+D polyorb_hi_generated.ads  20180607235124 32a22d97 polyorb_hi_generated%s
+D polyorb_hi_generated-deployment.ads  20180611081810 0956f063 polyorb_hi_generated.deployment%s
+D system.ads		20151123113124 c6f79445 system%s
+D s-atacco.ads		20120515093410 4c36d12f system.address_to_access_conversions%s
+D s-assert.ads		20140225151544 cd8d2c94 system.assertions%s
+D s-exctab.ads		20140225151139 54135002 system.exception_table%s
+D s-linux.ads		20150107101203 2fda6ad1 system.linux%s
+D s-multip.ads		20101011073009 38ac9f73 system.multiprocessors%s
+D s-oscons.ads		20180214165320 7ae90cd4 system.os_constants%s
+D s-osinte.ads		20151016132500 64f6e3c7 system.os_interface%s
+D s-parame.ads		20140801093848 7e2a0d7f system.parameters%s
+D s-secsta.ads		20140225151139 86a2856d system.secondary_stack%s
+D s-soflin.ads		20151020124036 14e1eb6c system.soft_links%s
+D s-stache.ads		20140225151139 a37c21ec system.stack_checking%s
+D s-stausa.ads		20110804134155 017a0a05 system.stack_usage%s
+D s-stalib.ads		20151112104907 09bd3940 system.standard_library%s
+D s-stoele.ads		20140225151139 2dc34a04 system.storage_elements%s
+D s-tasinf.ads		20140613095942 2b3f8252 system.task_info%s
+D s-taspri.ads		20141120144719 e3ab4429 system.task_primitives%s
+D s-taskin.ads		20151023124846 0766baa7 system.tasking%s
+D s-traent.ads		20140730135025 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20140731130224 9d58a4c0 system.unsigned_types%s
+D /home/taste/tool-inst/include/ocarina/runtime/polyorb-hi-ada/native.adc  20180607235124 00000000
+X 1 ada.ads
+16K9*Ada 19e8 8|34r6 62r34 64r41 67r34 69r39 9|32r6 32r35
+X 3 a-taside.ads
+39K13*Task_Identification 96e28 9|32w10 32r39
+48P9*Task_Id<29|109P9> 9|118r51 130r29
+53V14*"="{boolean} 9|133s33
+60V13*Current_Task{48P9} 9|122s34 130s40
+X 4 a-unccon.ads
+20v14*Unchecked_Conversion 8|34w10 62r38 64r45 67r38 69r43
+X 5 interfac.ads
+38K9*Interfaces 183e15 8|35w6 44r8 72r29 73r31 9|73r29 74r31
+62M9*Unsigned_8 8|63r20 65r7 68r18 70r7
+65M9*Unsigned_16 8|72r40 73r42 9|73r40 74r42
+X 7 polyorb_hi.ads
+35K9*PolyORB_HI 39e15 8|40r9 111r18 117r9 144r5 9|34r14 140r5
+X 8 polyorb_hi-utils.ads
+40K20*Utils 7|35k9 8|111r29 117r20 128E9 144l16 144e21 9|34b25 140l16 140t21
+62V13*Internal_Code[4|20]{5|62M9}
+64V13*Corresponding_Entity[4|20]{11|65E8}
+67V13*Internal_Code[4|20]{5|62M9}
+69V13*Corresponding_Node[4|20]{11|16E8}
+72V13*Swap_Bytes{5|65M9} 72>25 9|73b13 93l8 93t18
+72m25 B{5|65M9} 9|73b25 84r17 91r18 91r30
+81N4*HI_String_Size 129r23 139r15 9|41r24 47r25 61r18 61r61 63r33
+83R9*HI_String 85r46 88r28 91r25 94r24 111r35 128c9 133e14 135r25 138r24
+. 141r28 9|40r46 44r17 57r17 62r17
+85V13*To_Hi_String{83R9} 85>27 86r27 9|40b13 66l8 66t20
+85a27 S{string} 9|40b27 43r10 47r13 48r24 49r22 49r25 58r33 61r37 61r40 61r51
+88V13*To_String{string} 88>24 141b13
+88r24 H{83R9} 89r26 142r8 142r18
+91V13*Length{natural} 91>21 135b13
+91r21 H{83R9} 92r26 136r8
+94V13*Valid{boolean} 86s20 89s19 92s19 94>20 138b13
+94r20 H{83R9} 139r8
+96V13*Parse_String{integer} 96>27 96>39 96>56 9|99b13 112l8 112t20
+96a27 S{string} 98r28 98r49 9|99b27 102r25 104r25 105r13
+96i39 First{integer} 98r19 98r40 9|99b39 104r16
+96e56 Delimiter{character} 9|99b56 105r21
+110R9*Naming_Entry 114e14 117r26
+111r7*Location{83R9}
+112i7*Port{natural}
+113m7*Variable{12|67M9}
+116A9*Naming_Table_Type(110R9)<11|16E8>
+123U14*Set_Task_Id 123>27 9|120b14 123l8 123t19
+123e27 My_Id{11|65E8} 9|120b27 122r24
+124V13*Get_Task_Id{11|65E8} 9|129b13 138l8 138t19
+129a7*S{string} 142r10 9|44m28 57m28 62m28
+130i7*L{natural} 136r10 139r10 142r20 9|45m28 58m28 63m28
+X 9 polyorb_hi-utils.adb
+41a7 R{string} 44r33 49m13 57r33 61m10 62r33
+48i14 J{integer} 49r16 49r36
+102i7 Last{integer} 106m13 111r14
+104i11 J{integer} 105r16 106r21
+118a4 Task_Id_Mapping(3|48P9) 122m7 122r7 132r16 133r13
+130p7 My_Task_Id{3|48P9} 133r35
+132e11 J{11|65E8} 133r30 134r20
+X 10 polyorb_hi_generated.ads
+34K9*PolyORB_HI_Generated 8|38r6 45r8 10|38e25
+X 11 polyorb_hi_generated-deployment.ads
+10K30*Deployment 8|38w27 45r29 11|200e36
+16E8*Node_Type 8|68r7 70r19 116r37 11|18e21
+65E8*Entity_Type 8|63r7 65r19 123r35 124r32 9|118r29 120r35 129r32 137r14
+. 11|69e34
+X 12 system.ads
+37K9*System 8|36w6 113r18 9|76r11 12|156e11
+67M9*Address 8|113r25
+91n23*High_Order_First{91E9} 9|83r30
+92e4*Default_Bit_Order{91E9} 9|83r10
+X 24 s-stausa.ads
+203U14*Initialize 204i<c,__gnat_stack_usage_initialize>22
+268U14*Output_Results 272i<c,__gnat_stack_usage_output_results>22
+X 29 s-taskin.ads
+109P9*Task_Id(107R9)
+

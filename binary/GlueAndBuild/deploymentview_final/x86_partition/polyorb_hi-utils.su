@@ -1,0 +1,14 @@
+polyorb_hi-utils.adb:40:4:To_Hi_String	32	dynamic,bounded
+polyorb_hi-utils.ads:128:9:Hi_Stringip	4	static
+polyorb_hi-utils.ads:135:4:Length	32	dynamic,bounded
+polyorb_hi-utils.ads:138:4:Valid	4	static
+polyorb_hi-utils.ads:141:4:To_String	48	dynamic,bounded
+polyorb_hi-utils.ads:110:9:Naming_Entryip	4	static
+polyorb_hi-utils.ads:116:4:Tnaming_Table_Typebip	4	static
+polyorb_hi-utils.adb:40:4:To_Hi_String	416	dynamic,bounded
+polyorb_hi-utils.adb:73:4:Swap_Bytes	4	static
+polyorb_hi-utils.adb:99:4:Parse_String	64	dynamic,bounded
+polyorb_hi-utils.adb:118:4:Ttask_Id_Mappingbip	80	dynamic,bounded
+polyorb_hi-utils.adb:120:4:Set_Task_Id	32	dynamic,bounded
+polyorb_hi-utils.adb:129:4:Get_Task_Id	64	dynamic,bounded
+polyorb_hi-utils.adb:34:1:Utils	64	dynamic,bounded

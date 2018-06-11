@@ -1,0 +1,4 @@
+/home/taste/test1/Certyflie/crazyflie_support/src/platform_service.adb:38:4:Platform_Service_Init	8	static
+/home/taste/test1/Certyflie/crazyflie_support/src/platform_service.adb:54:4:Platform_Service_Test	0	static
+/home/taste/test1/Certyflie/crazyflie_support/src/platform_service.adb:80:4:Platform_Command_Process	48	static
+/home/taste/test1/Certyflie/crazyflie_support/src/platform_service.adb:63:4:Platform_Service_Handler	40	static

@@ -1,0 +1,6 @@
+/home/taste/test1/Certyflie/crazyflie_support/src/ext_uart.adb:93:8:IRQ_HANDLERP	16	static
+/home/taste/test1/Certyflie/crazyflie_support/src/ext_uart.adb:58:4:RECEPTIONTVIP	24	static
+/home/taste/test1/Certyflie/crazyflie_support/src/ext_uart.adb:109:4:INITIALIZE_EXT_UART	96	static
+/home/taste/test1/Certyflie/crazyflie_support/src/ext_uart.adb:180:4:GET_MESSAGE	16	static
+/home/taste/test1/Certyflie/crazyflie_support/src/ext_uart.adb:195:4:SEND_TO_UART	32	dynamic
+/home/taste/test1/Certyflie/crazyflie_support/src/ext_uart.adb:33:1:EXT_UART	32	static

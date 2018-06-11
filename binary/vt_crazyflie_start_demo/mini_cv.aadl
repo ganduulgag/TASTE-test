@@ -1,0 +1,46 @@
+-- Automatically Generated - For use with AADL2GlueC only - Do NOT modify! --
+
+SUBPROGRAM artificial_start_demo
+FEATURES
+	a:IN PARAMETER DataView::T_Uint16 {encoding=>UPER;};
+END artificial_start_demo;
+
+SUBPROGRAM IMPLEMENTATION artificial_start_demo.C
+PROPERTIES
+	FV_Name => "vt_crazyflie_start_demo";
+	Source_Language => C;
+END artificial_start_demo.C;
+
+SUBPROGRAM start_demo
+FEATURES
+	a:OUT PARAMETER DataView::T_Uint16 {encoding=>UPER;};
+END start_demo;
+
+SUBPROGRAM IMPLEMENTATION start_demo.C
+PROPERTIES
+	FV_Name => "vt_crazyflie_start_demo";
+	Source_Language => C;
+END start_demo.C;
+
+SUBPROGRAM led_on_vt
+FEATURES
+	a:OUT PARAMETER DataView::T_Uint16 {encoding=>UPER;};
+END led_on_vt;
+
+SUBPROGRAM IMPLEMENTATION led_on_vt.C
+PROPERTIES
+	FV_Name => "vt_crazyflie_start_demo";
+	Source_Language => C;
+END led_on_vt.C;
+
+SUBPROGRAM check_queue_vt
+FEATURES
+	res:IN PARAMETER DataView::T_Boolean {encoding=>NATIVE;};
+END check_queue_vt;
+
+SUBPROGRAM IMPLEMENTATION check_queue_vt.C
+PROPERTIES
+	FV_Name => "vt_crazyflie_start_demo";
+	Source_Language => C;
+END check_queue_vt.C;
+

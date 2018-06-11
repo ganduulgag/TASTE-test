@@ -1,0 +1,11 @@
+taste_dataview.adb:3:01: warning: "Unsigned_64" is already use-visible through previous use_type_clause at taste_dataview.ads:6
+taste_dataview.adb:4:01: warning: "Integer_64" is already use-visible through previous use_type_clause at taste_dataview.ads:7
+taste_dataview.adb:5:01: warning: "BIT" is already use-visible through previous use_type_clause at taste_dataview.ads:8
+taste_dataview.adb:26:12: warning: object "val" is always False at this point
+taste_dataview.adb:26:12: warning: (see assignment at line 25)
+taste_dataview.adb:29:49: warning: formal parameter "val" is not referenced
+taste_dataview.adb:59:52: warning: condition can only be False if invalid values present
+taste_dataview.adb:85:52: warning: condition can only be False if invalid values present
+taste_dataview.ads:4:20: warning: "OctetBuffer" is already use-visible through package use clause at line 3
+taste_dataview.ads:5:20: warning: "BitArray" is already use-visible through package use clause at line 3
+taste_dataview.ads:8:20: warning: "BIT" is already use-visible through package use clause at line 3

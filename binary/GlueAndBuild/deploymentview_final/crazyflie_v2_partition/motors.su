@@ -1,0 +1,6 @@
+/home/taste/test1/Certyflie/crazyflie_support/src/motors.adb:96:4:Motor_Set_Power	8	static
+/home/taste/test1/Certyflie/crazyflie_support/src/motors.adb:125:4:Motor_Set_Power_With_Bat_Compensation	16	static
+/home/taste/test1/Certyflie/crazyflie_support/src/motors.adb:160:4:Motors_Test	32	static
+/home/taste/test1/Certyflie/crazyflie_support/src/motors.adb:181:4:Motors_Reset	16	static
+/home/taste/test1/Certyflie/crazyflie_support/src/motors.adb:48:4:Motors_Init	48	static
+/home/taste/test1/Certyflie/crazyflie_support/src/motors.ads:36:1:Motors	0	static

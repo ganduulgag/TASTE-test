@@ -1,0 +1,8 @@
+polyorb_hi_generated-deployment.ads:16:8:Node_Typerp	32	dynamic,bounded
+polyorb_hi_generated-deployment.ads:49:3:Tut_Deployment_X86_Partition_Node_Image_Arraybip	4	static
+polyorb_hi_generated-deployment.ads:65:8:Entity_Typerp	32	dynamic,bounded
+polyorb_hi_generated-deployment.ads:92:3:Tut_Deployment_X86_Partition_Entity_Table_Arraybip	4	static
+polyorb_hi_generated-deployment.ads:121:3:Tut_Deployment_X86_Partition_Entity_Image_Arraybip	4	static
+polyorb_hi_generated-deployment.ads:139:8:Port_Typerp	32	dynamic,bounded
+polyorb_hi_generated-deployment.ads:160:3:Tut_Deployment_X86_Partition_Port_Table_Arraybip	4	static
+polyorb_hi_generated-deployment.ads:182:3:Tut_Deployment_X86_Partition_Port_Image_Arraybip	4	static

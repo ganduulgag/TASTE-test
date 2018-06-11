@@ -1,0 +1,70 @@
+V "GNAT Lib v6"
+A -O1
+A -gnatA
+A -g
+A -gnatwa
+A -gnatwG
+A -gnat12
+A -fstack-usage
+A -g
+A -gnata
+A -gnato
+A -g
+A -mtune=generic
+A -march=i686
+P ZX
+
+RN
+RR NO_ACCESS_SUBPROGRAMS
+RR NO_ALLOCATORS
+RR NO_DISPATCH
+RR NO_IO
+RR NO_RECURSION
+RR NO_UNCHECKED_ACCESS
+RR NO_UNCHECKED_DEALLOCATION
+RV NO_IMPLEMENTATION_ATTRIBUTES
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLEMENTATION_RESTRICTIONS
+RV NO_OBSOLESCENT_FEATURES
+RV SPARK_05
+
+U polyorb_hi.port_type_marshallers%b  polyorb_hi-port_type_marshallers.ads  82fe6eb4 NE OO PK
+Z ada%s			ada.ads			ada.ali
+Z ada.unchecked_conversion%s
+W interfaces%s		interfac.ads		interfac.ali
+W polyorb_hi%s		polyorb_hi.ads		polyorb_hi.ali
+W polyorb_hi.marshallers_g%s  polyorb_hi-marshallers_g.adb  polyorb_hi-marshallers_g.ali  EA
+Z polyorb_hi.messages%s	polyorb_hi-messages.adb	polyorb_hi-messages.ali
+Z polyorb_hi.streams%s	polyorb_hi-streams.ads	polyorb_hi-streams.ali
+
+U polyorb_hi.port_type_marshallers%s  polyorb_hi-port_type_marshallers.ads  49b8443e EB NE OO PK
+W interfaces%s		interfac.ads		interfac.ali
+W polyorb_hi%s		polyorb_hi.ads		polyorb_hi.ali
+W polyorb_hi.marshallers_g%s  polyorb_hi-marshallers_g.adb  polyorb_hi-marshallers_g.ali  EA
+Z polyorb_hi.messages%s	polyorb_hi-messages.adb	polyorb_hi-messages.ali
+
+D ada.ads		20070406091342 3ffc8e18 ada%s
+D a-unccon.ads		20070406091342 f9eb8f06 ada.unchecked_conversion%s
+D interfac.ads		20151118101227 4be8ce1b interfaces%s
+D polyorb_hi.ads	20180607235124 f77a07a6 polyorb_hi%s
+D polyorb_hi-marshallers_g.ads  20180607235124 77d4e337 polyorb_hi.marshallers_g%s
+D polyorb_hi-marshallers_g.adb  20180607235124 16a8c749 polyorb_hi.marshallers_g%b
+D polyorb_hi-messages.ads  20180607235124 891f9714 polyorb_hi.messages%s
+D polyorb_hi-port_type_marshallers.ads  20180607235124 82fe6eb4 polyorb_hi.port_type_marshallers%s
+D polyorb_hi-port_type_marshallers.ads  20180607235124 82fe6eb4 polyorb_hi.port_type_marshallers%b
+D polyorb_hi-streams.ads  20180607235124 54018470 polyorb_hi.streams%s
+D polyorb_hi_generated.ads  20180607235124 32a22d97 polyorb_hi_generated%s
+D polyorb_hi_generated-deployment.ads  20180611081810 0956f063 polyorb_hi_generated.deployment%s
+D system.ads		20151123113124 c6f79445 system%s
+D s-unstyp.ads		20140731130224 9d58a4c0 system.unsigned_types%s
+D /home/taste/tool-inst/include/ocarina/runtime/polyorb-hi-ada/native.adc  20180607235124 00000000
+X 3 interfac.ads
+38K9*Interfaces 183e15 9|34w6 37r34
+65M9*Unsigned_16 9|37r45
+X 4 polyorb_hi.ads
+35K9*PolyORB_HI 39e15 9|32r6 36r9 37r8
+X 5 polyorb_hi-marshallers_g.ads
+39k20*Marshallers_G 51e29 9|32w17 33r34 37r19
+X 9 polyorb_hi-port_type_marshallers.ads
+36K20*Port_Type_Marshallers[5|39] 4|35k9
+

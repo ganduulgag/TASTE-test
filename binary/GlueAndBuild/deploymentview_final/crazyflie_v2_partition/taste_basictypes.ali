@@ -1,0 +1,120 @@
+V "GNAT Lib v2017"
+A -O1
+A -gnatA
+A --RTS=/usr/gnat/arm-eabi/lib/gnat/ravenscar-full-stm32f4/
+A -mlittle-endian
+A -mfloat-abi=hard
+A -mcpu=cortex-m4
+A -mfpu=fpv4-sp-d16
+A -mthumb
+A -g
+A -gnatwa
+A -gnatwG
+A -gnat12
+A -fstack-usage
+A -g
+A -gnata
+A -gnato
+A -g
+P DB ES ZX
+
+RN
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RR NO_STREAMS
+RR NO_UNCHECKED_DEALLOCATION
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLEMENTATION_RESTRICTIONS
+RV NO_OBSOLESCENT_FEATURES
+RV SPARK_05
+
+U taste_basictypes%b	taste_basictypes.adb	1454839d NE OO PK KU
+W adaasn1rtl%s		adaasn1rtl.adb		adaasn1rtl.ali
+
+U taste_basictypes%s	taste_basictypes.ads	64f79272 EE NE OO PK KU
+W adaasn1rtl%s		adaasn1rtl.adb		adaasn1rtl.ali
+
+D ada.ads		20170517144320 76789da1 ada%s
+D a-charac.ads		20170517144320 2d3ec45b ada.characters%s
+D a-chlat1.ads		20170517144320 66457d31 ada.characters.latin_1%s
+D adaasn1rtl.ads	20180611081821 e9ad266d adaasn1rtl%s
+D interfac.ads		20170517144320 5ab55268 interfaces%s
+D system.ads		20170517144320 db831581 system%s
+D s-unstyp.ads		20170517144320 34867c83 system.unsigned_types%s
+D taste_basictypes.ads	20180611081821 8d5ab41f taste_basictypes%s
+D taste_basictypes.adb	20180611081821 70a311ef taste_basictypes%b
+D /home/taste/tool-inst/include/ocarina/runtime/polyorb-hi-ada/gnat_runtime.adc  20180607235124 00000000
+X 4 adaasn1rtl.ads
+8K9*adaasn1rtl 1380e15 8|2w6 3r5 4r10 5r10 6r10 7r10 8r10 16r27 24r75 25r28
+. 33r77 34r26 42r73 43r27 51r75 52r29 60r79 9|2w6 3r10 4r10 5r10 29r75 31r11
+. 33r12 55r77 57r11 59r12 81r73 83r11 85r12 107r75 109r11 111r12 133r79 135r11
+. 137r12
+15M9*BIT 8|8r21 9|5r21
+16A9*BitArray(15M9)<integer> 8|5r21
+20M12*Asn1Byte{5|63M9}
+21A9*OctetBuffer(20M12)<integer> 8|4r21
+23I12*Asn1Int{5|55I9} 8|7r21 16r38 34r37 9|4r21
+24M12*Asn1UInt{5|77M9} 8|6r21 25r39 43r38 9|3r21
+27B12*Asn1Boolean{boolean} 8|52r40
+95R9*ASN1_RESULT 98e14 8|24r86 33r88 42r84 51r86 60r90 9|29r86 31r22 33r23
+. 55r88 57r22 59r23 81r84 83r22 85r23 107r86 109r22 111r23 133r90 135r22
+. 137r23
+96b7*Success{boolean} 9|33m36 59m36 85m36 111m36 137m36
+97i7*ErrorCode{integer} 9|33m95 59m68 85m81 111m61 137m53
+X 5 interfac.ads
+55I9*Integer_64<long_long_integer>
+63M9*Unsigned_8
+77M9*Unsigned_64
+X 8 taste_basictypes.ads
+12K9*TASTE_BasicTypes 68l5 68e21 9|8b14 144l5 144t21
+16I9*asn1SccT_Int32{4|23I12} 19r46 21r37 24r52 9|13r46 21r37 23r10 29r52
+19V10*asn1SccT_Int32_Equal{boolean} 19>31 19>37 9|13b10 19l5 19t25
+19i31 val1{16I9} 9|13b31 17r16
+19i37 val2{16I9} 9|13b37 17r23
+21V10*asn1SccT_Int32_Init{16I9} 9|21b10 27l5 27t24
+23i1*ERR_T_INT32{integer} 9|33r108
+24V10*asn1SccT_Int32_IsConstraintValid{4|95R9} 24>43 9|29b10 35l5 35t37
+24i43 val{16I9} 9|29b43 33r64 33r74
+25M9*asn1SccT_UInt32{4|24M12} 28r47 30r38 33r53 9|39r47 47r38 49r10 55r53
+28V10*asn1SccT_UInt32_Equal{boolean} 28>32 28>38 9|39b10 45l5 45t26
+28m32 val1{25M9} 9|39b32 43r16
+28m38 val2{25M9} 9|39b38 43r23
+30V10*asn1SccT_UInt32_Init{25M9} 9|47b10 53l5 53t25
+32i1*ERR_T_UINT32{integer} 9|59r81
+33V10*asn1SccT_UInt32_IsConstraintValid{4|95R9} 33>44 9|55b10 61l5 61t38
+33m44 val{25M9} 9|55b44 59r48
+34I9*asn1SccT_Int8{4|23I12} 37r45 39r36 42r51 9|65r45 73r36 75r10 81r51
+37V10*asn1SccT_Int8_Equal{boolean} 37>30 37>36 9|65b10 71l5 71t24
+37i30 val1{34I9} 9|65b30 69r16
+37i36 val2{34I9} 9|65b36 69r23
+39V10*asn1SccT_Int8_Init{34I9} 9|73b10 79l5 79t23
+41i1*ERR_T_INT8{integer} 9|85r94
+42V10*asn1SccT_Int8_IsConstraintValid{4|95R9} 42>42 9|81b10 87l5 87t36
+42i42 val{34I9} 9|81b42 85r57 85r67
+43M9*asn1SccT_UInt8{4|24M12} 46r46 48r37 51r52 9|91r46 99r37 101r10 107r52
+46V10*asn1SccT_UInt8_Equal{boolean} 46>31 46>37 9|91b10 97l5 97t25
+46m31 val1{43M9} 9|91b31 95r16
+46m37 val2{43M9} 9|91b37 95r23
+48V10*asn1SccT_UInt8_Init{43M9} 9|99b10 105l5 105t24
+50i1*ERR_T_UINT8{integer} 9|111r74
+51V10*asn1SccT_UInt8_IsConstraintValid{4|95R9} 51>43 9|107b10 113l5 113t37
+51m43 val{43M9} 9|107b43 111r48
+52B9*asn1SccT_Boolean{4|27E12} 55r48 57r39 60r54 9|117r48 125r39 127r10 133r54
+55V10*asn1SccT_Boolean_Equal{boolean} 55>33 55>39 9|117b10 123l5 123t27
+55b33 val1{52E9} 9|117b33 121r16
+55b39 val2{52E9} 9|117b39 121r23
+57V10*asn1SccT_Boolean_Init{52E9} 9|125b10 131l5 131t26
+59i1*ERR_T_BOOLEAN{integer} 9|137r66
+60V10*asn1SccT_Boolean_IsConstraintValid{4|95R9} 60>45 9|133b10 139l5 139t39
+60b45 val{52E9} 9|133b45
+X 9 taste_basictypes.adb
+23i5 val{8|16I9} 25m5 26r12
+31r5 ret{4|95R9} 33m5 34r12
+49m5 val{8|25M9} 51m5 52r12
+57r5 ret{4|95R9} 59m5 60r12
+75i5 val{8|34I9} 77m5 78r12
+83r5 ret{4|95R9} 85m5 86r12
+101m5 val{8|43M9} 103m5 104r12
+109r5 ret{4|95R9} 111m5 112r12
+127b5 val{8|52E9} 129m5 130r12
+135r5 ret{4|95R9} 137m5 138r12
+

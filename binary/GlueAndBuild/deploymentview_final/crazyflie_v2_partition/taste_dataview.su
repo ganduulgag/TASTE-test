@@ -1,0 +1,9 @@
+/home/taste/test1/binary/led_control/led_control/taste_dataview.adb:13:1:Asn1scctaste_Boolean_Equal	0	static
+/home/taste/test1/binary/led_control/led_control/taste_dataview.adb:21:1:Asn1scctaste_Boolean_Init	0	static
+/home/taste/test1/binary/led_control/led_control/taste_dataview.adb:29:1:Asn1scctaste_Boolean_Isconstraintvalid	0	static
+/home/taste/test1/binary/led_control/led_control/taste_dataview.adb:39:1:Asn1sccmyinteger_Equal	0	static
+/home/taste/test1/binary/led_control/led_control/taste_dataview.adb:47:1:Asn1sccmyinteger_Init	0	static
+/home/taste/test1/binary/led_control/led_control/taste_dataview.adb:55:1:Asn1sccmyinteger_Isconstraintvalid	0	static
+/home/taste/test1/binary/led_control/led_control/taste_dataview.adb:65:1:Asn1scct_Uint16_Equal	0	static
+/home/taste/test1/binary/led_control/led_control/taste_dataview.adb:73:1:Asn1scct_Uint16_Init	0	static
+/home/taste/test1/binary/led_control/led_control/taste_dataview.adb:81:1:Asn1scct_Uint16_Isconstraintvalid	0	static

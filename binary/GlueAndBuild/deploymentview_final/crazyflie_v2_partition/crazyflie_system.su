@@ -1,0 +1,5 @@
+/home/taste/test1/Certyflie/src/crazyflie_system.adb:53:4:System_Init	24	static
+/home/taste/test1/Certyflie/src/crazyflie_system.adb:93:4:System_Self_Test	8	static
+/home/taste/test1/Certyflie/src/crazyflie_system.adb:127:4:System_Loop	40	static
+/home/taste/test1/Certyflie/src/crazyflie_system.adb:147:4:Last_Chance_Handler	24	static
+/home/taste/test1/Certyflie/src/crazyflie_system.adb:44:1:Crazyflie_System	0	static

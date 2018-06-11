@@ -1,0 +1,13 @@
+pohicdriver_bluetooth.ads:29:6:ADDRESS_TIP	4	static
+pohicdriver_bluetooth.ads:40:6:BLUETOOTH_CONF_T_EXISTIP	4	static
+pohicdriver_bluetooth.ads:44:6:BLUETOOTH_CONF_TIP	4	static
+pohicdriver_bluetooth.adb:13:1:DATARATE_T_EQUAL	4	static
+pohicdriver_bluetooth.adb:21:1:DATARATE_T_INIT	4	static
+pohicdriver_bluetooth.adb:29:1:DATARATE_T_ISCONSTRAINTVALID	4	static
+pohicdriver_bluetooth.adb:39:1:ADDRESS_T_EQUAL	32	dynamic,bounded
+pohicdriver_bluetooth.adb:47:1:ADDRESS_T_INIT	32	static
+pohicdriver_bluetooth.adb:64:1:BLUETOOTH_CONF_T_CHANNEL_EQUAL	4	static
+pohicdriver_bluetooth.adb:72:1:BLUETOOTH_CONF_T_EQUAL	32	dynamic,bounded
+pohicdriver_bluetooth.adb:100:1:BLUETOOTH_CONF_T_CHANNEL_INIT	4	static
+pohicdriver_bluetooth.adb:107:1:BLUETOOTH_CONF_T_INIT	32	dynamic,bounded
+pohicdriver_bluetooth.adb:123:1:BLUETOOTH_CONF_T_ISCONSTRAINTVALID	8	static

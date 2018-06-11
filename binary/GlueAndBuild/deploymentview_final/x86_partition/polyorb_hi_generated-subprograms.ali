@@ -1,0 +1,64 @@
+V "GNAT Lib v6"
+A -O1
+A -gnatA
+A -g
+A -gnatwa
+A -gnatwG
+A -gnat12
+A -fstack-usage
+A -g
+A -gnata
+A -gnato
+A -g
+A -mtune=generic
+A -march=i686
+P SS ZX
+
+RN
+RR NO_ACCESS_SUBPROGRAMS
+RR NO_ALLOCATORS
+RR NO_DISPATCH
+RR NO_IO
+RR NO_RECURSION
+RR NO_UNCHECKED_ACCESS
+RR NO_UNCHECKED_DEALLOCATION
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLEMENTATION_RESTRICTIONS
+RV NO_OBSOLESCENT_FEATURES
+
+U polyorb_hi_generated.subprograms%b  polyorb_hi_generated-subprograms.adb  8ae1e5bf NE OO PK
+W polyorb_hi_drivers_client_ble%s  polyorb_hi_drivers_client_ble.adb  polyorb_hi_drivers_client_ble.ali
+W polyorb_hi_generated%s  polyorb_hi_generated.ads  polyorb_hi_generated.ali
+
+U polyorb_hi_generated.subprograms%s  polyorb_hi_generated-subprograms.ads  4962832a EE NE OO PK
+W polyorb_hi_generated%s  polyorb_hi_generated.ads  polyorb_hi_generated.ali
+
+D ada.ads		20070406091342 3ffc8e18 ada%s
+D a-unccon.ads		20070406091342 f9eb8f06 ada.unchecked_conversion%s
+D interfac.ads		20151118101227 4be8ce1b interfaces%s
+D polyorb_hi.ads	20180607235124 f77a07a6 polyorb_hi%s
+D polyorb_hi-errors.ads	20180607235124 6deb16d4 polyorb_hi.errors%s
+D polyorb_hi-streams.ads  20180607235124 54018470 polyorb_hi.streams%s
+D polyorb_hi-utils.ads	20180607235124 8c6cb8de polyorb_hi.utils%s
+D polyorb_hi_drivers_client_ble.ads  20180607235124 544a9576 polyorb_hi_drivers_client_ble%s
+D polyorb_hi_generated.ads  20180607235124 32a22d97 polyorb_hi_generated%s
+D polyorb_hi_generated-deployment.ads  20180611081810 0956f063 polyorb_hi_generated.deployment%s
+D polyorb_hi_generated-subprograms.ads  20180611081810 7bc0aebd polyorb_hi_generated.subprograms%s
+D polyorb_hi_generated-subprograms.adb  20180611081810 a56bde74 polyorb_hi_generated.subprograms%b
+D system.ads		20151123113124 c6f79445 system%s
+D s-assert.ads		20140225151544 cd8d2c94 system.assertions%s
+D s-exctab.ads		20140225151139 54135002 system.exception_table%s
+D s-secsta.ads		20140225151139 86a2856d system.secondary_stack%s
+D s-stalib.ads		20151112104907 09bd3940 system.standard_library%s
+D s-stoele.ads		20140225151139 2dc34a04 system.storage_elements%s
+D s-unstyp.ads		20140731130224 9d58a4c0 system.unsigned_types%s
+D /home/taste/tool-inst/include/ocarina/runtime/polyorb-hi-ada/native.adc  20180607235124 00000000
+X 8 polyorb_hi_drivers_client_ble.ads
+37K9*PolyORB_HI_Drivers_Client_BLE 55e34 12|9w6 14r12
+47U14*Receive 12|14r42
+X 9 polyorb_hi_generated.ads
+34K9*PolyORB_HI_Generated 38e25 11|10r9 14r5 12|11r14 16r5
+X 11 polyorb_hi_generated-subprograms.ads
+10K30*Subprograms 9|34k9 11|14l26 14e37 12|11b35 16l26 16t37
+12U13*Client_BLE_Receive 12|13b13
+

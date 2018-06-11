@@ -1,0 +1,6 @@
+ext_uart.adb:20:11: warning: no entities of "STM32.Board" are referenced
+ext_uart.adb:29:06: warning: unit "System" is not referenced
+ext_uart.adb:30:06: warning: no entities of "Interfaces" are referenced
+ext_uart.adb:45:04: warning: constant "Rx_Channel" is not referenced
+ext_uart.adb:46:04: warning: constant "Rx_Stream" is not referenced
+ext_uart.adb:58:14: warning: variable "Reception" is not referenced

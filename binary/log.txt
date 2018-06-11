@@ -1,0 +1,332 @@
+From: /home/taste/test1/binary
+mono "$DMT/asn1scc/taste-extract-asn-from-design.exe" -i "/home/taste/test1/__iv_1_3.aadl" -k "/tmp/uniqhometastetest1__iv_1_3.aadl/dataview-uniq.asn" -c "/tmp/uniqhometastetest1__iv_1_3.aadl/dataview-uniq.acn"
+From: /home/taste/test1/binary
+cp "/tmp/uniqhometastetest1__iv_1_3.aadl/dataview-uniq.asn" . 2>/dev/null || exit 0
+From: /home/taste/test1/binary
+cp "/tmp/uniqhometastetest1__iv_1_3.aadl/dataview-uniq.acn" . 2>/dev/null || exit 0
+From: /home/taste/test1/binary
+cp "/tmp/uniqhometastetest1__iv_1_3.aadl/dataview-uniq.acn" . 2>/dev/null || exit 0
+From: /home/taste/test1/binary
+mono "$DMT/asn1scc/taste-extract-asn-from-design.exe" -i "/home/taste/test1/__iv_1_3.aadl" -j "/tmp/uniqhometastetest1__iv_1_3.aadl/dataview-uniq.asn"
+From: /home/taste/test1/binary
+mono "$DMT/asn1scc/taste-extract-asn-from-design.exe" -i "/home/taste/test1/__iv_1_3.aadl" -k "/tmp/uniqhometastetest1__iv_1_3.aadl/dataview-uniq.asn"
+From: /home/taste/test1/binary/auto-src
+cp "$DMT"/AutoGUI/debug_messages.? .
+From: /home/taste/test1/binary/auto-src
+cp "$DMT"/AutoGUI/timeInMS.? .
+From: /home/taste/test1/binary/auto-src
+cp "/tmp/uniqhometastetest1__iv_1_3.aadl/dataview-uniq.asn" .
+From: /home/taste/test1/binary/auto-src
+cp "/home/taste/test1/binary/dataview-uniq.acn" .
+From: /home/taste/test1/binary/auto-src
+msgPrinter "dataview-uniq.asn"
+From: /home/taste/test1/binary/auto-src
+msgPrinterASN1 "dataview-uniq.asn"
+From: /home/taste/test1/binary/led_control
+unzip -o "/home/taste/test1/led_control.zip"
+From: /home/taste/test1/binary/led_control
+find "led_control"/ ! -type d -exec chmod -x '{}' ';'
+From: /home/taste/test1/binary/led_control
+find "led_control"/ -exec touch '{}' ';'
+From: /home/taste/test1/binary/led_control
+find "led_control"/ -type f -iname '*.o' -exec rm -f '{}' ';'
+From: /home/taste/test1/binary/crazyflie
+unzip -o "/home/taste/test1/crazyflie.zip"
+From: /home/taste/test1/binary/crazyflie
+find "crazyflie"/ ! -type d -exec chmod -x '{}' ';'
+From: /home/taste/test1/binary/crazyflie
+find "crazyflie"/ -exec touch '{}' ';'
+From: /home/taste/test1/binary/crazyflie
+find "crazyflie"/ -type f -iname '*.o' -exec rm -f '{}' ';'
+From: /home/taste/test1/binary
+cleanupDV.pl "__dv_1_3.aadl" > a_temp_name && mv a_temp_name "__dv_1_3.aadl"
+From: /home/taste/test1/binary
+"buildsupport"  -x 100  -g  --keep-case  --gw --glue -i "/home/taste/test1/__iv_1_3.aadl"  -c "__dv_1_3.aadl" $(ocarina-config --resources)/AADLv2/ocarina_components.aadl  -d D_view_aadlv2.aadl --smp2 /home/taste/tool-inst/share/config_ellidiss/TASTE_IV_Properties.aadl /home/taste/tool-inst/share/config_ellidiss/TASTE_DV_Properties.aadl
+From: /home/taste/test1/binary
+TASTE --load-concurrency-view ConcurrencyView/process.aadl  --update-properties "/home/taste/test1/ConcurrencyView_Properties.aadl" --show false
+From: /home/taste/test1/binary/GlueAndBuild
+cp -u "/home/taste/test1/binary/GlueAndBuild/crazyflie_v2_partition_taste_api_wrappers.adb" . 2>/dev/null || exit 0
+From: /home/taste/test1/binary/GlueAndBuild
+cp -u "/home/taste/test1/binary/GlueAndBuild/crazyflie_v2_partition_taste_api_wrappers.ads" . 2>/dev/null || exit 0
+From: /home/taste/test1/binary/GlueAndBuild
+cp -u "/home/taste/test1/binary/GlueAndBuild/crazyflie_wrappers.adb" . 2>/dev/null || exit 0
+From: /home/taste/test1/binary/GlueAndBuild
+cp -u "/home/taste/test1/binary/GlueAndBuild/crazyflie_wrappers.ads" . 2>/dev/null || exit 0
+From: /home/taste/test1/binary/GlueAndBuild
+cp -u "/home/taste/test1/binary/GlueAndBuild/ground_async_ri_wrappers.adb" . 2>/dev/null || exit 0
+From: /home/taste/test1/binary/GlueAndBuild
+cp -u "/home/taste/test1/binary/GlueAndBuild/ground_async_ri_wrappers.ads" . 2>/dev/null || exit 0
+From: /home/taste/test1/binary/GlueAndBuild
+cp -u "/home/taste/test1/binary/GlueAndBuild/ground_wrappers.adb" . 2>/dev/null || exit 0
+From: /home/taste/test1/binary/GlueAndBuild
+cp -u "/home/taste/test1/binary/GlueAndBuild/ground_wrappers.ads" . 2>/dev/null || exit 0
+From: /home/taste/test1/binary/GlueAndBuild
+cp -u "/home/taste/test1/binary/GlueAndBuild/led_control_wrappers.adb" . 2>/dev/null || exit 0
+From: /home/taste/test1/binary/GlueAndBuild
+cp -u "/home/taste/test1/binary/GlueAndBuild/led_control_wrappers.ads" . 2>/dev/null || exit 0
+From: /home/taste/test1/binary/GlueAndBuild
+cp -u "/home/taste/test1/binary/GlueAndBuild/vt_crazyflie_pulse_wrappers.adb" . 2>/dev/null || exit 0
+From: /home/taste/test1/binary/GlueAndBuild
+cp -u "/home/taste/test1/binary/GlueAndBuild/vt_crazyflie_pulse_wrappers.ads" . 2>/dev/null || exit 0
+From: /home/taste/test1/binary/GlueAndBuild
+cp -u "/home/taste/test1/binary/GlueAndBuild/vt_crazyflie_start_demo_wrappers.adb" . 2>/dev/null || exit 0
+From: /home/taste/test1/binary/GlueAndBuild
+cp -u "/home/taste/test1/binary/GlueAndBuild/vt_crazyflie_start_demo_wrappers.ads" . 2>/dev/null || exit 0
+From: /home/taste/test1/binary/GlueAndBuild
+cp -u "/home/taste/test1/binary/crazyflie/crazyflie/crazyflie_wrappers.adb" . 2>/dev/null || exit 0
+From: /home/taste/test1/binary/GlueAndBuild
+cp -u "/home/taste/test1/binary/crazyflie/crazyflie/crazyflie_wrappers.ads" . 2>/dev/null || exit 0
+From: /home/taste/test1/binary/GlueAndBuild
+cp -u "/home/taste/test1/binary/crazyflie/crazyflie_wrappers.adb" . 2>/dev/null || exit 0
+From: /home/taste/test1/binary/GlueAndBuild
+cp -u "/home/taste/test1/binary/crazyflie/crazyflie_wrappers.ads" . 2>/dev/null || exit 0
+From: /home/taste/test1/binary/GlueAndBuild
+cp -u "/home/taste/test1/binary/crazyflie_v2_partition_taste_api/crazyflie_v2_partition_taste_api_wrappers.adb" . 2>/dev/null || exit 0
+From: /home/taste/test1/binary/GlueAndBuild
+cp -u "/home/taste/test1/binary/crazyflie_v2_partition_taste_api/crazyflie_v2_partition_taste_api_wrappers.ads" . 2>/dev/null || exit 0
+From: /home/taste/test1/binary/GlueAndBuild
+cp -u "/home/taste/test1/binary/ground/GUI/ground_async_ri_wrappers.adb" . 2>/dev/null || exit 0
+From: /home/taste/test1/binary/GlueAndBuild
+cp -u "/home/taste/test1/binary/ground/GUI/ground_async_ri_wrappers.ads" . 2>/dev/null || exit 0
+From: /home/taste/test1/binary/GlueAndBuild
+cp -u "/home/taste/test1/binary/ground/GUI/ground_wrappers.adb" . 2>/dev/null || exit 0
+From: /home/taste/test1/binary/GlueAndBuild
+cp -u "/home/taste/test1/binary/ground/GUI/ground_wrappers.ads" . 2>/dev/null || exit 0
+From: /home/taste/test1/binary/GlueAndBuild
+cp -u "/home/taste/test1/binary/ground/ext/ground_async_ri_wrappers.adb" . 2>/dev/null || exit 0
+From: /home/taste/test1/binary/GlueAndBuild
+cp -u "/home/taste/test1/binary/ground/ext/ground_async_ri_wrappers.ads" . 2>/dev/null || exit 0
+From: /home/taste/test1/binary/GlueAndBuild
+cp -u "/home/taste/test1/binary/ground/ext/ground_wrappers.adb" . 2>/dev/null || exit 0
+From: /home/taste/test1/binary/GlueAndBuild
+cp -u "/home/taste/test1/binary/ground/ext/ground_wrappers.ads" . 2>/dev/null || exit 0
+From: /home/taste/test1/binary/GlueAndBuild
+cp -u "/home/taste/test1/binary/ground/ground_async_ri_wrappers.adb" . 2>/dev/null || exit 0
+From: /home/taste/test1/binary/GlueAndBuild
+cp -u "/home/taste/test1/binary/ground/ground_async_ri_wrappers.ads" . 2>/dev/null || exit 0
+From: /home/taste/test1/binary/GlueAndBuild
+cp -u "/home/taste/test1/binary/ground/ground_wrappers.adb" . 2>/dev/null || exit 0
+From: /home/taste/test1/binary/GlueAndBuild
+cp -u "/home/taste/test1/binary/ground/ground_wrappers.ads" . 2>/dev/null || exit 0
+From: /home/taste/test1/binary/GlueAndBuild
+cp -u "/home/taste/test1/binary/led_control/led_control/led_control_wrappers.adb" . 2>/dev/null || exit 0
+From: /home/taste/test1/binary/GlueAndBuild
+cp -u "/home/taste/test1/binary/led_control/led_control/led_control_wrappers.ads" . 2>/dev/null || exit 0
+From: /home/taste/test1/binary/GlueAndBuild
+cp -u "/home/taste/test1/binary/led_control/led_control_wrappers.adb" . 2>/dev/null || exit 0
+From: /home/taste/test1/binary/GlueAndBuild
+cp -u "/home/taste/test1/binary/led_control/led_control_wrappers.ads" . 2>/dev/null || exit 0
+From: /home/taste/test1/binary/GlueAndBuild
+cp -u "/home/taste/test1/binary/vt_crazyflie_pulse/vt_crazyflie_pulse_wrappers.adb" . 2>/dev/null || exit 0
+From: /home/taste/test1/binary/GlueAndBuild
+cp -u "/home/taste/test1/binary/vt_crazyflie_pulse/vt_crazyflie_pulse_wrappers.ads" . 2>/dev/null || exit 0
+From: /home/taste/test1/binary/GlueAndBuild
+cp -u "/home/taste/test1/binary/vt_crazyflie_start_demo/vt_crazyflie_start_demo_wrappers.adb" . 2>/dev/null || exit 0
+From: /home/taste/test1/binary/GlueAndBuild
+cp -u "/home/taste/test1/binary/vt_crazyflie_start_demo/vt_crazyflie_start_demo_wrappers.ads" . 2>/dev/null || exit 0
+From: /home/taste/test1/binary/GlueAndBuild
+cleanupDV.pl "__dv_1_3.aadl" > a_temp_name && mv a_temp_name "__dv_1_3.aadl"
+From: /home/taste/test1/binary/led_control
+rm -f "led_control.adb"
+From: /home/taste/test1/binary/led_control
+mv "led_control.ads" "led_control"
+From: /home/taste/test1/binary/led_control
+mv "led_control_wrappers.ads" "led_control"
+From: /home/taste/test1/binary/led_control
+mv "led_control_wrappers.adb" "led_control"
+From: /home/taste/test1/binary/crazyflie
+rm -f "crazyflie.adb"
+From: /home/taste/test1/binary/crazyflie
+mv "crazyflie_wrappers.ads" "crazyflie"
+From: /home/taste/test1/binary/crazyflie
+mv "crazyflie_wrappers.adb" "crazyflie"
+From: /home/taste/test1/binary/crazyflie
+mv "crazyflie.ads" "crazyflie"
+for crazyflie_v2_partition, identified CC:
+arm-eabi-gcc
+for crazyflie_v2_partition, identified CFLAGS:
+
+for crazyflie_v2_partition, identified LDFLAGS:
+
+for x86_partition, identified CC:
+gcc
+for x86_partition, identified CFLAGS:
+
+for x86_partition, identified LDFLAGS:
+
+From: /home/taste/test1/binary/GlueAndBuild
+cp "/tmp/uniqhometastetest1__iv_1_3.aadl/dataview-uniq.asn" .
+From: /home/taste/test1/binary/GlueAndBuild/glueled_control
+"$GNATGCC" -c -I . -DSTATIC="" -g   -std=c99  -mfloat-abi=hard    -DNDEBUG    -I ../../auto-src       -I "../../led_control/led_control/" -I "../../crazyflie/crazyflie/"   -I ~/tool-src/misc/ZestSC1/Inc/  *.c
+From: /home/taste/test1/binary/GlueAndBuild/gluecrazyflie
+"$GNATGCC" -c -I . -DSTATIC="" -g   -std=c99  -mfloat-abi=hard    -DNDEBUG    -I ../../auto-src       -I "../../led_control/led_control/" -I "../../crazyflie/crazyflie/"   -I ~/tool-src/misc/ZestSC1/Inc/  *.c
+From: /home/taste/test1/binary/GlueAndBuild/glueground
+"$GNATGCC" -c -I . -DSTATIC="" -g   -std=c99      -I ../../auto-src       -I "../../led_control/led_control/" -I "../../crazyflie/crazyflie/"   -I ~/tool-src/misc/ZestSC1/Inc/  *.c
+From: /home/taste/test1/binary/GlueAndBuild/gluecrazyflie_v2_partition_taste_api
+"$GNATGCC" -c -I . -DSTATIC="" -g   -std=c99  -mfloat-abi=hard    -DNDEBUG    -I ../../auto-src       -I "../../led_control/led_control/" -I "../../crazyflie/crazyflie/"   -I ~/tool-src/misc/ZestSC1/Inc/  *.c
+From: /home/taste/test1/binary/GlueAndBuild/gluevt_crazyflie_pulse
+"$GNATGCC" -c -I . -DSTATIC="" -g   -std=c99  -mfloat-abi=hard    -DNDEBUG    -I ../../auto-src       -I "../../led_control/led_control/" -I "../../crazyflie/crazyflie/"   -I ~/tool-src/misc/ZestSC1/Inc/  *.c
+From: /home/taste/test1/binary/GlueAndBuild/gluevt_crazyflie_start_demo
+"$GNATGCC" -c -I . -DSTATIC="" -g   -std=c99  -mfloat-abi=hard    -DNDEBUG    -I ../../auto-src       -I "../../led_control/led_control/" -I "../../crazyflie/crazyflie/"   -I ~/tool-src/misc/ZestSC1/Inc/  *.c
+From: /home/taste/test1/binary/led_control/led_control
+for i in `/bin/ls ../../GlueAndBuild/glueled_control/*.ad? 2>/dev/null | grep -v '/asn1_'` ; do cp "$i"  . ; done
+From: /home/taste/test1/binary/led_control/led_control
+cp ../../GlueAndBuild/glueled_control/adaasn1rtl.ad? . 2>/dev/null ; exit 0
+From: /home/taste/test1/binary/led_control/led_control
+cp ../../GlueAndBuild/glueled_control/taste_dataview.ad? . 2>/dev/null ; exit 0
+From: /home/taste/test1/binary/led_control/led_control
+cp ../../GlueAndBuild/glueled_control/adaasn1rtl.ad? . 2>/dev/null ; exit 0
+From: /home/taste/test1/binary/led_control/led_control
+cp ../../GlueAndBuild/glueled_control/taste_basictypes.ad? . 2>/dev/null ; exit 0
+From: /home/taste/test1/binary/led_control/led_control
+for i in led_control_vm_if.c led_control_vm_if.h vm_callback.c ; do if [ -f ../$i ] ; then cp ../$i . ; fi ; done
+From: /home/taste/test1/binary/led_control/led_control
+for i in hpredef.h invoke_ri.c vm_callback.h ; do if [ -f ../$i ] ; then cp ../$i . ; fi ; done
+From: /home/taste/test1/binary/led_control/led_control
+cp ../*polyorb_interface.h . 2>/dev/null || exit 0
+From: /home/taste/test1/binary/led_control/led_control
+rm -f ../dataview.ad[sb] 2>/dev/null || exit 0
+From: /home/taste/test1/binary/led_control/led_control
+"$GNATGCC" -c -I . -DSTATIC="" -g   -std=c99  -mfloat-abi=hard    -DNDEBUG    -I ../../GlueAndBuild/glueled_control/ -I ../../auto-src/ *.c
+From: /home/taste/test1/binary/led_control
+"$GNATGCC" -c -I ../GlueAndBuild/glueled_control/ -I ../auto-src/ -I . -DSTATIC="" -g   -std=c99  -mfloat-abi=hard    -DNDEBUG    *.c
+From: /home/taste/test1/binary/crazyflie/crazyflie
+for i in `/bin/ls ../../GlueAndBuild/gluecrazyflie/*.ad? 2>/dev/null | grep -v '/asn1_'` ; do cp "$i"  . ; done
+From: /home/taste/test1/binary/crazyflie/crazyflie
+cp ../../GlueAndBuild/gluecrazyflie/adaasn1rtl.ad? . 2>/dev/null ; exit 0
+From: /home/taste/test1/binary/crazyflie/crazyflie
+cp ../../GlueAndBuild/gluecrazyflie/taste_dataview.ad? . 2>/dev/null ; exit 0
+From: /home/taste/test1/binary/crazyflie/crazyflie
+cp ../../GlueAndBuild/gluecrazyflie/adaasn1rtl.ad? . 2>/dev/null ; exit 0
+From: /home/taste/test1/binary/crazyflie/crazyflie
+cp ../../GlueAndBuild/gluecrazyflie/taste_basictypes.ad? . 2>/dev/null ; exit 0
+From: /home/taste/test1/binary/crazyflie/crazyflie
+for i in crazyflie_vm_if.c crazyflie_vm_if.h vm_callback.c ; do if [ -f ../$i ] ; then cp ../$i . ; fi ; done
+From: /home/taste/test1/binary/crazyflie/crazyflie
+for i in hpredef.h invoke_ri.c vm_callback.h ; do if [ -f ../$i ] ; then cp ../$i . ; fi ; done
+From: /home/taste/test1/binary/crazyflie/crazyflie
+cp ../*polyorb_interface.h . 2>/dev/null || exit 0
+From: /home/taste/test1/binary/crazyflie/crazyflie
+rm -f ../dataview.ad[sb] 2>/dev/null || exit 0
+From: /home/taste/test1/binary/crazyflie/crazyflie
+"$GNATGCC" -c -I . -DSTATIC="" -g   -std=c99  -mfloat-abi=hard    -DNDEBUG    -I ../../GlueAndBuild/gluecrazyflie/ -I ../../auto-src/ *.c
+From: /home/taste/test1/binary/crazyflie
+"$GNATGCC" -c -I ../GlueAndBuild/gluecrazyflie/ -I ../auto-src/ -I . -DSTATIC="" -g   -std=c99  -mfloat-abi=hard    -DNDEBUG    *.c
+From: /home/taste/test1/binary/ground
+for i in * ; do if [ -f "$i" -a ! -e ext/"$i" ] ; then ln -s ../"$i" ext/ ; fi ; done
+From: /home/taste/test1/binary/ground/ext
+cp "$DMT"/AutoGUI/queue_manager.? .
+From: /home/taste/test1/binary/ground/ext
+cp ../*polyorb_interface.? . 2>/dev/null || exit 0
+From: /home/taste/test1/binary/ground/ext
+cp ../Context-*.? . 2>/dev/null || exit 0
+From: /home/taste/test1/binary/ground/ext
+rm -f ../*-uniq.? *-uniq.? 2>/dev/null || exit 0
+From: /home/taste/test1/binary/ground/ext
+"$GNATGCC" -c -I . -DSTATIC="" -g   -std=c99      -I ../../GlueAndBuild/glueground/ -I ../../auto-src/ *.c
+From: /home/taste/test1/binary/ground
+for i in * ; do if [ -f "$i" -a ! -e GUI/"$i" ] ; then ln -s ../"$i" GUI/ ; fi ; done
+From: /home/taste/test1/binary/ground/GUI
+cp "$DMT"/AutoGUI/* .
+From: /home/taste/test1/binary/ground/GUI
+cat Makefile | sed 's,DataView,dataview-uniq,g' > a_temp_name && mv a_temp_name Makefile
+From: /home/taste/test1/binary/ground/GUI
+cat Makefile | sed 's,applicationName,ground_GUI,g' > a_temp_name && mv a_temp_name Makefile
+From: /home/taste/test1/binary/ground/GUI
+cp -u ../../GlueAndBuild/glueground/C_*.[ch] .
+From: /home/taste/test1/binary/GlueAndBuild/glueground/python
+cp "$DMT"/AutoGUI/queue_manager.? .
+From: /home/taste/test1/binary/GlueAndBuild/glueground/python
+cp "$DMT"/AutoGUI/timeInMS.? .
+From: /home/taste/test1/binary/GlueAndBuild/glueground/python
+cp "$DMT"/AutoGUI/debug_messages.? .
+From: /home/taste/test1/binary/GlueAndBuild/glueground/python
+cp "/home/taste/test1/binary"/ground/ground_enums_def.h .
+From: /home/taste/test1/binary/GlueAndBuild/glueground/python
+cp "/tmp/uniqhometastetest1__iv_1_3.aadl/dataview-uniq.asn" .
+From: /home/taste/test1/binary/GlueAndBuild/glueground/python
+cp "/home/taste/test1/binary/dataview-uniq.acn" .
+From: /home/taste/test1/binary/GlueAndBuild/glueground/python
+asn2dataModel -o asn2dataModel -toPython dataview-uniq.asn
+From: /home/taste/test1/binary/GlueAndBuild/glueground/python/asn2dataModel
+cp "/home/taste/test1/binary/dataview-uniq.acn" .
+From: /home/taste/test1/binary/GlueAndBuild/glueground/python/asn2dataModel
+cp "/home/taste/test1/binary"/ground/interface_enum.h .
+From: /home/taste/test1/binary/GlueAndBuild/glueground/python/asn2dataModel
+make -f Makefile.python
+From: /home/taste/test1/binary/GlueAndBuild/glueground/python
+cp asn2dataModel/asn1crt.h asn2dataModel/Stubs.py asn2dataModel/DV* asn2dataModel/*.so .
+From: /home/taste/test1/binary/GlueAndBuild/glueground/python
+cp asn2dataModel/dataview-uniq.h .
+From: /home/taste/test1/binary/GlueAndBuild/glueground/python
+cp asn2dataModel/dataview_uniq_asn.py .
+From: /home/taste/test1/binary/GlueAndBuild/glueground/python
+gcc -g -fPIC -c `python-config --cflags` gui_api.c queue_manager.c timeInMS.c debug_messages.c
+From: /home/taste/test1/binary/GlueAndBuild/glueground/python
+gcc -g -shared -o PythonAccess.so gui_api.o queue_manager.o timeInMS.o debug_messages.o `python-config --ldflags` -lrt
+From: /home/taste/test1/binary/crazyflie_v2_partition_taste_api
+"$GNATGCC" -c -I . -DSTATIC="" -g   -std=c99  -mfloat-abi=hard    -DNDEBUG    -I ../GlueAndBuild/gluecrazyflie_v2_partition_taste_api/ -I ../auto-src/ *.c
+From: /home/taste/test1/binary
+mv GlueAndBuild/glueled_control/*.o led_control/led_control/
+From: /home/taste/test1/binary
+mv GlueAndBuild/gluecrazyflie/*.o crazyflie/crazyflie/
+From: /home/taste/test1/binary
+mv GlueAndBuild/glueground/*.o ground/ext/
+From: /home/taste/test1/binary
+mv GlueAndBuild/gluecrazyflie_v2_partition_taste_api/*.o crazyflie_v2_partition_taste_api/
+From: /home/taste/test1/binary
+mv GlueAndBuild/gluevt_crazyflie_pulse/*.o vt_crazyflie_pulse/
+From: /home/taste/test1/binary
+mv GlueAndBuild/gluevt_crazyflie_start_demo/*.o vt_crazyflie_start_demo/
+From: /home/taste/test1/binary
+patchAPLCs.py  "ground/ext/" "ground_renamed" "ground/ext/" "ground" auto-src_PLATFORM_NATIVE/ auto-src_PLATFORM_NATIVE
+From: /home/taste/test1/binary
+patchAPLCs.py  "led_control/led_control/" "led_control_renamed" "crazyflie/crazyflie/" "crazyflie_renamed" "crazyflie_v2_partition_taste_api/" "crazyflie_v2_partition_taste_api_renamed" "crazyflie_v2_partition_taste_api/" "crazyflie_v2_partition_taste_api" "vt_crazyflie_pulse/" "vt_crazyflie_pulse_renamed" "vt_crazyflie_pulse/" "vt_crazyflie_pulse" "vt_crazyflie_start_demo/" "vt_crazyflie_start_demo_renamed" "vt_crazyflie_start_demo/" "vt_crazyflie_start_demo" auto-src_PLATFORM_GNAT_RUNTIME/ auto-src_PLATFORM_GNAT_RUNTIME
+From: /home/taste/test1/binary
+rm -rf "/home/taste/test1/binary/auto-src_PLATFORM_GNAT_RUNTIME" 2>/dev/null ; exit 0
+From: /home/taste/test1/binary/auto-src_PLATFORM_GNAT_RUNTIME
+cp ../auto-src/*.[ch] .
+From: /home/taste/test1/binary/auto-src_PLATFORM_GNAT_RUNTIME
+"$GNATGCC" -c -I . -DSTATIC="" -g   -std=c99  -mfloat-abi=hard    -DNDEBUG    *.c
+From: /home/taste/test1/binary/GlueAndBuild
+cd './deploymentview_final/crazyflie_v2_partition' && ADA_INCLUDE_PATH="/home/taste/test1/Certyflie/crazyflie_support/src:/home/taste/test1/Certyflie/src:/home/taste/test1/binary/led_control/led_control:/home/taste/test1/binary/crazyflie/crazyflie:/home/taste/test1/binary/vt_crazyflie_start_demo:/home/taste/test1/binary/vt_crazyflie_pulse:/home/taste/test1/binary/crazyflie_v2_partition_taste_api:/home/taste/test1/binary/ground:/home/taste/test1/binary/DriversConfig/crazyflie_v2_partition:/home/taste/test1/binary/DriversConfig/x86_partition"  USER_CFLAGS="${USER_CFLAGS} -g" USER_LDFLAGS="${USER_LDFLAGS} -g" EXTERNAL_OBJECTS="/home/taste/test1/binary/auto-src_PLATFORM_GNAT_RUNTIME/*.o /home/taste/test1/binary/crazyflie/crazyflie/*.o /home/taste/test1/binary/led_control/led_control/*.o /home/taste/test1/binary/crazyflie_v2_partition_taste_api/*.o " make
+From: /home/taste/test1/binary
+rm -rf "/home/taste/test1/binary/auto-src_PLATFORM_NATIVE" 2>/dev/null ; exit 0
+From: /home/taste/test1/binary/auto-src_PLATFORM_NATIVE
+cp ../auto-src/*.[ch] .
+From: /home/taste/test1/binary/auto-src_PLATFORM_NATIVE
+"$GNATGCC" -c -I . -DSTATIC="" -g   -std=c99      *.c
+From: /home/taste/test1/binary/GlueAndBuild
+cd './deploymentview_final/x86_partition' && ADA_INCLUDE_PATH="/home/taste/test1/Certyflie/crazyflie_support/src:/home/taste/test1/Certyflie/src:/home/taste/test1/binary/led_control/led_control:/home/taste/test1/binary/crazyflie/crazyflie:/home/taste/test1/binary/vt_crazyflie_start_demo:/home/taste/test1/binary/vt_crazyflie_pulse:/home/taste/test1/binary/crazyflie_v2_partition_taste_api:/home/taste/test1/binary/ground:/home/taste/test1/binary/DriversConfig/crazyflie_v2_partition:/home/taste/test1/binary/DriversConfig/x86_partition:/home/taste/test1/binary/DriversConfig/crazyflie_v2_partition:/home/taste/test1/binary/DriversConfig/x86_partition"  USER_CFLAGS="${USER_CFLAGS} -g " USER_LDFLAGS="${USER_LDFLAGS} -g -lm " EXTERNAL_OBJECTS="-lrt /home/taste/test1/binary/auto-src_PLATFORM_NATIVE/*.o /home/taste/test1/binary/ground/ext/*.o " make
+From: /home/taste/test1/binary
+find '/home/taste/test1/binary'/GlueAndBuild -type f -perm /111 ! -iname '*.so' -a ! -iname '*.pyd' | while read ANS ; do file "$ANS" | egrep 'ELF|PE32' >/dev/null 2>/dev/null && mv "$ANS" "/home/taste/test1/binary/binaries/" ; done ; exit 0
+From: /home/taste/test1/binary
+find '/home/taste/test1/binary'/ -name binaries -prune -o -type f -perm /111 -iname '*_GUI' -exec bash -c 'F="{}"; D=$(dirname "$F"); B=$(basename "$F") ; B="${B/_GUI/}"; mv "$F" "/home/taste/test1/binary/binaries/" ; mv "$D"/../../../${B}.pl "/home/taste/test1/binary/binaries/" ; mv "$D"/../../../${B}_RunAndPlot.sh "/home/taste/test1/binary/binaries/" ; ' ';' 2>/dev/null
+From: /home/taste/test1/binary/binaries
+rm -rf "/tmp/uniqhometastetest1__iv_1_3.aadl"
+From: /home/taste/test1/binary/binaries
+mkdir -p "/home/taste/test1/binary/binaries/ground-GUI"
+From: /home/taste/test1/binary/binaries
+cp "/home/taste/test1/binary/GlueAndBuild/glueground//"*.py "/home/taste/test1/binary/binaries/ground-GUI"
+From: /home/taste/test1/binary/binaries
+cp "/home/taste/test1/binary/GlueAndBuild/glueground//guilayout.ui" "/home/taste/test1/binary/binaries/ground-GUI"
+From: /home/taste/test1/binary/binaries
+cp "/home/taste/test1/binary/GlueAndBuild/glueground//python/"*.py "/home/taste/test1/binary/binaries/ground-GUI"
+From: /home/taste/test1/binary/binaries
+echo "errCodes = $(taste-asn1-errCodes /home/taste/test1/binary/GlueAndBuild/glueground//python/dataview-uniq.h)" >> "/home/taste/test1/binary/binaries/ground-GUI/datamodel.py"
+From: /home/taste/test1/binary/binaries
+cp "/home/taste/test1/binary/GlueAndBuild/glueground//python/"*.so "/home/taste/test1/binary/binaries/ground-GUI"
+From: /home/taste/test1/binary/binaries
+cp "/home/taste/test1/binary/GlueAndBuild/glueground//python/asn2dataModel/"*.pyd "/home/taste/test1/binary/binaries/ground-GUI" 2>/dev/null || exit 0
+From: /home/taste/test1/binary/binaries
+cp "/home/taste/test1/binary/GlueAndBuild/glueground//python/asn2dataModel/"*.so "/home/taste/test1/binary/binaries/ground-GUI" 2>/dev/null || exit 0
+From: /home/taste/test1/binary/binaries
+cp "/home/taste/test1/binary/GlueAndBuild/glueground//python/asn2dataModel/"DV_Types.py "/home/taste/test1/binary/binaries/ground-GUI" 2>/dev/null || exit 0
+From: /home/taste/test1/binary/binaries
+echo 'A=$(dirname "$0") ; cd "$A/ground-GUI" && PYTHONPATH=$(taste-config --prefix)/share:$PYTHONPATH taste-gui "$@"' > "/home/taste/test1/binary/binaries/GUI-ground" && chmod +x "/home/taste/test1/binary/binaries/GUI-ground"
+From: /home/taste/test1/binary/binaries
+cp "/home/taste/test1/__iv_1_3.aadl" "/home/taste/test1/binary/binaries/ground-GUI"/InterfaceView.aadl
+From: /home/taste/test1/binary/binaries
+cp "/home/taste/test1/__iv_1_3.aadl" "/home/taste/test1/binary/binaries/ground-GUI"/InterfaceView.aadl
+From: /home/taste/test1/binary/binaries
+cp "/home/taste/test1/binary/dataview-uniq.asn" "/home/taste/test1/binary/binaries/ground-GUI"/

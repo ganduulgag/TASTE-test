@@ -1,0 +1,30 @@
+/* CIF Keep Specific Geode ASNFilename 'dataview-uniq.asn' */
+USE Datamodel;
+SYSTEM crazyflie;
+
+	SIGNAL pulse;
+
+	/* CIF Keep Specific Geode PARAMNAMES a */
+	SIGNAL start_demo (T_Uint16);
+
+	PROCEDURE led_on COMMENT '#c_predef';
+		FPAR
+			IN a T_Uint16;
+ 	EXTERNAL;
+
+	CHANNEL c
+		FROM ENV TO crazyflie WITH pulse,start_demo;
+	ENDCHANNEL;
+
+	BLOCK crazyflie;
+
+		SIGNALROUTE r
+			FROM ENV TO crazyflie WITH pulse,start_demo;
+
+		CONNECT c and r;
+
+		PROCESS crazyflie REFERENCED;
+
+	ENDBLOCK;
+
+ENDSYSTEM;

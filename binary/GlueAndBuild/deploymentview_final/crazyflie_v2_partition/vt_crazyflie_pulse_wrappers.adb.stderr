@@ -1,0 +1,4 @@
+vt_crazyflie_pulse_wrappers.adb:6:26: warning: no entities of "PolyORB_HI_Generated.Activity" are referenced
+vt_crazyflie_pulse_wrappers.adb:7:16: warning: no entities of "PolyORB_HI.Utils" are referenced
+vt_crazyflie_pulse_wrappers.adb:14:16: warning: unit "PolyORB_HI.Output" is not referenced
+vt_crazyflie_pulse_wrappers.adb:21:32: warning: formal parameter "Entity" is not referenced

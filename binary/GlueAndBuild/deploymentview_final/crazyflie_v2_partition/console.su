@@ -1,0 +1,6 @@
+/home/taste/test1/Certyflie/crazyflie_support/src/console.adb:36:4:Console_Init	56	static
+/home/taste/test1/Certyflie/crazyflie_support/src/console.adb:48:4:Console_Test	0	static
+/home/taste/test1/Certyflie/crazyflie_support/src/console.adb:57:4:Console_Send_Message	48	static
+/home/taste/test1/Certyflie/crazyflie_support/src/console.adb:70:4:Console_Flush	16	static
+/home/taste/test1/Certyflie/crazyflie_support/src/console.adb:81:4:Console_Put_Line	32	static
+/home/taste/test1/Certyflie/crazyflie_support/src/console.ads:34:1:Console	8	static

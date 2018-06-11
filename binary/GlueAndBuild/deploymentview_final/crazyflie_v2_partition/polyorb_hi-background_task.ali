@@ -1,0 +1,131 @@
+V "GNAT Lib v2017"
+A -O1
+A -gnatA
+A --RTS=/usr/gnat/arm-eabi/lib/gnat/ravenscar-full-stm32f4/
+A -mlittle-endian
+A -mfloat-abi=hard
+A -mcpu=cortex-m4
+A -mfpu=fpv4-sp-d16
+A -mthumb
+A -g
+A -gnatwa
+A -gnatwG
+A -gnat12
+A -fstack-usage
+A -g
+A -gnata
+A -gnato
+A -g
+P DB LC TF  ES ZX
+
+RN
+RV NO_DELAY
+RV NO_IMPLICIT_CONDITIONALS
+RR NO_STREAMS
+RV NO_TASKING
+RR NO_UNCHECKED_DEALLOCATION
+RV STATIC_PRIORITIES
+RV STATIC_STORAGE_SIZE
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLEMENTATION_RESTRICTIONS
+RV NO_OBSOLESCENT_FEATURES
+RV SPARK_05
+
+U polyorb_hi.background_task%b  polyorb_hi-background_task.adb  b7a969b3 NE OO PK GE
+W polyorb_hi%s		polyorb_hi.ads		polyorb_hi.ali
+W polyorb_hi.output%s	polyorb_hi-output.adb	polyorb_hi-output.ali
+W polyorb_hi.suspenders%s  polyorb_hi-suspenders.adb  polyorb_hi-suspenders.ali
+
+U polyorb_hi.background_task%s  polyorb_hi-background_task.ads  79c7e85b BN EE NE OO PK GE
+W ada%s			ada.ads			ada.ali
+W ada.real_time%s	a-reatim.adb		a-reatim.ali
+W polyorb_hi%s		polyorb_hi.ads		polyorb_hi.ali
+W polyorb_hi.errors%s	polyorb_hi-errors.ads	polyorb_hi-errors.ali
+W polyorb_hi_generated%s  polyorb_hi_generated.ads  polyorb_hi_generated.ali
+W polyorb_hi_generated.deployment%s  polyorb_hi_generated-deployment.ads  polyorb_hi_generated-deployment.ali
+W system%s		system.ads		system.ali
+
+D ada.ads		20170517144320 76789da1 ada%s
+D a-reatim.ads		20170517144320 bb781ad1 ada.real_time%s
+D interfac.ads		20170517144320 5ab55268 interfaces%s
+D i-stm32.ads		20170517144320 4d2e1e9b interfaces.stm32%s
+D i-stm32-pwr.ads	20170517144320 10ed2a13 interfaces.stm32.pwr%s
+D i-stm32-rcc.ads	20170517144320 ed083a96 interfaces.stm32.rcc%s
+D polyorb_hi.ads	20180607235124 f77a07a6 polyorb_hi%s
+D polyorb_hi-background_task.ads  20180607235124 1bd0d23f polyorb_hi.background_task%s
+D polyorb_hi-background_task.adb  20180607235124 8ba49f89 polyorb_hi.background_task%b
+D polyorb_hi-errors.ads	20180607235124 6deb16d4 polyorb_hi.errors%s
+D polyorb_hi-output.ads	20180607235124 ccf271eb polyorb_hi.output%s
+D polyorb_hi-streams.ads  20180607235124 54018470 polyorb_hi.streams%s
+D polyorb_hi-suspenders.ads  20180607235124 eb2f55ee polyorb_hi.suspenders%s
+D polyorb_hi_generated.ads  20180607235124 32a22d97 polyorb_hi_generated%s
+D polyorb_hi_generated-deployment.ads  20180611081810 987d2446 polyorb_hi_generated.deployment%s
+D system.ads		20170517144320 db831581 system%s
+D s-bb.ads		20170517144320 09e072ae system.bb%s
+D s-bbbopa.ads		20170517144320 95d97b26 system.bb.board_parameters%s
+D s-bbbosu.ads		20170517144320 9b59a61f system.bb.board_support%s
+D s-bbcppr.ads		20170517144320 bcfa73ad system.bb.cpu_primitives%s
+D s-bcprmu.ads		20170517144320 043d3736 system.bb.cpu_primitives.multiprocessors%s
+D s-bbinte.ads		20170517144320 d9fc23b0 system.bb.interrupts%s
+D s-bbmcpa.ads		20170517144320 c4c55388 system.bb.mcu_parameters%s
+D s-bbpara.ads		20170517144320 77379e7b system.bb.parameters%s
+D s-bbthre.ads		20170517144320 d6c36e4f system.bb.threads%s
+D s-bbthqu.ads		20170517144320 db3cad46 system.bb.threads.queues%s
+D s-bbtime.ads		20170517144320 ad086247 system.bb.time%s
+D s-multip.ads		20170517144320 f33e0e35 system.multiprocessors%s
+D s-osinte.ads		20170517144320 2d4f0621 system.os_interface%s
+D s-stm32.ads		20170517144320 e898dba2 system.stm32%s
+D s-stoele.ads		20170517144320 2dc34a04 system.storage_elements%s
+D s-unstyp.ads		20170517144320 34867c83 system.unsigned_types%s
+D /home/taste/tool-inst/include/ocarina/runtime/polyorb-hi-ada/gnat_runtime.adc  20180607235124 00000000
+X 1 ada.ads
+16K9*Ada 20e8 8|33r6 66r34 9|41r8 84r34 86r14
+X 2 a-reatim.ads
+41K13*Real_Time 155e18 8|33w10 66r38 9|41r12 84r38 86r18
+53M9*Time<27|46M9> 8|66r48 9|84r48
+70V13*Clock{53M9}<27|134p13> 9|86s28
+X 7 polyorb_hi.ads
+35K9*PolyORB_HI 39e15 8|35r6 48r37 59r9 69r5 9|32r6 33r6 35r14 37r8 38r8
+. 40r8 89r5
+X 8 polyorb_hi-background_task.ads
+38e4 Entity{15|65E8} 9|59r45 62r19 67r45 70r66
+42i4 Task_Priority{16|116I12} 62r24
+45i4 Task_Stack_Size{natural} 63r28
+48U19 Job 48<24 9|73s7
+48e24 Result{10|34E9}
+51U19 Activate_Entrypoint 9|53s7
+55U19 Recover_Entrypoint 9|76s10
+59k20*Background_Task 7|35k9 8|38z4 42z4 45z4 48z19 51z19 55z19 69l16 69e31
+. 9|35b25 89l16 89t31
+61t9*The_Background_Task 9|47b14 78l8 78t27
+66V13*Next_Deadline{2|53M9} 9|84b13 87l8 87t21
+X 9 polyorb_hi-background_task.adb
+48e7 Error{10|34E9} 73m12 75r10
+X 10 polyorb_hi-errors.ads
+32K20*Errors 8|35w17 48r48 9|37r19 10|39e22
+34E9*Error_Kind 8|48r55 9|48r15 10|37e7
+35n7*Error_None{34E9} 9|75r19
+X 11 polyorb_hi-output.ads
+38K20*Output 9|32w17 38r19 11|81e22
+59b4*Verbose{boolean} 9|57r21 65r21 69r21
+63U14*Put_Line 9|58s21 66s21 70s21
+X 13 polyorb_hi-suspenders.ads
+40K20*Suspenders 9|33w17 40r19 13|57e26
+47m4*System_Startup_Time{2|53M9} 9|63r19
+50U14*Block_Task 9|62s7
+X 14 polyorb_hi_generated.ads
+34K9*PolyORB_HI_Generated 8|34r6 38r25 9|39r8 14|38e25
+X 15 polyorb_hi_generated-deployment.ads
+10K30*Deployment 8|34w27 38r46 9|39r29 15|200e36
+65E8*Entity_Type 8|38r57 15|69e28
+117A11*UT_Deployment_Crazyflie_V2_Partition_Entity_Image_Component{string}<integer>
+121A8*UT_Deployment_Crazyflie_V2_Partition_Entity_Image_Array(117A11)<65E8>
+125a3*Entity_Image{121A8} 9|59r31 67r31 70r52
+X 16 system.ads
+50K9*System 8|32w6 42r25 16|164e11
+116I12*Any_Priority{integer} 8|42r32
+X 21 s-bcprmu.ads
+39U14*Start_All_CPUs 40i<c,__gnat_start_slave_cpus>22
+X 27 s-bbtime.ads
+46M9*Time
+

@@ -1,0 +1,5 @@
+/home/taste/test1/Certyflie/crazyflie_support/src/safety.ads:10:4:Dead_Band	0	static
+/home/taste/test1/Certyflie/crazyflie_support/src/safety.ads:24:4:Saturate	0	static
+/home/taste/test1/Certyflie/crazyflie_support/src/safety.ads:37:4:Saturate	0	static
+/home/taste/test1/Certyflie/crazyflie_support/src/safety.ads:50:4:Truncate_To_T_Int16	8	static
+/home/taste/test1/Certyflie/crazyflie_support/src/safety.ads:62:4:Lift_Away_From_Zero	0	static

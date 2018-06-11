@@ -1,0 +1,9 @@
+led_control.adb:8:06: warning: redundant with clause in body
+led_control.adb:8:06: warning: no entities of "AdaASN1RTL" are referenced
+led_control.adb:9:01: warning: "adaasn1rtl" is already use-visible through previous use clause at led_control.ads:8
+led_control.adb:11:06: warning: redundant with clause in body
+led_control.adb:12:01: warning: "TASTE_Dataview" is already use-visible through previous use clause at led_control.ads:11
+led_control.adb:14:06: warning: no entities of "LEDS" are referenced
+led_control.adb:20:06: warning: no entities of "Types" are referenced
+led_control.adb:28:21: warning: formal parameter "a" is not referenced
+led_control.ads:7:06: warning: no entities of "AdaASN1RTL" are referenced

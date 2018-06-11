@@ -1,0 +1,44 @@
+-- Automatically Generated - For use with AADL2GlueC only - Do NOT modify! --
+
+SUBPROGRAM pulse
+END pulse;
+
+SUBPROGRAM IMPLEMENTATION pulse.Ada
+PROPERTIES
+	FV_Name => "crazyflie";
+	Source_Language => Ada;
+END pulse.Ada;
+
+SUBPROGRAM start_demo
+FEATURES
+	a:IN PARAMETER DataView::T_Uint16 {encoding=>UPER;};
+END start_demo;
+
+SUBPROGRAM IMPLEMENTATION start_demo.Ada
+PROPERTIES
+	FV_Name => "crazyflie";
+	Source_Language => Ada;
+END start_demo.Ada;
+
+SUBPROGRAM led_on
+FEATURES
+	a:OUT PARAMETER DataView::T_Uint16 {encoding=>UPER;};
+END led_on;
+
+SUBPROGRAM IMPLEMENTATION led_on.Ada
+PROPERTIES
+	FV_Name => "crazyflie";
+	Source_Language => Ada;
+END led_on.Ada;
+
+SUBPROGRAM check_queue
+FEATURES
+	res:IN PARAMETER DataView::T_Boolean {encoding=>NATIVE;};
+END check_queue;
+
+SUBPROGRAM IMPLEMENTATION check_queue.Ada
+PROPERTIES
+	FV_Name => "crazyflie";
+	Source_Language => Ada;
+END check_queue.Ada;
+

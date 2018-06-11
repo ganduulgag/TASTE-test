@@ -1,0 +1,15 @@
+taste_basictypes.adb:3:01: warning: "Unsigned_64" is already use-visible through previous use_type_clause at taste_basictypes.ads:6
+taste_basictypes.adb:4:01: warning: "Integer_64" is already use-visible through previous use_type_clause at taste_basictypes.ads:7
+taste_basictypes.adb:5:01: warning: "BIT" is already use-visible through previous use_type_clause at taste_basictypes.ads:8
+taste_basictypes.adb:33:61: warning: condition can only be False if invalid values present
+taste_basictypes.adb:33:78: warning: condition can only be False if invalid values present
+taste_basictypes.adb:59:52: warning: condition can only be False if invalid values present
+taste_basictypes.adb:85:54: warning: condition can only be False if invalid values present
+taste_basictypes.adb:85:71: warning: condition can only be False if invalid values present
+taste_basictypes.adb:111:52: warning: condition can only be False if invalid values present
+taste_basictypes.adb:130:12: warning: object "val" is always False at this point
+taste_basictypes.adb:130:12: warning: (see assignment at line 129)
+taste_basictypes.adb:133:45: warning: formal parameter "val" is not referenced
+taste_basictypes.ads:4:20: warning: "OctetBuffer" is already use-visible through package use clause at line 3
+taste_basictypes.ads:5:20: warning: "BitArray" is already use-visible through package use clause at line 3
+taste_basictypes.ads:8:20: warning: "BIT" is already use-visible through package use clause at line 3

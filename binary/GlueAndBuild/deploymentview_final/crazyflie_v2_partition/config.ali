@@ -1,0 +1,46 @@
+V "GNAT Lib v2017"
+A -O1
+A -gnatA
+A --RTS=/usr/gnat/arm-eabi/lib/gnat/ravenscar-full-stm32f4/
+A -mlittle-endian
+A -mfloat-abi=hard
+A -mcpu=cortex-m4
+A -mfpu=fpv4-sp-d16
+A -mthumb
+A -g
+A -gnatwa
+A -gnatwG
+A -gnat12
+A -fstack-usage
+A -g
+A -gnata
+A -gnato
+A -g
+P DB ES ZX
+
+RN
+RR NO_STREAMS
+RR NO_UNCHECKED_DEALLOCATION
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLEMENTATION_RESTRICTIONS
+RV NO_OBSOLESCENT_FEATURES
+
+U config%s		config.ads		22cf436f NE OO PK
+W system%s		system.ads		system.ali
+
+D config.ads		20180608084407 f94c56ee config%s
+D system.ads		20170517144320 db831581 system%s
+D /home/taste/tool-inst/include/ocarina/runtime/polyorb-hi-ada/gnat_runtime.adc  20180607235124 00000000
+X 1 config.ads
+32K9*Config 43l5 43e11
+34b4*QUAD_FORMATION_X{boolean}
+37i4*MAIN_TASK_PRIORITY{2|117I12}
+38i4*CRTP_RXTX_TASK_PRIORITY{2|117I12}
+39i4*SYSLINK_TASK_PRIORITY{2|117I12}
+40i4*LOG_TASK_PRIORITY{2|117I12}
+41i4*PM_TASK_PRIORITY{2|117I12}
+X 2 system.ads
+50K9*System 1|30w6 37r39 38r39 39r39 40r39 41r39 2|164e11
+116I12*Any_Priority{integer}
+117I12*Priority{116I12} 1|37r46 38r46 39r46 40r46 41r46
+

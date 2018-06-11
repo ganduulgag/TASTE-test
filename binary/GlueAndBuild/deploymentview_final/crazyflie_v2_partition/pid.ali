@@ -1,0 +1,182 @@
+V "GNAT Lib v2017"
+A -O1
+A -gnatA
+A --RTS=/usr/gnat/arm-eabi/lib/gnat/ravenscar-full-stm32f4/
+A -mlittle-endian
+A -mfloat-abi=hard
+A -mcpu=cortex-m4
+A -mfpu=fpv4-sp-d16
+A -mthumb
+A -g
+A -gnatwa
+A -gnatwG
+A -gnat12
+A -fstack-usage
+A -g
+A -gnata
+A -gnato
+A -g
+P DB ES ZX
+
+RN
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_FLOATING_POINT
+RR NO_STREAMS
+RR NO_UNCHECKED_DEALLOCATION
+RV NO_IMPLEMENTATION_ASPECT_SPECIFICATIONS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLEMENTATION_RESTRICTIONS
+RV NO_OBSOLESCENT_FEATURES
+RV SPARK_05
+
+U pid%b			pid.adb			98480e26 NE OO PK GE
+W safety%s		safety.ads		safety.ali
+
+U pid%s			pid.ads			8a8ad58e BN EE NE OO PK GE
+W pid_parameters%s	pid_parameters.ads	pid_parameters.ali
+W types%s		types.ads		types.ali
+
+D ada.ads		20170517144320 76789da1 ada%s
+D a-except.ads		20170517144320 291912d5 ada.exceptions%s
+D a-finali.ads		20170517144320 bf4f806b ada.finalization%s
+D a-numeri.ads		20170517144320 bb51c45a ada.numerics%s
+D a-reatim.ads		20170517144320 bb781ad1 ada.real_time%s
+D a-tags.ads		20170517144320 d3a89129 ada.tags%s
+D a-unccon.ads		20170517144320 31484697 ada.unchecked_conversion%s
+D filter.ads		20180608084407 da22adf9 filter%s
+D hal.ads		20180608084415 2b42c80e hal%s
+D hal-i2c.ads		20180608084415 0ed73138 hal.i2c%s
+D hal-time.ads		20180608084415 f5295cd7 hal.time%s
+D imu.ads		20180608084407 e5cf47da imu%s
+D interfac.ads		20170517144320 5ab55268 interfaces%s
+D i-stm32.ads		20170517144320 4d2e1e9b interfaces.stm32%s
+D i-stm32-pwr.ads	20170517144320 10ed2a13 interfaces.stm32.pwr%s
+D i-stm32-rcc.ads	20170517144320 ed083a96 interfaces.stm32.rcc%s
+D mpu9250.ads		20180608084415 11ad30ab mpu9250%s
+D pid.ads		20180608084407 da50deda pid%s
+D pid.adb		20180608084407 7f121aac pid%b
+D pid_parameters.ads	20180608084407 9170652a pid_parameters%s
+D safety.ads		20180608084407 3d0aca50 safety%s
+D system.ads		20170517144320 db831581 system%s
+D s-bb.ads		20170517144320 09e072ae system.bb%s
+D s-bbbopa.ads		20170517144320 95d97b26 system.bb.board_parameters%s
+D s-bbbosu.ads		20170517144320 9b59a61f system.bb.board_support%s
+D s-bbcppr.ads		20170517144320 bcfa73ad system.bb.cpu_primitives%s
+D s-bcprmu.ads		20170517144320 043d3736 system.bb.cpu_primitives.multiprocessors%s
+D s-bbinte.ads		20170517144320 d9fc23b0 system.bb.interrupts%s
+D s-bbmcpa.ads		20170517144320 c4c55388 system.bb.mcu_parameters%s
+D s-bbpara.ads		20170517144320 77379e7b system.bb.parameters%s
+D s-bbthre.ads		20170517144320 d6c36e4f system.bb.threads%s
+D s-bbthqu.ads		20170517144320 db3cad46 system.bb.threads.queues%s
+D s-bbtime.ads		20170517144320 ad086247 system.bb.time%s
+D s-exnllf.ads		20170517144320 bc7ebbdc system.exn_llf%s
+D s-finmas.ads		20170517144320 7811a767 system.finalization_masters%s
+D s-finroo.ads		20170517144320 4ff27390 system.finalization_root%s
+D s-multip.ads		20170517144320 f33e0e35 system.multiprocessors%s
+D s-osinte.ads		20170517144320 2d4f0621 system.os_interface%s
+D s-parame.ads		20170517144320 c9fe535f system.parameters%s
+D s-pooglo.ads		20170517144320 ede33ef8 system.pool_global%s
+D s-stalib.ads		20170517144320 09bd3940 system.standard_library%s
+D s-stm32.ads		20170517144320 e898dba2 system.stm32%s
+D s-stoele.ads		20170517144320 2dc34a04 system.storage_elements%s
+D s-stopoo.ads		20170517144320 b16154c2 system.storage_pools%s
+D s-traent.ads		20170517144320 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20170517144320 34867c83 system.unsigned_types%s
+D types.ads		20180608084407 c1aa6e7e types%s
+D /home/taste/tool-inst/include/ocarina/runtime/polyorb-hi-ada/gnat_runtime.adc  20180607235124 00000000
+X 18 pid.ads
+34f4 INPUT_LOW_LIMIT{float} 45r36 48r12 50r12
+35f4 INPUT_HIGH_LIMIT{float} 45r55 48r37 51r14
+36f4 OUTPUT_LOW_LIMIT{float} 46r36
+37f4 OUTPUT_HIGH_LIMIT{float} 46r56
+38f4 COEFF_LOW_LIMIT{float} 54r35
+39f4 COEFF_HIGH_LIMIT{float} 54r54
+41k9*Pid 34z4 35z4 36z4 37z4 38z4 39z4 166l5 166e8 19|32b14 229l5 229t8
+45F12*T_Input{float} 58r22 80r23 95r22 109r17 19|42r22 84r22 140r17
+46F12*T_Output{float} 66r22 67r22 68r22
+47F12*T_Error{float} 59r22 60r22 119r15 19|92r24 93r26 158r15
+49F12*T_Deriv{float} 62r22
+52F12*T_I_Limit{float} 61r22 69r22 70r22 84r23 85r23 147r22 154r23 19|46r22
+. 47r22 103r35 104r24 202r22 213r24
+54F12*T_Coeff{float} 63r22 64r22 65r22 81r23 82r23 83r23 126r13 133r13 140r13
+. 19|43r22 44r22 45r22 169r13 180r13 191r13
+57R9*Pid_Object 72e14 73r26 79r27 89r38 94r29 101r35 104r34 108r24 114r36
+. 118r22 125r20 132r20 139r20 146r29 153r30 161r20 19|41r26 70r38 83r29 116r35
+. 123r34 139r24 149r36 157r22 168r20 179r20 190r20 201r29 212r31 223r20
+58f7 Desired{45F12} 19|50m11 88r27 142m11 150r11
+59f7 Error{47F12} 19|51m11 72m11 88m14 91r26 95r46 99r25 101r33 109r29 160m11
+60f7 Prev_Error{47F12} 19|52m11 73m11 99r37 109m11
+61f7 Integ{52F12} 19|53m11 74m11 95m11 95r34 103r26 105r33
+62f7 Deriv{49F12} 19|54m11 75m11 99m11 107r33
+63f7 Kp{54F12} 19|55m11 101r24 127r14 171m11
+64f7 Ki{54F12} 19|56m11 105r24 127r34 182m11
+65f7 Kd{54F12} 19|57m11 107r24 127r54 193m11
+66f7 Out_P{46F12} 19|58m11 101m11 117r11
+67f7 Out_I{46F12} 19|59m11 105m11 117r23
+68f7 Out_D{46F12} 19|60m11 107m11 117r35
+69f7 I_Limit_Low{52F12} 19|61m11 96r34 204m11
+70f7 I_Limit_High{52F12} 19|62m11 97r34 215m11
+71f7 Dt{47|36F12} 19|63m11 91r38 95r58 99r55 226m11
+78U14*Pid_Init 79<7 80>7 81>7 82>7 83>7 84>7 85>7 86>7 19|40b14 64l8 64t16
+79r7 Pid{57R9} 19|41b7 50m7 51m7 52m7 53m7 54m7 55m7 56m7 57m7 58m7 59m7
+. 60m7 61m7 62m7 63m7
+80f7 Desired{45F12} 19|42b7 50r22
+81f7 Kp{54F12} 19|43b7 55r17
+82f7 Ki{54F12} 19|44b7 56r17
+83f7 Kd{54F12} 19|45b7 57r17
+84f7 I_Limit_Low{52F12} 19|46b7 61r27
+85f7 I_Limit_High{52F12} 19|47b7 62r27
+86f7 Dt{47|36F12} 19|48b7 63r17
+89U14*Pid_Reset 89=25 19|70b14 76l8 76t17
+89r25 Pid{57R9} 19|70b25 72m7 73m7 74m7 75m7
+93U14*Pid_Update 94=7 95>7 96>7 19|82b14 110l8 110t18
+94r7 Pid{57R9} 98r20 98r38 19|83b7 88m10 88r23 91r22 91r34 95m7 95r30 95r42
+. 95r54 96r30 97r30 99m7 99r21 99r33 99r51 101m7 101r20 101r29 103r22 105m7
+. 105r20 105r29 107m7 107r20 107r29 109m7 109r25
+95f7 Measured{45F12} 98r28 19|84b7 88r37
+96b7 Update_Error{boolean} 98r43 19|85b7 87r10
+101V13*Pid_Get_Output{float} 101>29 19|116b13
+101r29 Pid{57R9} 19|117r7 117r19 117r31
+104V13*Pid_Is_Active{boolean} 104>28 19|123b13 132l8 132t21
+104r28 Pid{57R9} 19|123b28 127r10 127r30 127r50
+107U14*Pid_Set_Desired 108=7 109>7 19|138b14 143l8 143t23
+108r7 Pid{57R9} 111r16 111r22 19|139b7 142m7
+109f7 Desired{45F12} 111r49 19|140b7 142r22
+114V13*Pid_Get_Desired{float} 114>30 19|149b13
+114r30 Pid{57R9} 19|150r7
+117U14*Pid_Set_Error 118=7 119>7 19|156b14 161l8 161t21
+118r7 Pid{57R9} 121r16 121r22 19|157b7 160m7
+119f7 Error{47F12} 121r47 19|158b7 160r20
+124U14*Pid_Set_Kp 125=7 126>7 19|167b14 172l8 172t18
+125r7 Pid{57R9} 128r16 128r22 19|168b7 171m7
+126f7 Kp{54F12} 128r44 19|169b7 171r17
+131U14*Pid_Set_Ki 132=7 133>7 19|178b14 183l8 183t18
+132r7 Pid{57R9} 135r16 135r22 19|179b7 182m7
+133f7 Ki{54F12} 135r44 19|180b7 182r17
+138U14*Pid_Set_Kd 139=7 140>7 19|189b14 194l8 194t18
+139r7 Pid{57R9} 142r16 142r22 19|190b7 193m7
+140f7 Kd{54F12} 142r44 19|191b7 193r17
+145U14*Pid_Set_I_Limit_Low 146=7 147>7 19|200b14 205l8 205t27
+146r7 Pid{57R9} 149r16 149r22 19|201b7 204m7
+147f7 I_Limit_Low{52F12} 149r53 19|202b7 204r26
+152U14*Pid_Set_I_Limit_High 153=7 154>7 19|211b14 216l8 216t28
+153r7 Pid{57R9} 156r16 156r22 19|212b7 215m7
+154f7 I_Limit_High{52F12} 156r54 19|213b7 215r27
+160U14*Pid_Set_Dt 161=7 162>7 19|222b14 227l8 227t18
+161r7 Pid{57R9} 164r16 164r22 19|223b7 226m7
+162f7 Dt{47|36F12} 164r44 19|224b7 226r17
+X 19 pid.adb
+125b7 Is_Active{boolean} 128m10 131r14
+X 20 pid_parameters.ads
+30K9*Pid_Parameters 18|31w6 31r26 20|74e19
+64N4*DEFAULT_PID_INTEGRATION_LIMIT 18|53r7 53r40
+X 21 safety.ads
+4K9*Safety 19|30w6 30r18 21|73e11
+24V13*Saturate{float} 19|95s20
+X 27 s-bcprmu.ads
+39U14*Start_All_CPUs 40i<c,__gnat_start_slave_cpus>22
+X 47 types.ads
+3K9*Types 18|30w6 30r26 47|59e10
+36F12*T_Delta_Time{float} 18|50r30 51r33 71r22 86r23 162r13 19|48r22 92r46
+. 93r47 224r13
+

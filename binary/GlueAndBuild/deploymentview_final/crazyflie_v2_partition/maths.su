@@ -1,0 +1,5 @@
+/home/taste/test1/Certyflie/src/maths.ads:16:13:Sqrtf	8	static
+/home/taste/test1/Certyflie/src/maths.adb:8:4:Inv_Sqrt	8	static
+/home/taste/test1/Certyflie/src/maths.adb:13:4:Atan	8	static
+/home/taste/test1/Certyflie/src/maths.adb:21:4:Asin	8	static
+/home/taste/test1/Certyflie/src/maths.adb:29:4:Mean_Float	16	static

@@ -1,0 +1,5 @@
+/home/taste/tool-inst/include/ocarina/runtime/polyorb-hi-ada/polyorb_hi-suspenders.adb:40:4:Ttask_Suspension_Objectsbip	32	static
+/home/taste/tool-inst/include/ocarina/runtime/polyorb-hi-ada/polyorb_hi-suspenders.adb:54:4:Block_Task	8	static
+/home/taste/tool-inst/include/ocarina/runtime/polyorb-hi-ada/polyorb_hi-suspenders.adb:63:4:Suspend_Forever	8	static
+/home/taste/tool-inst/include/ocarina/runtime/polyorb-hi-ada/polyorb_hi-suspenders.adb:79:4:Unblock_All_Tasks	16	static
+/home/taste/tool-inst/include/ocarina/runtime/polyorb-hi-ada/polyorb_hi-suspenders.adb:35:1:Suspenders	16	static

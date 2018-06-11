@@ -1,0 +1,660 @@
+V "GNAT Lib v2017"
+A -O1
+A -gnatA
+A --RTS=/usr/gnat/arm-eabi/lib/gnat/ravenscar-full-stm32f4/
+A -mlittle-endian
+A -mfloat-abi=hard
+A -mcpu=cortex-m4
+A -mfpu=fpv4-sp-d16
+A -mthumb
+A -g
+A -gnatwa
+A -gnatwG
+A -gnat12
+A -fstack-usage
+A -g
+A -gnata
+A -gnato
+A -g
+P DB LC TF  ES SS ZX
+
+RN
+RV NO_ACCESS_SUBPROGRAMS
+RV NO_ALLOCATORS
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_DISPATCH
+RV NO_DISPATCHING_CALLS
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTION_PROPAGATION
+RV NO_EXCEPTIONS
+RV NO_FLOATING_POINT
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_LOCAL_ALLOCATORS
+RV NO_NESTED_FINALIZATION
+RV NO_PROTECTED_TYPES
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RR NO_STREAMS
+RV NO_TASKING
+RV NO_UNCHECKED_ACCESS
+RV NO_UNCHECKED_CONVERSION
+RR NO_UNCHECKED_DEALLOCATION
+RV STATIC_PRIORITIES
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_ASPECT_SPECIFICATIONS
+RV NO_IMPLEMENTATION_ATTRIBUTES
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLEMENTATION_RESTRICTIONS
+RV NO_IMPLICIT_ALIASING
+RV NO_IMPLICIT_LOOPS
+RV NO_ELABORATION_CODE
+RV NO_OBSOLESCENT_FEATURES
+RV SPARK_05
+RV MAX_PROTECTED_ENTRIES=1
+RV MAX_ENTRY_QUEUE_LENGTH=1+
+
+U log%b			log.adb			9d88872a OO PF PK
+W ada%s			ada.ads			ada.ali
+W ada.containers%s	a-contai.ads		a-contai.ali
+W ada.containers.bounded_hashed_maps%s
+Z ada.containers.hash_tables%s  a-cohata.ads	a-cohata.ali
+Z ada.containers.hash_tables.generic_bounded_keys%s
+Z ada.containers.hash_tables.generic_bounded_operations%s
+Z ada.containers.helpers%s  a-conhel.adb	a-conhel.ali
+Z ada.containers.prime_numbers%s  a-coprnu.adb	a-coprnu.ali
+W ada.exceptions%s	a-except.adb		a-except.ali
+Z ada.finalization%s	a-finali.ads		a-finali.ali
+Z ada.iterator_interfaces%s
+W ada.real_time%s	a-reatim.adb		a-reatim.ali
+W ada.real_time.timing_events%s  a-rttiev.adb	a-rttiev.ali
+W ada.streams%s		a-stream.adb		a-stream.ali
+W ada.strings%s		a-string.ads		a-string.ali
+W ada.strings.bounded%s	a-strbou.adb		a-strbou.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
+W ada.unchecked_conversion%s
+W crc%s			crc.adb			crc.ali
+W crtp%s		crtp.adb		crtp.ali
+W generic_vectors%s	generic_vectors.adb	generic_vectors.ali  AD
+W interfaces%s		interfac.ads		interfac.ali
+W system%s		system.ads		system.ali
+Z system.address_to_access_conversions%s
+W system.assertions%s	s-assert.adb		s-assert.ali
+W system.finalization_masters%s  s-finmas.adb	s-finmas.ali
+W system.pool_global%s	s-pooglo.adb		s-pooglo.ali
+W system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+W system.soft_links%s	s-soflin.adb		s-soflin.ali
+W system.storage_elements%s  s-stoele.adb	s-stoele.ali
+W system.storage_pools%s  s-stopoo.adb		s-stopoo.ali
+W system.storage_pools.subpools%s  s-stposu.adb	s-stposu.ali
+W system.tasking%s	s-taskin.adb		s-taskin.ali
+W system.tasking.protected_objects%s  s-taprob.adb  s-taprob.ali
+W system.tasking.protected_objects.entries%s  s-tpoben.adb  s-tpoben.ali
+W system.tasking.protected_objects.operations%s  s-tpobop.adb  s-tpobop.ali
+W system.tasking.restricted.stages%s  s-tarest.adb  s-tarest.ali
+W system.unsigned_types%s  s-unstyp.ads		s-unstyp.ali
+W types%s		types.ads		types.ali
+
+U log%s			log.ads			2451e0a7 EE NE OO PK
+W ada.tags%s		a-tags.adb		a-tags.ali
+W system%s		system.ads		system.ali
+W system.parameters%s	s-parame.adb		s-parame.ali
+W system.storage_elements%s  s-stoele.adb	s-stoele.ali
+W system.task_info%s	s-tasinf.adb		s-tasinf.ali
+W system.tasking%s	s-taskin.adb		s-taskin.ali
+W system.tasking.restricted.stages%s  s-tarest.adb  s-tarest.ali
+W system.unsigned_types%s  s-unstyp.ads		s-unstyp.ali
+
+D ada.ads		20170517144320 76789da1 ada%s
+D a-charac.ads		20170517144320 2d3ec45b ada.characters%s
+D a-chlat1.ads		20170517144320 66457d31 ada.characters.latin_1%s
+D a-contai.ads		20170517144320 61e5e089 ada.containers%s
+D a-cbhama.ads		20170517144320 5171c7c6 ada.containers.bounded_hashed_maps%s
+D a-cbhama.adb		20170517144320 07073673 ada.containers.bounded_hashed_maps%b
+D a-cohata.ads		20170517144320 80a8c839 ada.containers.hash_tables%s
+D a-chtgbk.ads		20170517144320 faa4d958 ada.containers.hash_tables.generic_bounded_keys%s
+D a-chtgbk.adb		20170517144320 c609a759 ada.containers.hash_tables.generic_bounded_keys%b
+D a-chtgbo.ads		20170517144320 2dfe77a9 ada.containers.hash_tables.generic_bounded_operations%s
+D a-chtgbo.adb		20170517144320 d914a2e8 ada.containers.hash_tables.generic_bounded_operations%b
+D a-conhel.ads		20170517144320 20298884 ada.containers.helpers%s
+D a-conhel.adb		20170517144320 9cc5095b ada.containers.helpers%b
+D a-coprnu.ads		20170517144320 0cdf1864 ada.containers.prime_numbers%s
+D a-except.ads		20170517144320 291912d5 ada.exceptions%s
+D a-finali.ads		20170517144320 bf4f806b ada.finalization%s
+D a-interr.ads		20170517144320 bdf68b51 ada.interrupts%s
+D a-intnam.ads		20170517144320 cdde51a1 ada.interrupts.names%s
+D a-iteint.ads		20170517144320 7c7305e9 ada.iterator_interfaces%s
+D a-reatim.ads		20170517144320 bb781ad1 ada.real_time%s
+D a-rttiev.ads		20170517144320 f8eb9b1f ada.real_time.timing_events%s
+D a-stream.ads		20170517144320 119b8fb3 ada.streams%s
+D a-string.ads		20170517144320 90ac6797 ada.strings%s
+D a-strbou.ads		20170517144320 53ab54ae ada.strings.bounded%s
+D a-strbou.adb		20170517144320 adb4aa70 ada.strings.bounded%b
+D a-strmap.ads		20170517144320 e8bb714a ada.strings.maps%s
+D a-strsup.ads		20170517144320 a27dcb33 ada.strings.superbounded%s
+D a-tags.ads		20170517144320 d3a89129 ada.tags%s
+D a-taside.ads		20170517144320 c6417f71 ada.task_identification%s
+D a-unccon.ads		20170517144320 31484697 ada.unchecked_conversion%s
+D ak8963.ads		20180608084415 ee27c928 ak8963%s
+D crc.ads		20180608084407 619fb73d crc%s
+D crc.adb		20180608084407 262c006d crc%b
+D crtp.ads		20180608084407 28118101 crtp%s
+D crtp.adb		20180608084407 b29edda0 crtp%b
+D generic_queue.ads	20180608084407 4cb410a9 generic_queue%s
+D generic_vectors.ads	20180608084407 04d47fda generic_vectors%s
+D generic_vectors.adb	20180608084407 457e604a generic_vectors%b
+D gnat.ads		20170517144320 fd2ad2f1 gnat%s
+D g-crc32.ads		20170517144320 f06a8e9a gnat.crc32%s
+D hal.ads		20180608084415 2b42c80e hal%s
+D hal-audio.ads		20180608084415 6baea1e9 hal.audio%s
+D hal-block_drivers.ads	20180608084415 3a6f071f hal.block_drivers%s
+D hal-gpio.ads		20180608084415 146364b8 hal.gpio%s
+D hal-i2c.ads		20180608084415 0ed73138 hal.i2c%s
+D hal-real_time_clock.ads  20180608084415 9dd52fca hal.real_time_clock%s
+D hal-sdmmc.ads		20180608084415 7293c891 hal.sdmmc%s
+D hal-spi.ads		20180608084415 fe139819 hal.spi%s
+D hal-time.ads		20180608084415 f5295cd7 hal.time%s
+D hal-uart.ads		20180608084415 d58316b4 hal.uart%s
+D interfac.ads		20170517144320 5ab55268 interfaces%s
+D i-stm32.ads		20170517144320 4d2e1e9b interfaces.stm32%s
+D i-stm32-pwr.ads	20170517144320 10ed2a13 interfaces.stm32.pwr%s
+D i-stm32-rcc.ads	20170517144320 ed083a96 interfaces.stm32.rcc%s
+D leds.ads		20180608100909 1ed6915b leds%s
+D link_interface.ads	20180608084407 63ce6922 link_interface%s
+D log.ads		20180608084407 ffd2f526 log%s
+D log.adb		20180608084407 9eab01a5 log%b
+D mpu9250.ads		20180608084415 11ad30ab mpu9250%s
+D ravenscar_time.ads	20180608084415 7a23edc6 ravenscar_time%s
+D sdmmc_svd_periph.ads	20180608084415 b49674fe sdmmc_svd_periph%s
+D stm32.ads		20180608084415 698e2c3b stm32%s
+D stm32-adc.ads		20180608084415 a0a7f671 stm32.adc%s
+D stm32-board.ads	20180608084415 69000a83 stm32.board%s
+D stm32-crc.ads		20180608084415 9ef7b3c1 stm32.crc%s
+D stm32-dac.ads		20180608084415 bbc963b4 stm32.dac%s
+D stm32-device.ads	20180608084415 b860d86c stm32.device%s
+D stm32-dma.ads		20180608084415 a485c5f7 stm32.dma%s
+D stm32-dma-interrupts.ads  20180608084415 35afaa6f stm32.dma.interrupts%s
+D stm32-exti.ads	20180608084415 27a7d05f stm32.exti%s
+D stm32-gpio.ads	20180608084415 dfe90a82 stm32.gpio%s
+D stm32-i2c.ads		20180608084415 e73ffae8 stm32.i2c%s
+D stm32-i2c-dma.ads	20180608084415 75d445d8 stm32.i2c.dma%s
+D stm32-i2s.ads		20180608084415 8099fbc7 stm32.i2s%s
+D stm32-rtc.ads		20180608084415 ff58a3e8 stm32.rtc%s
+D stm32-sdmmc.ads	20180608084415 4cae3006 stm32.sdmmc%s
+D stm32-sdmmc_interrupt.ads  20180608084415 6fda8a6a stm32.sdmmc_interrupt%s
+D stm32-spi.ads		20180608084415 98127252 stm32.spi%s
+D stm32-spi-dma.ads	20180608084415 030a0921 stm32.spi.dma%s
+D stm32-timers.ads	20180608084415 63c500b2 stm32.timers%s
+D stm32-usarts.ads	20180608084415 c32302c7 stm32.usarts%s
+D stm32_svd.ads		20180608084415 eeda8404 stm32_svd%s
+D stm32_svd-adc.ads	20180608084415 0c4598f6 stm32_svd.adc%s
+D stm32_svd-crc.ads	20180608084415 f8fb8ec8 stm32_svd.crc%s
+D stm32_svd-dac.ads	20180608084415 7ce3d16d stm32_svd.dac%s
+D stm32_svd-dma.ads	20180608084415 cbdaf790 stm32_svd.dma%s
+D stm32_svd-gpio.ads	20180608084415 d1b361bd stm32_svd.gpio%s
+D stm32_svd-i2c.ads	20180608084415 bbdaed5e stm32_svd.i2c%s
+D stm32_svd-sdio.ads	20180608084415 586e3cc2 stm32_svd.sdio%s
+D stm32_svd-spi.ads	20180608084415 9452a68a stm32_svd.spi%s
+D stm32_svd-usart.ads	20180608084415 e4981db8 stm32_svd.usart%s
+D system.ads		20170517144320 db831581 system%s
+D s-atacco.ads		20170517144320 4c36d12f system.address_to_access_conversions%s
+D s-assert.ads		20170517144320 cd8d2c94 system.assertions%s
+D s-atocou.ads		20170517144320 b45c2d8d system.atomic_counters%s
+D s-atocou.adb		20170517144320 b65612c0 system.atomic_counters%b
+D s-bb.ads		20170517144320 09e072ae system.bb%s
+D s-bbbopa.ads		20170517144320 95d97b26 system.bb.board_parameters%s
+D s-bbbosu.ads		20170517144320 9b59a61f system.bb.board_support%s
+D s-bbcppr.ads		20170517144320 bcfa73ad system.bb.cpu_primitives%s
+D s-bcprmu.ads		20170517144320 043d3736 system.bb.cpu_primitives.multiprocessors%s
+D s-bbinte.ads		20170517144320 d9fc23b0 system.bb.interrupts%s
+D s-bbmcpa.ads		20170517144320 c4c55388 system.bb.mcu_parameters%s
+D s-bbpara.ads		20170517144320 77379e7b system.bb.parameters%s
+D s-bbthre.ads		20170517144320 d6c36e4f system.bb.threads%s
+D s-bbthqu.ads		20170517144320 db3cad46 system.bb.threads.queues%s
+D s-bbtime.ads		20170517144320 ad086247 system.bb.time%s
+D s-bbtiev.ads		20170517144320 14ca2877 system.bb.timing_events%s
+D s-crc32.ads		20170517144320 e3a788c7 system.crc32%s
+D s-finmas.ads		20170517144320 7811a767 system.finalization_masters%s
+D s-finroo.ads		20170517144320 4ff27390 system.finalization_root%s
+D s-interr.ads		20170517144320 36300b98 system.interrupts%s
+D s-multip.ads		20170517144320 f33e0e35 system.multiprocessors%s
+D s-mufalo.ads		20170517144320 3dca0374 system.multiprocessors.fair_locks%s
+D s-musplo.ads		20170517144320 69fa25c4 system.multiprocessors.spin_locks%s
+D s-osinte.ads		20170517144320 2d4f0621 system.os_interface%s
+D s-parame.ads		20170517144320 c9fe535f system.parameters%s
+D s-pooglo.ads		20170517144320 ede33ef8 system.pool_global%s
+D s-secsta.ads		20170517144320 0b22b54c system.secondary_stack%s
+D s-soflin.ads		20170517144320 09900c20 system.soft_links%s
+D s-stalib.ads		20170517144320 09bd3940 system.standard_library%s
+D s-stm32.ads		20170517144320 e898dba2 system.stm32%s
+D s-stoele.ads		20170517144320 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20170517144320 ed88f8fb system.storage_elements%b
+D s-stopoo.ads		20170517144320 b16154c2 system.storage_pools%s
+D s-stposu.ads		20170517144320 97a6219c system.storage_pools.subpools%s
+D s-tasinf.ads		20170517144320 801abd01 system.task_info%s
+D s-taspri.ads		20170517144320 351848fa system.task_primitives%s
+D s-taskin.ads		20170517144320 a1f44ab3 system.tasking%s
+D s-taprob.ads		20170517144320 c8fc0753 system.tasking.protected_objects%s
+D s-tpoben.ads		20170517144320 8351b91e system.tasking.protected_objects.entries%s
+D s-tpobop.ads		20170517144320 1882ba41 system.tasking.protected_objects.operations%s
+D s-tposen.ads		20170517144320 828b4fcc system.tasking.protected_objects.single_entry%s
+D s-tasres.ads		20170517144320 0c8ef6fb system.tasking.restricted%s
+D s-tarest.ads		20170517144320 4cbcd33f system.tasking.restricted.stages%s
+D s-traent.ads		20170517144320 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20170517144320 34867c83 system.unsigned_types%s
+D types.ads		20180608084407 c1aa6e7e types%s
+D /home/taste/tool-inst/include/ocarina/runtime/polyorb-hi-ada/gnat_runtime.adc  20180607235124 00000000
+X 1 ada.ads
+16K9*Ada 20e8 58|30r6 31r6 32r6 32r39 33r6 33r39 34r6 117r11 217r47 218r8
+. 222r34 351r16 381r16 455r51 482r50 592r54 638r16 734r13 756r19 887r9 935r50
+X 4 a-contai.ads
+16K13*Containers 24e19 58|31r10 217r51 218r12 222r38 351r20 381r20 638r20
+. 756r23
+19M9*Hash_Type 58|217r62 218r23
+20I9*Count_Type<integer> 58|351r31 381r31 638r31 756r34
+X 5 a-cbhama.ads
+41+9 Key_Type 58|223r7
+42+9 Element_Type 58|224r7
+44V18 Hash{4|19M9} 58|225r7
+45V18 Equivalent_Keys{boolean} 58|226r7
+48k24*Bounded_Hashed_Maps 468e39 58|31w21 222r49
+53R9*Map<7|68R12[336[58|222]]> 58|258r35[222]
+61R9*Cursor 58|678r31[222] 736r40[222] 800r40[222] 837r40[222]
+72V13*Has_Element{boolean} 58|681s29[222] 740s29[222] 803s29[222] 840s29[222]
+103V13*Length{4|20I9} 58|641s24[222]
+109U14*Clear 58|862s24[222]
+115V13*Element{integer} 58|685s40[222] 744s28[222] 808s55[222] 845s50[222]
+215U14*Insert 58|660s27[222]
+217m7 Key{138|15M9} 58|660r35[222]
+218i7 New_Item{integer} 58|660r52[222]
+264U14*Delete 58|686s21[222]
+285V13*Find{61R9[58|222]} 58|678s55[222] 736s64[222] 800s64[222] 837s64[222]
+291V13*Contains{boolean} 58|646s24[222] 1021s35[222]
+X 7 a-cohata.ads
+68R12 Hash_Table_Type
+X 19 a-iteint.ads
+24h9 Forward_Iterator
+X 20 a-reatim.ads
+41K13*Real_Time 155e18 58|32w10 32r43 33r10 33r43
+53M9*Time<107|46M9> 58|936r10
+63I9*Time_Span<107|81I9> 58|205r25
+70V13*Clock{53M9}<107|134p13> 58|819s37 941s47 968s37
+74V14*"+"{53M9} 58|819s43 968s43
+106V13*Milliseconds{63I9} 58|817s35
+X 21 a-rttiev.ads
+38K23*Timing_Events 74e32 58|33w20 33r53
+40R9*Timing_Event<108|42R9> 72e17 58|203r39 236r47 960r47 962r44
+42P9*Timing_Event_Handler 58|246r39
+45U14*Set_Handler 58|818s13 967s13
+46r7 Event{58|203R9} 58|818r26 967r26
+47m7 At_Time{20|53M9} 58|819r26 968r26
+48p7 Handler{42P9} 58|820r26 969r26
+50V13*Current_Handler{42P9}
+53U14*Cancel_Handler<108|80p14> 58|697s7 815s13 845s7
+57V13*Time_Of_Event{20|53M9}
+X 23 a-string.ads
+16K13*Strings 35e16 58|34r10 117r15
+X 24 a-strbou.ads
+39K21*Bounded 914e24 58|34w18 117r23
+43i7 Max{positive} 58|117r55
+46k12*Generic_Bounded_Length 912e30 58|117r31
+50R12*Bounded_String<27|47R9> 58|118r30[116] 121r32[116]
+63V16*To_Bounded_String{50R12[58|116]} 58|123s15[116]
+67V16*To_String{string} 58|119r34[116]
+162V17*"="{boolean}<27|168p13> 58|420s50[116]
+X 30 a-unccon.ads
+20v14*Unchecked_Conversion 58|30w10 455r55 482r54 592r58 734r17 887r13 935r54
+X 32 crc.ads
+39K9*CRC 45e8 58|39w6 505r38
+42+12 Data_Kind 58|505r48
+43v13*Make 58|505r42
+X 34 crtp.ads
+36K9*CRTP 236e9 58|36w6 36r39
+42N4*CRTP_MAX_DATA_SIZE 58|765r15
+51M9*CRTP_Channel<138|15M9> 58|456r10
+60n23*CRTP_PORT_LOG{56E9} 58|328r31 517r10 1031r29
+88R9*CRTP_Packet 103e14 58|265r41 268r40 271r44 449r41 476r40 586r44 595r21
+89m7*Size{138|15M9} 58|607r72 611r72 626m17
+93m13*Channel{51M9} 58|460r54
+96a13*Data_1{78A12} 58|515r53 546r37 601r57 606r43 607r43 610r43 611r43 613r48
+. 616r35 617r44 619r46 625m17
+110R9*CRTP_Packet_Handler 203e14 58|313r31 511r24 873r31 989r25
+115V13*CRTP_Create_Packet{110R9} 58|516s25 1030s15
+116e7 Port{56E9} 58|1031r18
+117m7 Channel{51M9} 58|1032r18
+124V13*CRTP_Get_Packet_From_Handler{88R9} 58|578s10 1129s32
+130u14*CRTP_Append_Data 58|489r49 496r50 894r9 999r56 1001r49 1003r50 1005r50
+. 1007r48 1009r49 1011r49 1013r47
+131r7 Handler{110R9} 58|1035r39[1001] 1039r46[999] 1060r31[1001] 1070r31[1003]
+. 1080r31[1005] 1090r31[1007] 1100r31[1009] 1110r31[1011] 1120r31[1013]
+132m7 Data{138|15M9} 58|1036r39[1001] 1040r46[999] 1061r31[1001] 1071r31[1003]
+. 1081r31[1005] 1091r31[1007] 1101r31[1009] 1111r31[1011] 1121r31[1013]
+133b7 Has_Succeed{boolean} 58|1037r39[1001] 1041r46[999] 1062r31[1001] 1072r31[1003]
+. 1082r31[1005] 1092r31[1007] 1102r31[1009] 1112r31[1011] 1122r31[1013]
+161U14*CRTP_Send_Packet 58|577s7 627s7 1128s13
+162r7 Packet{88R9} 58|1129r16
+163b7 Has_Succeed{boolean} 58|1130r16
+168U14*CRTP_Register_Callback 58|328s7
+176U14*CRTP_Reset 58|1134s13
+182V13*CRTP_Is_Connected{boolean} 58|1020s13
+X 37 generic_vectors.ads
+31+9 Element_Type 58|144r7 157r7 169r7 197r7
+32k9*Generic_Vectors 72e20 58|40w6 143r33 156r35 168r30 196r34
+35R9*Vector 58|146r48[143] 159r56[156] 171r42[168] 198r51[196]
+37V13*Length{natural} 58|355s30[168] 363s39[168] 385s30[156] 395s58[143]
+. 419s41[168] 527s48[143] 548s51[143] 771s66[143] 915s38[196] 1044s60[196]
+39U14*Append 58|359s27[168] 390s30[143] 395s27[156] 781s30[196]
+42V13*Element{58|163R9} 58|420s33[168] 784s42[143] 917s44[196] 1051s44[143]
+46V13*Element_Access(58|163R9) 58|380s35[168] 556s47[143] 558s44[168] 1047s54[196]
+60U14*Clear 58|701s24[196]
+X 42 hal-audio.ads
+61h9*Audio_Stream
+X 43 hal-block_drivers.ads
+34h9*Block_Driver
+X 44 hal-gpio.ads
+44h9*GPIO_Point
+X 45 hal-i2c.ads
+48h9*I2C_Port
+X 46 hal-real_time_clock.ads
+79h9*RTC_Device
+X 47 hal-sdmmc.ads
+380h9*SDMMC_Driver
+X 48 hal-spi.ads
+48h9*SPI_Port
+X 49 hal-time.ads
+34h9*Delays
+X 50 hal-uart.ads
+48h9*UART_Port
+X 51 interfac.ads
+46I9*Integer_8<short_short_integer>
+49I9*Integer_16<short_integer>
+52I9*Integer_32<integer>
+63M9*Unsigned_8
+66M9*Unsigned_16
+74M9*Unsigned_32
+X 57 log.ads
+32K9*Log 95l5 95e8 58|42b14 1140l5 1140t8
+36E9*Log_Variable_Type 43e17 44r8 52r8 76r22 85r22 58|90r34 132r22 191r19
+. 192r19 375r22 407r22 563r25 712r43 764r30 785r30
+37n7*LOG_UINT8{36E9} 45r7 58|91r10 1054r27
+38n7*LOG_UINT16{36E9} 46r7 58|92r10 1064r27
+39n7*LOG_UINT32{36E9} 47r7 58|93r10 1074r27
+40n7*LOG_INT8{36E9} 48r7 58|94r10 1084r27
+41n7*LOG_INT16{36E9} 49r7 58|95r10 1094r27
+42n7*LOG_INT32{36E9} 50r7 58|96r10 1104r27
+43n7*LOG_FLOAT{36E9} 51r7 58|97r10 1114r27
+57U14*Log_Init 58|322b14 331l8 331t16
+60V13*Log_Test{boolean} 58|337b13 340l8 340t16
+62N4*Max_Name_Length 70r31 79r31 89r24 89r59 58|117r62 124r30
+66U14*Create_Log_Group 67>7 68<7 69<7 58|346b14 366l8 366t24 428s10
+67a7 Name{string} 70r16 58|347b7 360r41 428r28
+68i7 Group_ID{natural} 58|348b7 363m7 429r28
+69b7 Has_Succeed{boolean} 58|349b7 353m7 365m7 430r28
+73U14*Append_Log_Variable_To_Group 74>7 75>7 76>7 77>7 78<7 58|372b14 398l8
+. 398t36 435s10
+74i7 Group_ID{natural} 58|373b7 380r51 390r51 435r40
+75a7 Name{string} 79r16 58|374b7 391r71 436r40
+76e7 Log_Type{36E9} 58|375b7 392r51 437r40
+77m7 Variable{92|80M9} 58|376b7 393r51 438r40
+78b7 Has_Succeed{boolean} 58|377b7 383m7 397m7 439r40
+82U14*Add_Log_Variable 83>7 84>7 85>7 86>7 87<7 58|404b14 441l8 441t24
+83a7 Group{string} 89r8 58|405b7 411r61 428r43
+84a7 Name{string} 89r44 58|406b7 436r55
+85e7 Log_Type{36E9} 58|407b7 437r55
+86m7 Variable{92|80M9} 58|408b7 438r55
+87b7 Success{boolean} 58|409b7 415m7 430m43 434r10 439m55
+91T14*Logger 91d22 58|984b14 1138l8 1138t14
+91i22 Priority{92|117I12} 92r21
+X 58 log.adb
+47E9 Log_Channel 50e19 51r8 55r8 456r24 458r17 517r25 1032r29
+48n7 LOG_TOC_CH{47E9} 52r7 463r15 517r47
+49n7 LOG_CONTROL_CH{47E9} 53r7 465r15
+50n7 LOG_DATA_CH{47E9} 54r7 1032r51
+61E9 Log_TOC_Command 63e24 64r8 67r8 483r19 510r24 520r10
+62n7 LOG_CMD_GET_ITEM{61E9} 65r7 543r15
+63n7 LOG_CMD_GET_INFO{61E9} 66r7 524r15
+70E9 Log_Control_Command 76e25 77r8 84r8 593r19 596r21
+71n7 LOG_CONTROL_CREATE_BLOCK{70E9} 78r7 604r15
+72n7 LOG_CONTROL_APPEND_BLOCK{70E9} 79r7 608r15
+73n7 LOG_CONTROL_DELETE_BLOCK{70E9} 80r7 612r15
+74n7 LOG_CONTROL_START_BLOCK{70E9} 81r7 614r15
+75n7 LOG_CONTROL_STOP_BLOCK{70E9} 82r7 618r15
+76n7 LOG_CONTROL_RESET{70E9} 83r7 620r15
+90a4 Type_Length(138|15M9) 764r17 917r14
+100N4 ENOENT 682r17 741r17 773r23 804r17 841r17
+101N4 E2BIG 767r23
+102N4 ENOMEM 642r17
+103N4 EEXIST 647r17
+106N4 MAX_LOG_NUMBER_OF_GROUPS 126r51 139r49 172r19 355r39
+108N4 MAX_LOG_NUMBER_OF_VARIABLES_PER_GROUP 139r9 160r19 385r39
+110N4 MAX_LOG_OPS 195r55 199r19 540r16
+112N4 MAX_LOG_BLOCKS 220r47 258r52 259r52 536r16
+116K12 Strings[24|46] 118r22 119r26 121r24 123r7
+118V14 "+"=119:34{string} 566s25 567s25
+118r18 B{24|50R12[116]}
+121R12 Log_Name{24|50R12[116]} 122r52 131r22 164r23 411r29 413r16
+122V13 String_To_Log_Name{121R12} 122>33 360s21 391s51 411s41
+122a33 S{string} 123r34 124r18
+126I12 Group_Identifier{natural} 130r22 426r26
+129R9 Log_Variable 134e14 144r23 555r33
+130i7*Group_ID{126I12} 390m39 559r36
+131r7*Name{121R12} 391m39 567r35
+132e7*Log_Type{57|36E9} 392m39 563r62 784r61
+133m7*Variable{92|80M9} 393m39 1051r66
+138N4 Max_Variables 141r54 147r19
+141I12 Variable_Identifier{natural} 157r23 190r19 751r33 776r25
+143K12 Log_Variables[37|32] 146r34
+146R12 Log_Variable_Array{37|35R9[143]} 178r23
+156K12 Group_Variables[37|32] 159r40
+159R12 Log_Group_Variable_Array{37|35R9[156]} 165r23
+163R9 Log_Group 166e14 169r23 379r15 557r30
+164r7*Name{121R12} 360m11 420r45 566r32
+165r7*Log_Variables{159R12} 385r16 395m13
+168K12 Log_Groups[37|32] 171r31
+171R12 Log_Group_Array{37|35R9[168]} 177r23
+176R9 Log_TOC 179e14 252r23 505r61
+177r7*Log_Groups{171R12} 355r19 359m16 363r28 380m24 419r30 420r22 558m33
+178r7*Log_Variables{146R12} 390m16 395r44 527r34 548r37 556m33 771r52 784r28
+. 1051r30
+189R9 Log_Operation 193e14 197r23 1046r24
+190i7*Variable{141I12} 782m17 1051r56
+191e7*Stored_As{57|36E9} 783m17
+192e7*Report_As{57|36E9} 785m17 917r56 1053r27
+195I12 Operation_Identifier{natural}
+196K12 Log_Operations[37|32] 198r36
+198R12 Log_Operations_Array{37|35R9[196]} 213r20
+203R9 Log_Block_Timing_Event<21|40R9> 21|45p14 50p13 53P14 57p13 58|206e14
+. 212r20 961r25 962r20 108|63p14 75p13 86p13
+204m7*Client_Block_ID{138|15M9} 816m25 964r45
+205i7*Period{20|63I9} 817m25 819r57 968r58
+210R9 Log_Block 214e14 255r41 302r45 693r15 749r18 809r18 910r45
+211b7*Free{boolean} 650r61 658r28 662m28 700m13 745r42 812r35
+212r7*Timer{203R9} 697m29 815m35 816m19 817m19 818m43 819r51 845m68
+213r7*Operations{198R12} 701m13 781m19 915r27 917r33 1044r49 1047m43
+217V13 Uint8_Hash{4|19M9} 217>25 225r26
+217m25 Key{138|15M9} 218r34
+220I12 Log_Block_ID{integer} 224r26 255r24 281r43 691r43 737r12 808r24 986r25
+222K12 Log_Block_Maps[5|48] 258r20 678r16 681r14 685r25 736r25 740r14 744r13
+. 800r25 803r14 808r40 837r25 840r14 845r35
+229A12 Log_Time_Stamp{138|23A9}<integer> 306r39 927r39 939r20 988r25 1000r10
+233w14 Log_Block_Timing_Event_Handler 247r9 954b19 982l8 982t38 1017r10
+236U17 Log_Run_Block 236=32 247r40 960b17 970l11 970t24
+236r32 Event{21|40R9} 960b32 962r64 967m37
+237Y13 Get_Block_To_Run 237<31 976b13 980l11 980t27 1017s41
+237m31 ID{138|15M9} 979m10 1018r13
+240b7 Record_Required{boolean} 965r13 976r54 978r10
+241m7 Block_To_Record{138|15M9} 964r13 979r16
+246p4 Log_Block_Timer_Handler{21|42P9} 820r37 969r37
+249b4 Is_Init{boolean} 324r10 330m7 339r14 858r10
+252r4 Log_Data{176R9} 355r10 359m7 359r7 363r19 380m15 380r15 390m7 390r7
+. 395r35 419r21 420r13 507r40 527r25 548r28 556m24 556r24 558m24 558r24 771r43
+. 784r19 1051r21
+255a4 Log_Blocks(210R9) 650r41 657r16 658r13 662m13 693m33 693r33 745r26
+. 749m36 749r36 809m36 809r36 845m23 845r23 1044r27 1047m21 1047r21
+258r4 Log_Block_Map{5|53R9[222]} 641r10 641r33 646r10 660m13 660r13 678r41
+. 686m7 686r7 736r50 800r50 837r50 859r23 862m10 862r10 1021r21 1025r25
+265U14 Log_CRTP_Handler 265>32 328r46 449b14 470l8 470t24
+265r32 Packet{34|88R9} 449b32 460r47 464r30 466r34
+268U14 Log_TOC_Process 268>31 464s13 476b14 580l8 580t23
+268r31 Packet{34|88R9} 476b31 515r46 546r30
+271U14 Log_Control_Process 271>35 466s13 586b14 628l8 628t27
+271r35 Packet{34|88R9} 586b35 595r36 601r50 606r36 607r36 607r65 610r36 611r36
+. 611r65 613r41 616r28 617r37 619r39
+275V13 Log_Create_Block{138|15M9} 276>7 277>7 605s23 634b13 670l8 670t24
+276m7 Block_ID{138|15M9} 606r16 635b7 646r34 660r42 664r41
+277a7 Ops_Settings_Raw{138|23A9} 607r16 636b7 664r51
+280V13 Log_Delete_Block{138|15M9} 280>31 613s23 676b13 689l8 689t24
+280m31 Block_ID{138|15M9} 676b31 678r61
+281U14 Log_Delete_Block 281>32 685s7 691b14 702l8 702t24 860s13
+281i32 Block_ID{220I12} 691b32 693r45
+285V13 Log_Append_To_Block{138|15M9} 286>7 287>7 609s23 664s20 708b13 790l8
+. 790t27
+286m7 Block_ID{138|15M9} 610r16 709b7 736r70
+287a7 Ops_Settings_Raw{138|23A9} 611r16 710b7 727r21 754r52
+290V13 Log_Start_Block{138|15M9} 291>7 292>7 615s23 796b13 828l8 828t23
+291m7 Block_ID{138|15M9} 616r16 797b7 800r70 816r44
+292i7 Period{natural} 617r16 798b7 814r13 817r62
+295V13 Log_Stop_Block{138|15M9} 295>29 619s23 834b13 849l8 849t22
+295m29 Block_ID{138|15M9} 834b29 837r70
+298U14 Log_Reset 621s13 855b14 864l8 864t17 1133s13
+302V13 Calculate_Block_Length{138|15M9} 302>37 303r19 760s37 910b13 921l8
+. 921t30
+302r37 Block{210R9} 910b37 915r21 917r27
+306V13 Get_Log_Time_Stamp{229A12} 307r19 927b13 946l8 946t26 1027s27
+310U14 Append_Raw_Data_Variable_Name_To_Packet 311>7 312>7 313=7 314<7 565s22
+. 870b14 904l8 904t47
+311a7 Group_Name{string} 871b7 877r22 898r12
+312a7 Variable_Name{string} 872b7 877r46 898r37
+313r7 Packet_Handler{34|110R9} 873b7 901m10
+314b7 Has_Succeed{boolean} 874b7 903m10
+379r7 Group{163R9} 385r10 395r7
+411r7 Group_Name{121R12} 420r52
+412i7 Group_ID{integer} 421m13 426r10 429m43 435r55
+419i11 J{integer} 420r42 421r25
+455V16 CRTP_Channel_To_Log_Channel[30|20]{47E9} 460s18
+458e7 Channel{47E9} 460m7 462r12
+482V16 T_Uint8_To_Log_TOC_Command[30|20]{61E9} 515s18
+489U17 CRTP_Append_T_Uint8_Data[34|130] 35|159b14 58|518s7 525s13 534s13
+. 538s13 549s19 561s22
+496U17 CRTP_Append_T_Uint32_Data[34|130] 35|159b14 58|530s13
+499V16 Log_Data_CRC32{138|17M9} 500b16 508l11 508t25 532s16
+505V19 Log_TOC_CRC[32|43]{51|74M9} 33|35b13 58|507s27
+510e7 Command{61E9} 515m7 520r36 523r12
+511r7 Packet_Handler{34|110R9} 516m7 519m10 519r10 526m16 526r16 531m16 531r16
+. 535m16 535r16 539m16 539r16 550m22 550r22 562m25 562r25 568m25 568r25 578r40
+512b7 Has_Succeed{boolean} 513r28 521m10 528m16 533m16 537m16 541m16 552m22
+. 564m25 569m25 579m10
+545i16 Var_ID{integer} 548r19 551r31 556r63
+555r22 Variable{129R9} 559r27 563r53 567r26
+557r22 Group{163R9} 566r26
+592V16 T_Uint8_To_Log_Control_Command[30|20]{70E9} 601s18
+595r7 Tx_Packet{34|88R9} 625m7 626m7 627r25
+596e7 Command{70E9} 601m7 603r12
+597m7 Answer{138|15M9} 605m13 609m13 613m13 615m13 619m13 622m13 625r31
+598b7 Has_Succeed{boolean} 599r28 627m36
+650r32 Block=650:41{210R9} 650r55
+657i11 J{integer} 658r25 660r64 662r25
+678r7 Cursor{5|61R9[222]} 681r42 685r49 686m29 686r29
+693r7 Block=693:33{210R9} 697r23 700r7 701r7
+694b7 Dummy{boolean} 697m36
+712E12 Short_Log_Variable_Type<57|36E9> 715r25 716r25
+714R12 Ops_Setting 719e9 720r11 727r53
+715e10 Storage_Type{712E12} 721r10
+716e10 Log_Type{712E12} 722r10 764r51 785r51
+717m10 Variable_ID{138|15M9} 723r10 771r27 776r48
+726A12 Ops_Settings_Array(714R12)<integer> 734r54 753r34
+733V16 T_Uint8_Array_To_Ops_Settings_Array[30|20]{726A12} 754s15
+736r7 Cursor{5|61R9[222]} 740r42 744r37
+737i7 ID{220I12} 744m7 745r38 749r48
+749r10 Block=749:36{210R9} 760r61 781r13
+750m10 Current_Block_Length{138|15M9} 760m13 763r16
+751i10 Variable{141I12} 776m13 782r29 784r51
+753a10 Ops_Settings{726A12} 759r19
+759r14 O=759:19{714R12} 764r49 771r25 776r46 785r49
+800r7 Cursor{5|61R9[222]} 803r42 808r64
+808i10 ID{220I12} 809r48
+809r10 Block=809:36{210R9} 812r29 815r29 816r13 817r13 818r37 819r45
+810b10 Dummy{boolean} 815m42
+836b7 Dummy{boolean} 846m23
+837r7 Cursor{5|61R9[222]} 840r42 845r59
+856m7 Dummy{138|15M9}
+859i14 Block{integer} 860r31
+876A15 Log_Complete_Name{string}<integer> 880r24 887r35
+879A15 Log_Complete_Name_Raw{138|23A9}<integer> 887r54 894r27 896r36
+886V16 Log_Complete_Name_To_Log_Complete_Name_Raw[30|20]{138|23A9} 897s12
+893U17 CRTP_Append_Log_Complete_Name_Raw_Data[34|130] 35|159b14 58|900s7
+896a7 Complete_Name_Raw{879A15} 902r10
+912m7 Block_Length{138|15M9} 916m10 916r26 920r14
+915i11 J{integer} 917r53
+929A16 Time_T_Uint8_Array{138|23A9}<integer> 936r16 938r20
+935V16 Time_To_Time_T_Uint8_Array[30|20]{138|23A9} 941s19
+938a7 Raw_Time{929A16} 941m7 943r21
+939a7 Time_Stamp{229A12} 943m7 945r14
+961r10 Actual_Event{203R9} 964r32 968r45
+976m31 ID{138|15M9}
+985m7 Client_Block_ID{138|15M9} 1018m19 1021r45 1025r40 1036r54
+986i7 Block_ID{220I12} 1025m13 1044r39 1047r33
+987m7 Variable{92|80M9} 1050m19 1057r50 1067r50 1077r50 1087r50 1097r50 1107r50
+. 1117r50
+988a7 Time_Stamp{229A12} 1027m13 1040r61
+989r7 Packet_Handler{34|110R9} 1029m13 1035m54 1035r54 1039m61 1039r61 1060m46
+. 1060r46 1070m46 1070r46 1080m46 1080r46 1090m47 1090r47 1100m46 1100r46
+. 1110m46 1110r46 1120m46 1120r46 1129r62
+990b7 Has_Succeed{boolean} 1037m54 1041m61 1062m46 1072m46 1082m46 1092m46
+. 1102m46 1112m46 1122m46 1130m32
+999U17 CRTP_Append_Log_Time_Stamp_Data[34|130] 35|159b14 58|1039s13
+1001U17 CRTP_Append_T_Uint8_Data[34|130] 35|159b14 58|1035s13 1059s28
+1003U17 CRTP_Append_T_Uint16_Data[34|130] 35|159b14 58|1069s28
+1005U17 CRTP_Append_T_Uint32_Data[34|130] 35|159b14 58|1079s28
+1007U17 CRTP_Append_T_Int8_Data[34|130] 35|159b14 58|1089s28
+1009U17 CRTP_Append_T_Int16_Data[34|130] 35|159b14 58|1099s28
+1011U17 CRTP_Append_T_Int32_Data[34|130] 35|159b14 58|1109s28
+1013U17 CRTP_Append_Float_Data[34|130] 35|159b14 58|1119s28
+1044i17 J{integer} 1047r70
+1046r19 Op{189R9} 1051r53 1053r24
+1056m28 Value{138|15M9} 1057m32 1057r32 1061r46
+1066m28 Value{138|16M9} 1067m32 1067r32 1071r46
+1076m28 Value{138|17M9} 1077m32 1077r32 1081r46
+1086i28 Value{138|7I12} 1087m32 1087r32 1091r46
+1096i28 Value{138|8I12} 1097m32 1097r32 1101r46
+1106i28 Value{138|9I12} 1107m32 1107r32 1111r46
+1116f28 Value{float} 1117m32 1117r32 1121r46
+X 92 system.ads
+50K9*System 57|30w6 77r22 86r22 91r33 58|133r22 133r40 376r22 408r22 987r25
+. 92|164e11
+80M9*Address 57|77r29 86r29 58|133r29 376r29 408r29 987r32
+82m4*Null_Address{80M9} 58|133r47
+116I12*Any_Priority{integer}
+117I12*Priority{116I12} 57|91r40
+X 101 s-bcprmu.ads
+39U14*Start_All_CPUs 40i<c,__gnat_start_slave_cpus>22
+X 107 s-bbtime.ads
+46M9*Time
+81I9*Time_Span<long_long_integer>
+X 108 s-bbtiev.ads
+37P9*Timing_Event_Handler
+42R9*Timing_Event
+63U14*Set_Handler
+75V13*Current_Handler{37P9}
+86V13*Time_Of_Event{107|46M9}
+X 112 s-interr.ads
+101U14*Install_Restricted_Handlers_Sequential 102i<c,__gnat_attach_all_handlers>22
+X 129 s-taskin.ads
+413V13*Get_Sec_Stack{92|80M9} 414i<c,__gnat_get_secondary_stack>22
+X 135 s-tarest.ads
+225U14*Activate_All_Tasks_Sequential 226i<c,__gnat_activate_all_tasks>22
+X 138 types.ads
+3K9*Types 58|37w6 37r39 138|59e10
+7I12*T_Int8{51|46I9} 58|1008r10 1086r36
+8I12*T_Int16{51|49I9} 58|1010r10 1096r36
+9I12*T_Int32{51|52I9} 58|1012r10 1106r36
+15M9*T_Uint8<51|63M9> 58|90r56 204r25 217r31 223r26 237r40 241r25 276r26
+. 277r48 280r42 280r58 286r26 287r48 291r18 292r34 295r40 295r56 302r63 483r10
+. 490r10 527r16 551r22 593r10 597r21 635r26 636r48 676r42 676r58 709r26 710r48
+. 717r25 750r33 797r18 798r34 834r40 834r56 856r16 910r63 912r22 976r40 985r25
+. 1002r10 1056r36
+16M9*T_Uint16<51|66M9> 58|1004r10 1066r36
+17M9*T_Uint32<51|74M9> 58|497r10 499r38 500r38 507r17 1006r10 1076r36
+23A9*T_Uint8_Array(15M9)<integer> 58|229r30 277r26 287r26 636r26 710r26 734r39
+. 880r9 929r38
+

@@ -1,0 +1,27 @@
+--  This file was generated automatically: DO NOT MODIFY IT !
+
+--  This file contains a part of the system CONCURRENCY VIEW.
+--  It is an input file for OCARINA.
+
+package vt_crazyflie_pulse_CV_Thread
+public
+	with Deployment;
+	with process_package;
+	with Dataview;
+
+THREAD vt_crazyflie_pulse_vt_crazyflie_pulse
+END vt_crazyflie_pulse_vt_crazyflie_pulse;
+
+THREAD IMPLEMENTATION vt_crazyflie_pulse_vt_crazyflie_pulse.others
+PROPERTIES
+	Initialize_Entrypoint_Source_Text => "crazyflie_wrappers.C_Init_crazyflie";
+	Compute_Entrypoint_Source_Text => "vt_crazyflie_pulse_wrappers.artificial_pulse";
+	Dispatch_Protocol      => Periodic;
+	Period                 => 2000 ms;
+	Dispatch_Offset        => 0 ms;
+	Compute_Execution_Time => 0 ms .. 10 ms;
+	Stack_Size             => 5 KByte;
+	Priority               => 1;
+END vt_crazyflie_pulse_vt_crazyflie_pulse.others;
+
+end vt_crazyflie_pulse_CV_Thread;

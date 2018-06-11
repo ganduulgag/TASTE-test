@@ -1,0 +1,13 @@
+--  This file was generated automatically: DO NOT MODIFY IT !
+
+--  This file contains the description of the system distribution.
+--  It is an input file for the TASTE ORCHESTRATOR
+
+* crazyflie_v2_partition PLATFORM_GNAT_RUNTIME
+crazyflie
+led_control
+crazyflie_v2_partition_taste_api
+vt_crazyflie_pulse
+vt_crazyflie_start_demo
+* x86_partition PLATFORM_NATIVE
+ground

@@ -1,0 +1,4 @@
+polyorb_hi_drivers_client_ble.adb:181:4:INITIALIZE_RECEIVER	112	dynamic,bounded
+polyorb_hi_drivers_client_ble.adb:94:4:INITIALIZE	784	dynamic,bounded
+polyorb_hi_drivers_client_ble.adb:203:4:RECEIVE	640	dynamic
+polyorb_hi_drivers_client_ble.adb:281:4:SEND	512	dynamic,bounded

@@ -1,0 +1,45 @@
+V "GNAT Lib v2017"
+A -O1
+A -gnatA
+A --RTS=/usr/gnat/arm-eabi/lib/gnat/ravenscar-full-stm32f4/
+A -mlittle-endian
+A -mfloat-abi=hard
+A -mcpu=cortex-m4
+A -mfpu=fpv4-sp-d16
+A -mthumb
+A -g
+A -gnatwa
+A -gnatwG
+A -gnat12
+A -fstack-usage
+A -g
+A -gnata
+A -gnato
+A -g
+P ES ZX
+
+RN
+RR NO_STREAMS
+RR NO_UNCHECKED_DEALLOCATION
+RV NO_IMPLEMENTATION_ATTRIBUTES
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLEMENTATION_RESTRICTIONS
+RV NO_OBSOLESCENT_FEATURES
+RV SPARK_05
+
+U polyorb_hi.streams%s	polyorb_hi-streams.ads	a37b83d6 NE OO PU PK
+W polyorb_hi%s		polyorb_hi.ads		polyorb_hi.ali
+
+D polyorb_hi.ads	20180607235124 f77a07a6 polyorb_hi%s
+D polyorb_hi-streams.ads  20180607235124 54018470 polyorb_hi.streams%s
+D system.ads		20170517144320 db831581 system%s
+D /home/taste/tool-inst/include/ocarina/runtime/polyorb-hi-ada/gnat_runtime.adc  20180607235124 00000000
+X 1 polyorb_hi.ads
+35K9*PolyORB_HI 39e15 2|35r9 58r5
+X 2 polyorb_hi-streams.ads
+35K20*Streams 1|35k9 2|58l16 58e23
+44M9*Stream_Element 54r56
+46I9*Stream_Element_Offset<integer> 51r6 51r39 54r13
+50I12*Stream_Element_Count{46I9}
+53A9*Stream_Element_Array(44M9)<46I9>
+

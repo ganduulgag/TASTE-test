@@ -1,0 +1,12 @@
+/home/taste/test1/Certyflie/src/free_fall.ads:115:9:Ff_Acc_Data_Collectorip	0	static
+/home/taste/test1/Certyflie/src/free_fall.adb:47:4:Add_Acc_Z_Sample	8	static
+/home/taste/test1/Certyflie/src/free_fall.adb:61:4:Calculate_Last_Derivative	8	static
+/home/taste/test1/Certyflie/src/free_fall.adb:79:4:Ff_Detect_Free_Fall	16	static
+/home/taste/test1/Certyflie/src/free_fall.adb:102:4:Ff_Detect_Landing	8	static
+/home/taste/test1/Certyflie/src/free_fall.adb:187:4:Ff_Get_Recovery_Commands	0	static
+/home/taste/test1/Certyflie/src/free_fall.adb:212:4:Ff_Get_Recovery_Thrust	0	static
+/home/taste/test1/Certyflie/src/free_fall.adb:234:4:Get_Time_Since_Last_Landing	8	static
+/home/taste/test1/Certyflie/src/free_fall.adb:245:4:Get_Time_Since_Last_Free_Fall	8	static
+/home/taste/test1/Certyflie/src/free_fall.adb:129:4:Ff_Watchdog	8	static
+/home/taste/test1/Certyflie/src/free_fall.adb:144:4:Ff_Check_Event	32	static
+/home/taste/test1/Certyflie/src/free_fall.ads:38:1:Free_Fall	8	static
